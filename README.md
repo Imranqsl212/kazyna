@@ -58,6 +58,12 @@ Then visit `http://localhost:8000`.
 
 Edit colors and typography in `assets/css/variables.css`. Add article cards in `pages/articles.html`. Add formula cards in `assets/js/formulas.js`. Add glossary terms in `assets/js/glossary.js`.
 
+## Google / SEO
+
+See **[GOOGLE-SEO.md](GOOGLE-SEO.md)** for step-by-step indexing in Google Search Console.
+
+Included: `robots.txt`, `sitemap.xml`, canonical URLs, Open Graph, Twitter cards, JSON-LD.
+
 ## Deployment
 
 ### Vercel (recommended)

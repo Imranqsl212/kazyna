@@ -1,0 +1,5 @@
+# https://kazyna-iota.vercel.app — замените домен в Sitemap, если подключите свой (например kazyna.kg)
+User-agent: *
+Allow: /
+
+Sitemap: https://kazyna-iota.vercel.app/sitemap.xml
