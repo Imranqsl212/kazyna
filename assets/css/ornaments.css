@@ -1,0 +1,158 @@
+/* Kyrgyz state-style ornamental layer (shyrdak / koshkar-muiz inspired) */
+
+.gov-stripe {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 5px;
+  z-index: 100;
+  background: linear-gradient(
+    90deg,
+    var(--color-red-deep) 0%,
+    var(--color-red) 18%,
+    var(--color-gold) 50%,
+    var(--color-red) 82%,
+    var(--color-red-deep) 100%
+  );
+}
+
+.gov-stripe::after {
+  content: "";
+  position: absolute;
+  inset: 5px 0 auto;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--color-gold) 0 8px,
+    transparent 8px 14px,
+    var(--color-red) 14px 18px,
+    transparent 18px 24px
+  );
+  opacity: 0.85;
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: var(--ornament-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23c9a227' stroke-width='1.2'%3E%3Cpath d='M40 4 L48 32 L76 40 L48 48 L40 76 L32 48 L4 40 L32 32 Z'/%3E%3Cpath d='M40 16 L44 32 L60 40 L44 48 L40 64 L36 48 L20 40 L36 32 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+
+.page > *:not(.gov-stripe) {
+  position: relative;
+  z-index: 1;
+}
+
+.ornament-frame {
+  position: relative;
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+      135deg,
+      var(--color-gold),
+      var(--color-red),
+      var(--color-navy-2),
+      var(--color-gold)
+    )
+    1;
+}
+
+.ornament-divider {
+  height: 12px;
+  margin: 2rem 0;
+  background:
+    linear-gradient(90deg, transparent, var(--color-gold) 20%, var(--color-red) 50%, var(--color-gold) 80%, transparent),
+    repeating-linear-gradient(90deg, var(--color-gold) 0 6px, transparent 6px 12px);
+  background-size: 100% 2px, auto 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.ornament-corner {
+  position: relative;
+}
+
+.ornament-corner::before,
+.ornament-corner::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--color-gold);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.ornament-corner::before {
+  top: 0.6rem;
+  left: 0.6rem;
+  border-right: none;
+  border-bottom: none;
+}
+
+.ornament-corner::after {
+  bottom: 0.6rem;
+  right: 0.6rem;
+  border-left: none;
+  border-top: none;
+}
+
+.badge--official {
+  background: linear-gradient(135deg, rgba(196, 30, 58, 0.12), rgba(201, 162, 39, 0.18));
+  border: 1px solid rgba(201, 162, 39, 0.35);
+}
+
+.badge--official::before {
+  content: "◆";
+  color: var(--color-red);
+  font-size: 0.55rem;
+}
+
+.hero__frame {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: var(--radius-lg);
+  background: var(--color-card);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-line);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-red), var(--color-gold), var(--color-red));
+}
+
+.article-card__media--macro {
+  background:
+    linear-gradient(145deg, var(--color-navy), var(--color-navy-2)),
+    repeating-linear-gradient(45deg, transparent 0 12px, rgba(201, 162, 39, 0.15) 12px 14px);
+}
+
+.article-card__media--micro {
+  background:
+    linear-gradient(145deg, #1a3d2e, #2d5a45),
+    repeating-linear-gradient(-45deg, transparent 0 10px, rgba(232, 201, 106, 0.12) 10px 12px);
+}
+
+.article-card__media--olympiad {
+  background:
+    linear-gradient(145deg, var(--color-red-deep), var(--color-navy-2)),
+    repeating-linear-gradient(90deg, transparent 0 16px, rgba(255, 255, 255, 0.08) 16px 18px);
+}
+
+.footer__ornament {
+  height: 6px;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, var(--color-red), var(--color-gold), var(--color-red));
+  border-radius: 3px;
+  opacity: 0.9;
+}
