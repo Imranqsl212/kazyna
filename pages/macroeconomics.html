@@ -1,33 +1,337 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Macroeconomics | Kazyna Economics</title>
-  <meta name="description" content="Long-form macroeconomics lessons on GDP, inflation, unemployment, fiscal policy, monetary policy, exchange rates, IS-LM, AD-AS, and growth.">
-  <meta name="keywords" content="macroeconomics, GDP, inflation, unemployment, monetary policy, fiscal policy, IS-LM, AD-AS">
-  <meta property="og:title" content="Macroeconomics | Kazyna Economics"><meta property="og:description" content="Readable macroeconomics for olympiad preparation."><meta property="og:image" content="../assets/images/og-kazyna.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/chrome.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Macroeconomics | Kazyna Economics</title>
+    <meta
+      name="description"
+      content="Long-form macroeconomics lessons on GDP, inflation, unemployment, fiscal policy, monetary policy, exchange rates, IS-LM, AD-AS, and growth."
+    />
+    <meta
+      name="keywords"
+      content="macroeconomics, GDP, inflation, unemployment, monetary policy, fiscal policy, IS-LM, AD-AS"
+    />
+    <meta property="og:title" content="Macroeconomics | Kazyna Economics" />
+    <meta
+      property="og:description"
+      content="Readable macroeconomics for olympiad preparation."
+    />
+    <meta property="og:image" content="../assets/images/og-kazyna.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/chrome.js"></script>
+  </head>
+  <body class="page macro-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress">
+      <div class="progress__bar" data-progress-bar></div>
+    </div>
+    <header class="navbar">
+      <div class="navbar__inner container">
+        <a class="navbar__logo" href="../index.html"
+          ><span class="navbar__mark">K</span
+          ><span class="navbar__brand-text">Kazyna Economics</span></a
+        >
+        <nav class="navbar__links" data-nav-links aria-label="Main navigation">
+          <a class="navbar__link" href="../index.html">Home</a
+          ><a class="navbar__link" href="microeconomics.html">Microeconomics</a
+          ><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a
+          ><a class="navbar__link" href="olympiads.html">Olympiad Prep</a>
+        </nav>
+        <div class="navbar__actions">
+          <button class="icon-button navbar__burger" data-burger>☰</button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <span class="badge">Macro track</span>
+          <h1>
+            Macroeconomics: the economy from 10,000 meters and from the policy
+            desk.
+          </h1>
+          <p class="text-lead">
+            This track teaches the models students actually use in olympiads:
+            national accounts, inflation, labor markets, fiscal and monetary
+            tools, exchange rates, growth theory, recessions, central banks,
+            IS-LM, and AD-AS.
+          </p>
+          <img
+            src="../assets/images/kyrgyz-ornament-1.svg"
+            alt=""
+            class="page-ornament page-ornament--left"
+            aria-hidden="true"
+          />
+        </div>
+      </section>
+      <section class="section section--tight">
+        <div class="container main-layout">
+          <aside class="toc">
+            <strong>Table of contents</strong
+            ><a class="toc__link" href="#gdp">GDP</a
+            ><a class="toc__link" href="#inflation">Inflation</a
+            ><a class="toc__link" href="#policy">Policy</a
+            ><a class="toc__link" href="#models">IS-LM and AD-AS</a
+            ><a class="toc__link" href="#growth">Growth</a>
+          </aside>
+          <div class="article-body stack">
+            <article class="card" id="gdp">
+              <h2>GDP explained</h2>
+              <p>
+                Gross domestic product measures the market value of final goods
+                and services produced inside a country during a period. The
+                olympiad trap is to treat GDP as well-being. It is not. GDP
+                misses leisure, informal work, environmental costs, and
+                distribution, yet it remains powerful because it gives a common
+                scale for output.
+              </p>
+              <p>
+                The expenditure identity is
+                <strong>Y = C + I + G + (X - M)</strong>. Consumption tracks
+                household demand, investment tracks capital formation and
+                inventories, government spending captures public purchases, and
+                net exports adjust for foreign demand. A strong answer names the
+                component, explains the shock, and then predicts multiplier or
+                price-level effects.
+              </p>
+              <blockquote>
+                Key takeaway: GDP is a production measure, not a happiness
+                measure. Always ask whether a change is nominal, real, final, or
+                intermediate.
+              </blockquote>
+            </article>
+            <article class="card" id="inflation">
+              <h2>Inflation and price indices</h2>
+              <p>
+                Inflation is a sustained rise in the general price level.
+                Students should separate a one-time price jump from continuing
+                inflation. CPI follows a consumer basket, GDP deflator covers
+                domestically produced output, and core measures remove volatile
+                items to reveal trend pressure.
+              </p>
+              <p>
+                Demand-pull inflation comes from excess spending; cost-push
+                inflation comes from supply shocks; expected inflation can
+                become self-fulfilling through wage and price setting. In
+                diagrams, demand-pull shifts AD right, while cost-push shifts
+                SRAS left and creates the unpleasant combination of higher
+                prices and lower output.
+              </p>
+            </article>
+            <article class="card" id="unemployment">
+              <h2>Unemployment</h2>
+              <p>
+                Unemployment is not one thing. Frictional unemployment is search
+                time, structural unemployment is skill or location mismatch,
+                cyclical unemployment follows recessions, and natural
+                unemployment remains even near potential output. Good analysis
+                compares actual output with potential output and explains
+                whether policy can help without overheating demand.
+              </p>
+            </article>
+            <article class="card" id="policy">
+              <h2>Fiscal and monetary policy</h2>
+              <p>
+                Fiscal policy uses spending, taxes, and transfers. Expansionary
+                fiscal policy can lift aggregate demand, but it may raise debt
+                or crowd out investment when resources are already tight.
+                Monetary policy changes interest rates, reserves, and
+                expectations. Lower rates usually increase investment and
+                consumption; higher rates cool inflation but can slow output.
+              </p>
+              <p>
+                For olympiad essays, avoid slogans. State the initial gap,
+                choose the tool, trace the channel, discuss time lags, and
+                mention a realistic risk.
+              </p>
+            </article>
+            <article class="card">
+              <h2>Exchange rates and open economy logic</h2>
+              <p>
+                An appreciation makes imports cheaper and exports less
+                competitive; a depreciation does the reverse. Exchange rates
+                respond to interest differentials, inflation expectations, trade
+                balances, and confidence. In small open-economy questions,
+                always track both the goods market and capital flows.
+              </p>
+            </article>
+            <article class="card" id="models">
+              <h2>IS-LM and AD-AS models</h2>
+              <p>
+                IS-LM is a short-run model of goods and money market
+                equilibrium. IS shifts with fiscal policy, investment
+                confidence, and net exports; LM shifts with money supply and
+                liquidity preference. AD-AS then translates demand shocks and
+                supply shocks into output and price-level outcomes.
+              </p>
+              <p>
+                Diagram discipline matters: label axes, mark original
+                equilibrium, show the shift, identify the new equilibrium, and
+                write the economic story in one sentence.
+              </p>
+            </article>
+            <article class="card" id="growth">
+              <h2>Economic growth and recessions</h2>
+              <p>
+                Long-run growth comes from labor, capital, human capital,
+                technology, institutions, and productivity. Recessions occur
+                when spending falls, financial conditions tighten, or supply is
+                disrupted. Stabilization policy can reduce the pain, but
+                sustainable growth requires capacity, not only stimulus.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
-</head>
-<body class="page macro-page">
-  <a class="skip-link" href="#main">Skip to content</a><div class="progress"><div class="progress__bar" data-progress-bar></div></div>
-  <header class="navbar"><div class="navbar__inner container"><a class="navbar__logo" href="../index.html"><span class="navbar__mark">K</span><span class="navbar__brand-text">Kazyna Economics</span></a><nav class="navbar__links" data-nav-links aria-label="Main navigation"><a class="navbar__link" href="../index.html">Home</a><a class="navbar__link" href="microeconomics.html">Microeconomics</a><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a><a class="navbar__link" href="olympiads.html">Olympiad Prep</a></nav><div class="navbar__actions"><button class="icon-button navbar__burger" data-burger>☰</button></div></div></header>
-  <main id="main">
-    <section class="section"><div class="container"><span class="badge">Macro track</span><h1>Macroeconomics: the economy from 10,000 meters and from the policy desk.</h1><p class="text-lead">This track teaches the models students actually use in olympiads: national accounts, inflation, labor markets, fiscal and monetary tools, exchange rates, growth theory, recessions, central banks, IS-LM, and AD-AS.</p><img src="../assets/images/kyrgyz-ornament-1.svg" alt="" class="page-ornament page-ornament--left" aria-hidden="true"></div></section>
-    <section class="section section--tight"><div class="container main-layout"><aside class="toc"><strong>Table of contents</strong><a class="toc__link" href="#gdp">GDP</a><a class="toc__link" href="#inflation">Inflation</a><a class="toc__link" href="#policy">Policy</a><a class="toc__link" href="#models">IS-LM and AD-AS</a><a class="toc__link" href="#growth">Growth</a></aside>
-      <div class="article-body stack">
-        <article class="card" id="gdp"><h2>GDP explained</h2><p>Gross domestic product measures the market value of final goods and services produced inside a country during a period. The olympiad trap is to treat GDP as well-being. It is not. GDP misses leisure, informal work, environmental costs, and distribution, yet it remains powerful because it gives a common scale for output.</p><p>The expenditure identity is <strong>Y = C + I + G + (X - M)</strong>. Consumption tracks household demand, investment tracks capital formation and inventories, government spending captures public purchases, and net exports adjust for foreign demand. A strong answer names the component, explains the shock, and then predicts multiplier or price-level effects.</p><blockquote>Key takeaway: GDP is a production measure, not a happiness measure. Always ask whether a change is nominal, real, final, or intermediate.</blockquote></article>
-        <article class="card" id="inflation"><h2>Inflation and price indices</h2><p>Inflation is a sustained rise in the general price level. Students should separate a one-time price jump from continuing inflation. CPI follows a consumer basket, GDP deflator covers domestically produced output, and core measures remove volatile items to reveal trend pressure.</p><p>Demand-pull inflation comes from excess spending; cost-push inflation comes from supply shocks; expected inflation can become self-fulfilling through wage and price setting. In diagrams, demand-pull shifts AD right, while cost-push shifts SRAS left and creates the unpleasant combination of higher prices and lower output.</p></article>
-        <article class="card" id="unemployment"><h2>Unemployment</h2><p>Unemployment is not one thing. Frictional unemployment is search time, structural unemployment is skill or location mismatch, cyclical unemployment follows recessions, and natural unemployment remains even near potential output. Good analysis compares actual output with potential output and explains whether policy can help without overheating demand.</p></article>
-        <article class="card" id="policy"><h2>Fiscal and monetary policy</h2><p>Fiscal policy uses spending, taxes, and transfers. Expansionary fiscal policy can lift aggregate demand, but it may raise debt or crowd out investment when resources are already tight. Monetary policy changes interest rates, reserves, and expectations. Lower rates usually increase investment and consumption; higher rates cool inflation but can slow output.</p><p>For olympiad essays, avoid slogans. State the initial gap, choose the tool, trace the channel, discuss time lags, and mention a realistic risk.</p></article>
-        <article class="card"><h2>Exchange rates and open economy logic</h2><p>An appreciation makes imports cheaper and exports less competitive; a depreciation does the reverse. Exchange rates respond to interest differentials, inflation expectations, trade balances, and confidence. In small open-economy questions, always track both the goods market and capital flows.</p></article>
-        <article class="card" id="models"><h2>IS-LM and AD-AS models</h2><p>IS-LM is a short-run model of goods and money market equilibrium. IS shifts with fiscal policy, investment confidence, and net exports; LM shifts with money supply and liquidity preference. AD-AS then translates demand shocks and supply shocks into output and price-level outcomes.</p><p>Diagram discipline matters: label axes, mark original equilibrium, show the shift, identify the new equilibrium, and write the economic story in one sentence.</p></article>
-        <article class="card" id="growth"><h2>Economic growth and recessions</h2><p>Long-run growth comes from labor, capital, human capital, technology, institutions, and productivity. Recessions occur when spending falls, financial conditions tighten, or supply is disrupted. Stabilization policy can reduce the pain, but sustainable growth requires capacity, not only stimulus.</p></article>
-      </div></div></section>
-  </main>
-  <footer class="footer"><div class="footer__inner container"><div><a class="navbar__logo" href="../index.html"><span class="navbar__mark">K</span><span>Kazyna Economics</span></a><p>Macroeconomics for ambitious students.</p></div><div><h3>Next</h3><a href="microeconomics.html">Microeconomics</a><br><a href="formulas.html">Formulas</a></div><div><h3>Practice</h3><a href="olympiads.html">Olympiads</a></div><div><h3>Contact</h3><a href="contacts.html">contacts@kazyna.edu</a></div></div></footer>
-  <div class="search-modal" data-search-modal aria-hidden="true"><div class="search-modal__panel"><button class="icon-button" data-search-close>×</button><input class="search-modal__field" data-search-input placeholder="Search macro topics"><div class="search-modal__results" data-search-results></div></div></div><button class="icon-button scroll-top" data-scroll-top>↑</button>
-  <script src="../assets/js/main.js" defer></script><script src="../assets/js/navigation.js" defer></script>
-<script src="../assets/js/seo.js" defer></script></body></html>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer__ornament" aria-hidden="true"></div>
+      <div class="footer__inner container">
+        <div>
+          <a
+            class="navbar__logo"
+            href="../index.html"
+            style="margin-bottom: 0.8rem; display: inline-flex"
+          >
+            <span class="navbar__mark">К</span>
+            <span style="color: var(--color-gold-light); font-weight: 900"
+              >Kazyna Economics</span
+            >
+          </a>
+          <p style="font-size: 0.88rem; max-width: 280px">
+            Platform to study Economics
+          </p>
+        </div>
+        <div>
+          <h3>Topics</h3>
+          <div class="footer__links">
+            <a href="microeconomics.html">Microeconomics</a>
+            <a href="macroeconomics.html">Macroeconomics</a>
+            <a href="olympiads.html">Olympiad Prep</a>
+          </div>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <div class="footer__links">
+            <a href="formulas.html">Formulas</a>
+            <a href="articles.html">Articles</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/kazyna_economics?igsh=d3hlMml0dDBpNGZl"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="social-link social-link--instagram"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <circle cx="17.5" cy="6.5" r="1.5"></circle></svg
+            ></a>
+            <a
+              href="mailto:omorbekovnurs@gmail.com"
+              aria-label="Gmail"
+              class="social-link social-link--gmail"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M7 10l5 3.5L17 10"></path></svg
+            ></a>
+            <a
+              href="https://wa.me/996701400657"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              class="social-link social-link--whatsapp"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                ></path>
+                <circle cx="9" cy="10" r="1"></circle>
+                <circle cx="12" cy="10" r="1"></circle>
+                <circle cx="15" cy="10" r="1"></circle></svg
+            ></a>
+          </div>
+          <p style="font-size: 0.82rem; opacity: 0.6; margin-top: 1rem">
+            © 2026 Kazyna
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Search modal -->
+    <div class="search-modal" data-search-modal aria-hidden="true">
+      <div
+        class="search-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Search"
+      >
+        <button
+          class="icon-button"
+          data-search-close
+          aria-label="Close search"
+          style="margin-bottom: 0.5rem"
+        >
+          ×
+        </button>
+        <input
+          class="search-modal__field"
+          data-search-input
+          placeholder="Search topics..."
+          aria-label="Search query"
+        />
+        <div class="search-modal__results" data-search-results></div>
+      </div>
+    </div>
+
+    <button
+      class="icon-button scroll-top"
+      data-scroll-top
+      aria-label="Scroll to top"
+    >
+      ↑
+    </button>
+
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/navigation.js" defer></script>
+    <script src="../assets/js/tabs.js" defer></script>
+  </body>
+</html>

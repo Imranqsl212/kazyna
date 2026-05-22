@@ -23,7 +23,7 @@
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
   opacity: var(--ornament-opacity);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23grad)' stroke-width='1.5'%3E%3C!-- Koshkar-muiz (ram horns) motif --%3E%3Cpath d='M60 15 Q75 25 75 45 Q75 65 60 75 Q45 65 45 45 Q45 25 60 15' stroke-linecap='round'/%3E%3Cpath d='M60 15 Q45 25 45 45 Q45 65 60 75 Q75 65 75 45 Q75 25 60 15' stroke-linecap='round'/%3E%3C!-- Center diamond --%3E%3Cpath d='M60 35 L70 50 L60 65 L50 50 Z' stroke-linejoin='round'/%3E%3C!-- Corner flourishes --%3E%3Ccircle cx='20' cy='20' r='8' stroke-width='1'/%3E%3Ccircle cx='100' cy='20' r='8' stroke-width='1'/%3E%3Ccircle cx='20' cy='100' r='8' stroke-width='1'/%3E%3Ccircle cx='100' cy='100' r='8' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
   background-size: 120px 120px;
@@ -31,7 +31,6 @@
 
 .page > *:not(.gov-stripe) {
   position: relative;
-  z-index: 1;
 }
 
 /* Ornament corner brackets — minimal */

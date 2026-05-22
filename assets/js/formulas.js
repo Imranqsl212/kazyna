@@ -27,6 +27,7 @@
     const visible = category === "all" ? formulas : formulas.filter((formula) => formula.category === category);
     mount.innerHTML = visible.map((formula) => `
       <article class="card formula-card" id="${formula.id}" data-filter-card="formulas" data-category="${formula.category}">
+        <div class="formula-card__ornament" aria-hidden="true"></div>
         <span class="badge">${formula.category === "macro" ? (lang() === "ru" ? "макро" : "macro") : (lang() === "ru" ? "микро" : "micro")}</span>
         <h3>${pick(formula, "title")}</h3>
         <div class="formula-card__formula" data-tex="${formula.tex}">${formula.tex}</div>

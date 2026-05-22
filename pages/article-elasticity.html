@@ -1,56 +1,233 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elasticity masterclass | Kazyna Economics</title>
-  <meta name="description" content="PED, income elasticity, cross-price, and revenue logic.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/chrome.js"></script>
-</head>
-<body class="page article-page">
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="progress"><div class="progress__bar" data-progress-bar></div></div>
-  <header class="navbar"><div class="navbar__inner container"><a class="navbar__logo" href="../index.html"><span class="navbar__mark">K</span><span class="navbar__brand-text">Kazyna Economics</span></a><nav class="navbar__links" data-nav-links aria-label="Main navigation"><a class="navbar__link" href="../index.html">Home</a><a class="navbar__link" href="microeconomics.html">Microeconomics</a><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a><a class="navbar__link" href="olympiads.html">Olympiad Prep</a></nav><div class="navbar__actions"><button class="icon-button navbar__burger" data-burger>☰</button></div></div></header>
-  <main id="main">
-    <article class="section">
-      <div class="container main-layout">
-        <aside class="toc ornament-corner"><strong>In this article</strong>
-          <a class="toc__link" href="#ped">Price elasticity of demand</a>
-          <a class="toc__link" href="#revenue">Revenue rule</a>
-          <a class="toc__link" href="#other">Income and cross elasticity</a>
-        </aside>
-        <div class="article-body stack">
-          <header class="card ornament-corner">
-            <span class="badge badge--official">Micro · 13 min</span>
-            <h1>Elasticity masterclass</h1>
-            <p class="text-lead">PED, income elasticity, cross-price, and revenue logic.</p>
-          </header>
-          <section class="card" id="ped">
-            <h2>Price elasticity of demand</h2>
-            <p>PED = (%ΔQ<sub>d</sub>) / (%ΔP). |PED| &gt; 1 elastic; &lt; 1 inelastic. Along linear demand, elasticity changes by price segment.</p>
-          </section>
-          <section class="card" id="revenue">
-            <h2>Revenue rule</h2>
-            <p>If demand is inelastic, a price rise raises total revenue (fewer units lost in % terms). If elastic, a price cut can raise revenue. Olympiad favorite: link elasticity to monopoly pricing power.</p>
-          </section>
-          <section class="card" id="other">
-            <h2>Income and cross elasticity</h2>
-            <p>Income elasticity: normal vs inferior goods. Cross elasticity: substitutes (positive) vs complements (negative).</p>
-          </section>
-          <p><a class="button button--gold" href="articles.html">← Library</a></p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elasticity masterclass | Kazyna Economics</title>
+    <meta
+      name="description"
+      content="PED, income elasticity, cross-price, and revenue logic."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/chrome.js"></script>
+  </head>
+  <body class="page article-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="progress">
+      <div class="progress__bar" data-progress-bar></div>
+    </div>
+    <header class="navbar">
+      <div class="navbar__inner container">
+        <a class="navbar__logo" href="../index.html"
+          ><span class="navbar__mark">K</span
+          ><span class="navbar__brand-text">Kazyna Economics</span></a
+        >
+        <nav class="navbar__links" data-nav-links aria-label="Main navigation">
+          <a class="navbar__link" href="../index.html">Home</a
+          ><a class="navbar__link" href="microeconomics.html">Microeconomics</a
+          ><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a
+          ><a class="navbar__link" href="olympiads.html">Olympiad Prep</a>
+        </nav>
+        <div class="navbar__actions">
+          <button class="icon-button navbar__burger" data-burger>☰</button>
         </div>
       </div>
-    </article>
-  </main>
-  <footer class="footer"><div class="footer__ornament" aria-hidden="true"></div><div class="footer__inner container"><div><a class="navbar__logo" href="../index.html"><span class="navbar__mark">K</span><span>Kazyna Economics</span></a></div><div><a href="articles.html">Articles</a></div></div></footer>
-  <div class="search-modal" data-search-modal aria-hidden="true"><div class="search-modal__panel"><button class="icon-button" data-search-close>×</button><input class="search-modal__field" data-search-input><div class="search-modal__results" data-search-results></div></div></div>
-  <button class="icon-button scroll-top" data-scroll-top>↑</button>
-  <script src="../assets/js/main.js" defer></script>
-  <script src="../assets/js/navigation.js" defer></script>
-  <script src="../assets/js/seo.js" defer></script>
-</body>
+    </header>
+    <main id="main">
+      <article class="section">
+        <div class="container main-layout">
+          <aside class="toc ornament-corner">
+            <strong>In this article</strong>
+            <a class="toc__link" href="#ped">Price elasticity of demand</a>
+            <a class="toc__link" href="#revenue">Revenue rule</a>
+            <a class="toc__link" href="#other">Income and cross elasticity</a>
+          </aside>
+          <div class="article-body stack">
+            <header class="card ornament-corner">
+              <span class="badge badge--official">Micro · 13 min</span>
+              <h1>Elasticity masterclass</h1>
+              <p class="text-lead">
+                PED, income elasticity, cross-price, and revenue logic.
+              </p>
+            </header>
+            <section class="card" id="ped">
+              <h2>Price elasticity of demand</h2>
+              <p>
+                PED = (%ΔQ<sub>d</sub>) / (%ΔP). |PED| &gt; 1 elastic; &lt; 1
+                inelastic. Along linear demand, elasticity changes by price
+                segment.
+              </p>
+            </section>
+            <section class="card" id="revenue">
+              <h2>Revenue rule</h2>
+              <p>
+                If demand is inelastic, a price rise raises total revenue (fewer
+                units lost in % terms). If elastic, a price cut can raise
+                revenue. Olympiad favorite: link elasticity to monopoly pricing
+                power.
+              </p>
+            </section>
+            <section class="card" id="other">
+              <h2>Income and cross elasticity</h2>
+              <p>
+                Income elasticity: normal vs inferior goods. Cross elasticity:
+                substitutes (positive) vs complements (negative).
+              </p>
+            </section>
+            <p>
+              <a class="button button--gold" href="articles.html">← Library</a>
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer__ornament" aria-hidden="true"></div>
+      <div class="footer__inner container">
+        <div>
+          <a
+            class="navbar__logo"
+            href="../index.html"
+            style="margin-bottom: 0.8rem; display: inline-flex"
+          >
+            <span class="navbar__mark">К</span>
+            <span style="color: var(--color-gold-light); font-weight: 900"
+              >Kazyna Economics</span
+            >
+          </a>
+          <p style="font-size: 0.88rem; max-width: 280px">
+            Platform to study Economics
+          </p>
+        </div>
+        <div>
+          <h3>Topics</h3>
+          <div class="footer__links">
+            <a href="microeconomics.html">Microeconomics</a>
+            <a href="macroeconomics.html">Macroeconomics</a>
+            <a href="olympiads.html">Olympiad Prep</a>
+          </div>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <div class="footer__links">
+            <a href="formulas.html">Formulas</a>
+            <a href="articles.html">Articles</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/kazyna_economics?igsh=d3hlMml0dDBpNGZl"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="social-link social-link--instagram"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <circle cx="17.5" cy="6.5" r="1.5"></circle></svg
+            ></a>
+            <a
+              href="mailto:omorbekovnurs@gmail.com"
+              aria-label="Gmail"
+              class="social-link social-link--gmail"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M7 10l5 3.5L17 10"></path></svg
+            ></a>
+            <a
+              href="https://wa.me/996701400657"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              class="social-link social-link--whatsapp"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                ></path>
+                <circle cx="9" cy="10" r="1"></circle>
+                <circle cx="12" cy="10" r="1"></circle>
+                <circle cx="15" cy="10" r="1"></circle></svg
+            ></a>
+          </div>
+          <p style="font-size: 0.82rem; opacity: 0.6; margin-top: 1rem">
+            © 2026 Kazyna
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Search modal -->
+    <div class="search-modal" data-search-modal aria-hidden="true">
+      <div
+        class="search-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Search"
+      >
+        <button
+          class="icon-button"
+          data-search-close
+          aria-label="Close search"
+          style="margin-bottom: 0.5rem"
+        >
+          ×
+        </button>
+        <input
+          class="search-modal__field"
+          data-search-input
+          placeholder="Search topics..."
+          aria-label="Search query"
+        />
+        <div class="search-modal__results" data-search-results></div>
+      </div>
+    </div>
+
+    <button
+      class="icon-button scroll-top"
+      data-scroll-top
+      aria-label="Scroll to top"
+    >
+      ↑
+    </button>
+
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/navigation.js" defer></script>
+    <script src="../assets/js/tabs.js" defer></script>
+  </body>
 </html>
