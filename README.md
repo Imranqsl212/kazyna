@@ -1,91 +1,93 @@
 # Kazyna Economics
 
-Kazyna Economics is a production-ready static educational website for macroeconomics, microeconomics, economics olympiad preparation, formulas, tests, articles, and glossary revision.
+> Minimal economics education platform with Kyrgyz ethno accents
 
-## Tech Stack
+## 🎯 Overview
 
-- HTML5 semantic pages
-- Modular CSS3 with BEM naming
-- Vanilla JavaScript
-- Optional CDN enhancements: Chart.js and KaTeX
-- No React, Vue, Angular, jQuery, or heavy runtime
+Clean, focused platform for economics olympiad preparation with three core sections:
+- **Economics for Olympiad Preparation**
+- **Microeconomics**
+- **Macroeconomics**
 
-## Structure
+## 📁 Structure
 
-```txt
-kazyna-economics/
-├── index.html
+```
+kazyna/
+├── index.html              # Homepage with 3 tabs
 ├── pages/
+│   ├── microeconomics.html # Micro topics
+│   ├── macroeconomics.html # Macro topics
+│   ├── olympiads.html      # Olympiad prep
+│   ├── formulas.html       # Formula reference
+│   ├── articles.html       # Article index
+│   ├── article-*.html      # Individual articles
+│   ├── about.html          # About page
+│   └── contacts.html       # Contact page
 ├── assets/
 │   ├── css/
-│   ├── js/
-│   ├── images/
-│   ├── icons/
-│   └── fonts/
-└── README.md
+│   │   ├── variables.css   # Color palette & tokens
+│   │   ├── ornaments.css   # Minimal ethno accents
+│   │   ├── components.css  # UI components
+│   │   ├── layout.css      # Grid & structure
+│   │   ├── typography.css  # Text styles
+│   │   ├── utilities.css   # Helper classes
+│   │   └── responsive.css  # Media queries
+│   └── js/
+│       ├── main.js         # Core functionality
+│       ├── navigation.js   # Nav & burger menu
+│       ├── tabs.js         # Tab system
+│       ├── formulas.js     # Formula rendering
+│       └── chrome.js       # Theme & preferences
 ```
 
-## Run Locally
+## 🎨 Design
 
-Open `index.html` directly in a browser, or serve the folder:
+### Color Palette
+- **Background:** `#fafaf8` (warm white)
+- **Primary:** `#c8392b` (Kyrgyz red)
+- **Accent:** `#d4a017` (gold)
+- **Text:** `#1a1a1a` (soft black)
 
-```bash
-python3 -m http.server 8000
-```
+### Typography
+- **Headings:** Playfair Display (serif)
+- **Body:** Manrope (sans-serif)
 
-Then visit `http://localhost:8000`.
+### Principles
+- Minimal visual noise
+- Comfortable spacing
+- Clear hierarchy
+- Subtle Kyrgyz ornaments
 
-## Features
+## 🚀 Features
 
-- Sticky responsive navbar
-- Mobile burger menu
-- Dark/light mode
-- One-click Russian/English language switcher
-- Reading progress bar
-- Scroll-to-top button
-- Search modal
-- Category filters
-- Article table of contents
-- Interactive formula cards with copy buttons
-- KaTeX formula rendering
-- Timed quiz system with score tracking and explanations
-- Searchable 100-term glossary
-- Chart.js economics visualizations
-- SEO meta tags and schema markup
-- Accessible focus states, semantic landmarks, and readable contrast
+- **Three-tab homepage** — Olympiad Prep, Micro, Macro
+- **Topic cards** — Numbered, organized content
+- **Dark mode** — Theme toggle
+- **Responsive** — Mobile-friendly
+- **Clean navigation** — 4 main links only
 
-## Customization
+## 📝 Navigation
 
-Edit colors and typography in `assets/css/variables.css`. Add article cards in `pages/articles.html`. Add formula cards in `assets/js/formulas.js`. Add glossary terms in `assets/js/glossary.js`.
+**Header (all pages):**
+- Home
+- Microeconomics
+- Macroeconomics
+- Olympiad Prep
 
-## Google / SEO
+**Footer:**
+- Topics (Micro, Macro, Olympiad)
+- Resources (Formulas, Articles)
+- Contact
 
-See **[GOOGLE-SEO.md](GOOGLE-SEO.md)** for step-by-step indexing in Google Search Console.
+## 🗑️ Removed
 
-Included: `robots.txt`, `sitemap.xml`, canonical URLs, Open Graph, Twitter cards, JSON-LD.
+- Tests page
+- Glossary page
+- Search functionality
+- Language toggle
+- Newsletter section
+- Stats cards
 
-## Deployment
+## 📄 License
 
-### Vercel (recommended)
-
-1. Push this repo to GitHub.
-2. Import the project at [vercel.com/new](https://vercel.com/new).
-3. Framework preset: **Other** (static site, no build command).
-4. Output directory: **`.`** (project root).
-5. Deploy.
-
-`vercel.json` is included: clean URLs, asset caching, no build step.
-
-CLI:
-
-```bash
-npx vercel --prod
-```
-
-### GitHub Pages
-
-Serve the repository root as a static site (same folder as `index.html`).
-
-### Other hosts
-
-Netlify, Nginx, Apache, or any CDN-backed object storage works — no server runtime required.
+© 2026 Kazyna Economics

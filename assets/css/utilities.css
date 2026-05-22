@@ -1,3 +1,7 @@
+/* ============================================================
+   Utilities
+   ============================================================ */
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -10,28 +14,9 @@
   border: 0;
 }
 
-.muted {
-  color: var(--color-ink-soft);
-}
-
-.stack {
-  display: grid;
-  gap: 1rem;
-}
-
 .center {
   text-align: center;
   margin-inline: auto;
-}
-
-.ornament-divider {
-  width: min(480px, 80%);
-  height: 18px;
-  margin: 2rem auto;
-  background:
-    linear-gradient(45deg, transparent 45%, var(--color-gold) 46% 54%, transparent 55%) 0 0 / 36px 18px,
-    linear-gradient(-45deg, transparent 45%, var(--color-red) 46% 54%, transparent 55%) 18px 0 / 36px 18px;
-  opacity: 0.7;
 }
 
 .skip-link {
@@ -39,7 +24,7 @@
   left: 1rem;
   top: -100px;
   z-index: 999;
-  background: var(--color-navy);
+  background: var(--color-felt);
   color: #fff;
   padding: 0.7rem 1rem;
   border-radius: var(--radius-sm);
@@ -50,6 +35,25 @@
 }
 
 :focus-visible {
-  outline: 3px solid rgba(201, 149, 47, 0.85);
+  outline: 3px solid rgba(212, 160, 23, 0.85);
   outline-offset: 3px;
+}
+
+/* Shyrdak divider (center version) */
+.divider-shyrdak {
+  width: min(480px, 80%);
+  height: 16px;
+  margin: 2rem auto;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--color-felt) 0px 8px,
+      var(--color-gold) 8px 12px,
+      var(--color-felt-deep) 12px 16px,
+      transparent 16px 20px
+    );
+  background-size: 20px 4px;
+  background-position: center;
+  background-repeat: repeat-x;
+  opacity: 0.60;
 }

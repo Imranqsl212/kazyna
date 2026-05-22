@@ -3,20 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kazyna Economics | Premium Economics & Olympiad Platform</title>
-  <meta name="description" content="Kazyna Economics is a premium macroeconomics, microeconomics, and olympiad preparation platform with Kyrgyz visual identity.">
-  <meta name="keywords" content="economics, macroeconomics, microeconomics, olympiad preparation, Kyrgyzstan education">
+  <title>Kazyna Economics | Kyrgyz Olympiad Preparation Platform</title>
+  <meta name="description" content="Kazyna — a Kyrgyz economics education platform for olympiad preparation. Master macroeconomics, microeconomics, and competition strategy.">
+  <meta name="keywords" content="economics, macroeconomics, microeconomics, olympiad preparation, Kyrgyzstan education, экономика олимпиада">
   <meta property="og:title" content="Kazyna Economics">
   <meta property="og:description" content="Master Economics. Win Olympiads. Build Your Future.">
   <meta property="og:image" content="https://kazyna-iota.vercel.app/assets/images/og-kazyna.svg">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
   <meta name="twitter:title" content="Kazyna Economics">
   <meta name="twitter:description" content="Master Economics. Win Olympiads. Build Your Future.">
-  <meta name="twitter:image" content="https://kazyna-iota.vercel.app/assets/images/og-kazyna.svg">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-  <!-- Google Search Console: вставьте код подтверждения ниже -->
-  <!-- <meta name="google-site-verification" content="ВАШ_КОД_ИЗ_SEARCH_CONSOLE" /> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
@@ -27,24 +23,24 @@
 <body class="page">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="progress" aria-hidden="true"><div class="progress__bar" data-progress-bar></div></div>
+
+  <!-- Top ethno stripe -->
+  <div class="gov-stripe" aria-hidden="true"></div>
+
+  <!-- Navbar -->
   <header class="navbar">
     <div class="navbar__inner container">
-      <a class="navbar__logo" href="index.html" aria-label="Kazyna Economics home"><span class="navbar__mark">K</span><span class="navbar__brand-text">Kazyna Economics</span></a>
+      <a class="navbar__logo" href="index.html" aria-label="Kazyna Economics home">
+        <span class="navbar__mark">К</span>
+        <span class="navbar__brand-text">Kazyna Economics</span>
+      </a>
       <nav class="navbar__links" data-nav-links aria-label="Main navigation">
-        <a class="navbar__link" href="index.html">Home</a>
-        <a class="navbar__link" href="pages/macroeconomics.html">Macro</a>
-        <a class="navbar__link" href="pages/microeconomics.html">Micro</a>
-        <a class="navbar__link" href="pages/olympiads.html">Olympiads</a>
-        <a class="navbar__link" href="pages/formulas.html">Formulas</a>
-        <a class="navbar__link" href="pages/articles.html">Articles</a>
-        <a class="navbar__link" href="pages/tests.html">Tests</a>
-        <a class="navbar__link" href="pages/glossary.html">Glossary</a>
-        <a class="navbar__link" href="pages/about.html">About</a>
-        <a class="navbar__link" href="pages/contacts.html">Contact</a>
+        <a class="navbar__link navbar__link--active" href="index.html">Home</a>
+        <a class="navbar__link" href="pages/microeconomics.html">Microeconomics</a>
+        <a class="navbar__link" href="pages/macroeconomics.html">Macroeconomics</a>
+        <a class="navbar__link" href="pages/olympiads.html">Olympiad Prep</a>
       </nav>
       <div class="navbar__actions">
-        <button class="icon-button" type="button" data-search-open aria-label="Open search">⌕</button>
-        <button class="language-toggle" type="button" data-i18n-toggle aria-label="Switch language">RU</button>
         <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle theme">☾</button>
         <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
@@ -52,180 +48,277 @@
   </header>
 
   <main id="main">
+
+    <!-- ===== HERO ===== -->
     <section class="hero">
       <div class="hero__inner container">
         <div class="hero__frame ornament-corner">
-          <span class="badge badge--official">Кыргызская образовательная платформа · Kyrgyz editorial</span>
-          <h1 class="hero__title">Master Economics. Win Olympiads. Build Your Future.</h1>
-          <p class="hero__subtitle text-lead">A focused platform for ambitious students: clear macro and micro theory, formulas, olympiad strategies, interactive tests, and readable long-form economics articles.</p>
+          <span class="badge badge--official">◆ Economics Education Platform</span>
+          <h1 class="hero__title">Master Economics. Win Olympiads.</h1>
+          <p class="hero__subtitle text-lead">Clear theory, practical examples, and olympiad strategies for ambitious students.</p>
           <div class="hero__actions">
-            <a class="button button--gold" href="pages/olympiads.html">Start olympiad roadmap</a>
-            <a class="button button--ghost" href="pages/articles.html">Read featured articles</a>
-          </div>
-          <div class="hero__stats" aria-label="Platform statistics">
-            <div class="stat"><span class="stat__value" data-count="102" data-suffix="+">0</span><span class="stat__label">glossary terms</span></div>
-            <div class="stat"><span class="stat__value" data-count="13" data-suffix="+">0</span><span class="stat__label">long-form articles</span></div>
-            <div class="stat"><span class="stat__value" data-count="10" data-suffix="+">0</span><span class="stat__label">formula cards</span></div>
+            <a class="button button--primary" href="#tab-olympiad">Start Learning</a>
+            <a class="button button--ghost" href="pages/olympiads.html">Olympiad Guide</a>
           </div>
         </div>
-        <div class="hero-visual" aria-label="Economics dashboard preview">
+
+        <!-- Yurt-panel visual -->
+        <div class="hero-visual" aria-label="Economics dashboard">
           <div class="hero-visual__panel">
             <div class="hero-visual__chart hero-visual__chart--static" aria-hidden="true">
-              <svg viewBox="0 0 320 120" role="img" aria-label="GDP trend illustration">
-                <polyline fill="none" stroke="#e2b85c" stroke-width="3" points="10,95 60,72 110,58 160,64 210,42 260,28 310,18"/>
-                <polyline fill="none" stroke="#d96a5b" stroke-width="2" stroke-dasharray="6 4" points="10,78 60,74 110,70 160,66 210,62 260,58 310,54"/>
+              <svg viewBox="0 0 320 130" role="img" aria-label="GDP trend">
+                <defs>
+                  <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#d4a017"/>
+                    <stop offset="100%" stop-color="#f0c040"/>
+                  </linearGradient>
+                </defs>
+                <line x1="10" y1="100" x2="310" y2="100" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+                <line x1="10" y1="70" x2="310" y2="70" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                <line x1="10" y1="40" x2="310" y2="40" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+                <polyline fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  points="10,98 55,80 100,68 145,72 190,50 240,34 310,20"/>
+                <polyline fill="none" stroke="#c8392b" stroke-width="2" stroke-dasharray="6 4"
+                  points="10,82 55,78 100,74 145,70 190,66 240,62 310,58"/>
               </svg>
             </div>
-            <div class="hero-visual__metric"><span>Nominal GDP lens</span><strong>Y = C + I + G + NX</strong></div>
-            <div class="hero-visual__metric"><span>Olympiad habit</span><strong>Model → Graph → Calculate</strong></div>
+            <div class="hero-visual__metric">
+              <span>GDP Formula</span>
+              <strong>Y = C + I + G + NX</strong>
+            </div>
           </div>
           <div class="hero-visual__coin" aria-hidden="true">₭</div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- ===== THREE TABS ===== -->
+    <section class="section section--tight">
       <div class="container">
-        <div class="section__header">
-          <div>
-            <span class="badge">Featured articles</span>
-            <h2>Economics that reads like a sharp briefing, not a sleepy textbook.</h2>
+        <div class="tabs" data-tabs>
+          <div class="tabs__nav" role="tablist" aria-label="Economics Topics">
+            <button class="tabs__btn tabs__btn--active" role="tab" aria-selected="true" aria-controls="tab-olympiad" data-tab="olympiad">
+              <span class="tabs__btn-icon">🏆</span> Economics for Olympiad Preparation
+            </button>
+            <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-micro" data-tab="micro">
+              <span class="tabs__btn-icon">µ</span> Microeconomics
+            </button>
+            <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="tab-macro" data-tab="macro">
+              <span class="tabs__btn-icon">Σ</span> Macroeconomics
+            </button>
           </div>
-          <p class="text-lead">Each piece connects definitions, diagrams, intuition, and olympiad shortcuts so students can move from reading to solving.</p>
-        </div>
-        <div class="grid grid--three">
-          <a class="card article-card" href="pages/article-single.html">
-            <div class="article-card__media article-card__media--macro" role="img" aria-label="GDP"></div>
-            <div class="article-card__meta"><span>Macro</span><span>12 min</span></div>
-            <h3 class="article-card__title">GDP explained</h3>
-            <p class="article-card__description">Output, income, expenditure, real vs nominal GDP, and olympiad traps.</p>
-          </a>
-          <a class="card article-card" href="pages/article-inflation.html">
-            <div class="article-card__media article-card__media--macro" role="img" aria-label="Inflation"></div>
-            <div class="article-card__meta"><span>Macro</span><span>14 min</span></div>
-            <h3 class="article-card__title">Inflation deep dive</h3>
-            <p class="article-card__description">CPI, deflator, demand-pull, cost-push, and policy trade-offs.</p>
-          </a>
-          <a class="card article-card" href="pages/article-fiscal-policy.html">
-            <div class="article-card__media article-card__media--macro" role="img" aria-label="Policy"></div>
-            <div class="article-card__meta"><span>Macro</span><span>15 min</span></div>
-            <h3 class="article-card__title">Fiscal and monetary policy</h3>
-            <p class="article-card__description">Multipliers, crowding out, and essay structure.</p>
-          </a>
-          <a class="card article-card" href="pages/article-supply-demand.html">
-            <div class="article-card__media article-card__media--micro" role="img" aria-label="Markets"></div>
-            <div class="article-card__meta"><span>Micro</span><span>12 min</span></div>
-            <h3 class="article-card__title">Supply and demand mastery</h3>
-            <p class="article-card__description">Equilibrium, shocks, surplus, and welfare.</p>
-          </a>
-          <a class="card article-card" href="pages/article-elasticity.html">
-            <div class="article-card__media article-card__media--micro" role="img" aria-label="Elasticity"></div>
-            <div class="article-card__meta"><span>Micro</span><span>13 min</span></div>
-            <h3 class="article-card__title">Elasticity masterclass</h3>
-            <p class="article-card__description">PED, income and cross elasticity, revenue rule.</p>
-          </a>
-          <a class="card article-card" href="pages/microeconomics.html#game-theory">
-            <div class="article-card__media article-card__media--olympiad" role="img" aria-label="Game theory"></div>
-            <div class="article-card__meta"><span>Micro</span><span>9 min</span></div>
-            <h3 class="article-card__title">Game theory basics</h3>
-            <p class="article-card__description">Nash equilibrium and payoff matrices.</p>
-          </a>
-        </div>
-      </div>
+
+          <!-- TAB 1: OLYMPIAD -->
+          <div class="tabs__panel tabs__panel--active" id="tab-olympiad" role="tabpanel">
+            <div class="section__header">
+              <div>
+                <h2>Economics for Olympiad Preparation</h2>
+              </div>
+              <p class="text-lead">Systematic approach from core concepts to problem-solving and essay writing.</p>
+            </div>
+
+            <div class="grid grid--three">
+              <div class="topic-card">
+                <span class="topic-card__number">Step 01</span>
+                <h4 class="topic-card__title">Build Core Knowledge</h4>
+                <p class="topic-card__desc">Master scarcity, markets, GDP, inflation, policy, elasticity, and trade fundamentals.</p>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Step 02</span>
+                <h4 class="topic-card__title">Practice by Problem Type</h4>
+                <p class="topic-card__desc">Group problems by graphs, formulas, strategic games, essay logic, and data interpretation.</p>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Step 03</span>
+                <h4 class="topic-card__title">Review Like an Analyst</h4>
+                <p class="topic-card__desc">After each set, note what changed, which assumption mattered, and where your diagram could be clearer.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: MICROECONOMICS -->
+          <div class="tabs__panel" id="tab-micro" role="tabpanel">
+            <div class="section__header">
+              <div>
+                <h2>Microeconomics</h2>
+              </div>
+              <p class="text-lead">Individual behavior, markets, and firm decisions.</p>
+            </div>
+
+            <div class="grid grid--three">
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 01</span>
+                <h4 class="topic-card__title">Supply and Demand</h4>
+                <p class="topic-card__desc">Market equilibrium, shifts, consumer and producer surplus.</p>
+                <a class="topic-card__link" href="pages/article-supply-demand.html">Read article</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 02</span>
+                <h4 class="topic-card__title">Elasticity</h4>
+                <p class="topic-card__desc">Price elasticity of demand (PED), income, cross-price elasticity.</p>
+                <a class="topic-card__link" href="pages/article-elasticity.html">Read article</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 03</span>
+                <h4 class="topic-card__title">Consumer Theory</h4>
+                <p class="topic-card__desc">Utility, indifference curves, budget constraints, consumer optimum.</p>
+                <a class="topic-card__link" href="pages/microeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 04</span>
+                <h4 class="topic-card__title">Production Theory</h4>
+                <p class="topic-card__desc">Production function, marginal product, diminishing returns.</p>
+                <a class="topic-card__link" href="pages/microeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 05</span>
+                <h4 class="topic-card__title">Market Structures</h4>
+                <p class="topic-card__desc">Perfect competition, monopoly, oligopoly, monopolistic competition.</p>
+                <a class="topic-card__link" href="pages/microeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 06</span>
+                <h4 class="topic-card__title">Costs</h4>
+                <p class="topic-card__desc">Fixed, variable, marginal costs. ATC, AVC, AFC curves.</p>
+                <a class="topic-card__link" href="pages/microeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 07</span>
+                <h4 class="topic-card__title">Market Failures</h4>
+                <p class="topic-card__desc">Externalities, public goods, information asymmetry, monopoly power.</p>
+                <a class="topic-card__link" href="pages/microeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 08</span>
+                <h4 class="topic-card__title">Game Theory</h4>
+                <p class="topic-card__desc">Nash equilibrium, dominant strategies, prisoner's dilemma.</p>
+                <a class="topic-card__link" href="pages/microeconomics.html#game-theory">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 09</span>
+                <h4 class="topic-card__title">Factor Markets</h4>
+                <p class="topic-card__desc">Labor market, marginal product of labor, monopsony, minimum wage.</p>
+                <a class="topic-card__link" href="pages/microeconomics.html">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: MACROECONOMICS -->
+          <div class="tabs__panel" id="tab-macro" role="tabpanel">
+            <div class="section__header">
+              <div>
+                <h2>Macroeconomics</h2>
+              </div>
+              <p class="text-lead">National economies, policy, growth, and international trade.</p>
+            </div>
+
+            <div class="grid grid--three">
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 01</span>
+                <h4 class="topic-card__title">GDP and National Income</h4>
+                <p class="topic-card__desc">Measurement methods, real vs nominal GDP, deflator, GNP, NNP.</p>
+                <a class="topic-card__link" href="pages/article-single.html">Read article</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 02</span>
+                <h4 class="topic-card__title">Inflation</h4>
+                <p class="topic-card__desc">CPI, GDP deflator, demand-pull and cost-push inflation, Phillips curve.</p>
+                <a class="topic-card__link" href="pages/article-inflation.html">Read article</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 03</span>
+                <h4 class="topic-card__title">Unemployment</h4>
+                <p class="topic-card__desc">Frictional, structural, cyclical unemployment. NAIRU, natural rate.</p>
+                <a class="topic-card__link" href="pages/macroeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 04</span>
+                <h4 class="topic-card__title">Fiscal Policy</h4>
+                <p class="topic-card__desc">Spending multiplier, tax multiplier, crowding out, automatic stabilizers.</p>
+                <a class="topic-card__link" href="pages/article-fiscal-policy.html">Read article</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 05</span>
+                <h4 class="topic-card__title">Monetary Policy</h4>
+                <p class="topic-card__desc">Central bank tools, interest rates, open market operations, reserve requirements.</p>
+                <a class="topic-card__link" href="pages/macroeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 06</span>
+                <h4 class="topic-card__title">AD-AS Model</h4>
+                <p class="topic-card__desc">Aggregate demand and supply, shocks, output gaps, stagflation.</p>
+                <a class="topic-card__link" href="pages/macroeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 07</span>
+                <h4 class="topic-card__title">Economic Growth</h4>
+                <p class="topic-card__desc">Solow model, growth factors, technological progress, human capital.</p>
+                <a class="topic-card__link" href="pages/macroeconomics.html">Learn more</a>
+              </div>
+              <div class="topic-card">
+                <span class="topic-card__number">Topic 08</span>
+                <h4 class="topic-card__title">Balance of Payments</h4>
+                <p class="topic-card__desc">Current account, capital account, exchange rates, PPP.</p>
+                <a class="topic-card__link" href="pages/macroeconomics.html">Learn more</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /tabs -->
       </div>
     </section>
 
-    <section class="section content-band">
-      <div class="container grid grid--two">
-        <div class="stack">
-          <span class="badge">Macro economics</span>
-          <h2>Understand economies as living systems.</h2>
-          <p>Learn GDP, inflation, unemployment, fiscal policy, monetary policy, exchange rates, IS-LM, AD-AS, growth, recessions, and central banks through examples that connect graphs to real policy trade-offs.</p>
-          <a class="button button--gold" href="pages/macroeconomics.html">Open macro track</a>
-        </div>
-        <div class="card macro-sectors" aria-label="Macroeconomic sectors chart">
-          <div class="macro-sectors__row"><span>Households</span><span class="macro-sectors__bar" style="--w:42%"></span><span>42%</span></div>
-          <div class="macro-sectors__row"><span>Firms</span><span class="macro-sectors__bar" style="--w:28%"></span><span>28%</span></div>
-          <div class="macro-sectors__row"><span>Government</span><span class="macro-sectors__bar" style="--w:18%"></span><span>18%</span></div>
-          <div class="macro-sectors__row"><span>External</span><span class="macro-sectors__bar" style="--w:12%"></span><span>12%</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container grid grid--two">
-        <article class="card feature">
-          <span class="feature__icon">µ</span>
-          <div><h3>Microeconomics</h3><p class="muted">Demand, supply, elasticity, utility, market structures, monopolies, costs, consumer behavior, opportunity cost, and comparative advantage.</p><a class="button button--ghost" href="pages/microeconomics.html">Study micro</a></div>
-        </article>
-        <article class="card feature">
-          <span class="feature__icon">Σ</span>
-          <div><h3>Economic formulas</h3><p class="muted">Formula cards with KaTeX rendering, examples, copy buttons, and short notes on when each equation is useful.</p><a class="button button--ghost" href="pages/formulas.html">Open formulas</a></div>
-        </article>
-        <article class="card feature">
-          <span class="feature__icon">✓</span>
-          <div><h3>Practice tests</h3><p class="muted">Timed multiple-choice quizzes with instant feedback, score tracking, and explanations after every answer.</p><a class="button button--ghost" href="pages/tests.html">Take a test</a></div>
-        </article>
-        <article class="card feature">
-          <span class="feature__icon">A</span>
-          <div><h3>Glossary</h3><p class="muted">A searchable dictionary of 100 economics terms for quick revision before contests and interviews.</p><a class="button button--ghost" href="pages/glossary.html">Search terms</a></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <div><span class="badge">Success roadmap</span><h2>How to become an economics olympiad student.</h2></div>
-          <p class="text-lead">The rhythm is simple: concepts, graphs, timed drills, written explanations, and post-solution reflection.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline__item card"><h3>Build the core map</h3><p class="muted">Master scarcity, markets, GDP, inflation, policy, elasticity, and trade before chasing advanced tricks.</p></article>
-          <article class="timeline__item card"><h3>Practice by model type</h3><p class="muted">Group problems by graphs, formulas, strategic games, essay logic, and data interpretation.</p></article>
-          <article class="timeline__item card"><h3>Review like an analyst</h3><p class="muted">After every set, write what changed, which assumption mattered, and where your diagram could be cleaner.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section content-band">
-      <div class="container grid grid--two">
-        <div>
-          <span class="badge">Quote</span>
-          <h2>"Economics is the art of seeing the unseen cost."</h2>
-          <p>At Kazyna, every lesson trains this habit: look past the obvious number, find the incentive, then explain the trade-off clearly.</p>
-        </div>
-        <form class="card ornament-corner" data-newsletter aria-label="Newsletter sign-up">
-          <h3>Join the weekly briefing</h3>
-          <p class="muted">Problem sets, diagrams, and olympiad prep notes.</p>
-          <label class="sr-only" for="email">Email</label>
-          <input class="search-modal__field" id="email" type="email" placeholder="student@example.com">
-          <button class="button button--gold" type="submit">Subscribe</button>
-        </form>
-      </div>
-    </section>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer__ornament" aria-hidden="true"></div>
     <div class="footer__inner container">
-      <div><a class="navbar__logo" href="index.html"><span class="navbar__mark">K</span><span>Kazyna Economics</span></a><p>Premium economics education shaped by Kyrgyz cultural geometry and global olympiad standards.</p></div>
-      <div><h3>Study</h3><a href="pages/macroeconomics.html">Macro</a><br><a href="pages/microeconomics.html">Micro</a><br><a href="pages/formulas.html">Formulas</a></div>
-      <div><h3>Practice</h3><a href="pages/olympiads.html">Olympiads</a><br><a href="pages/tests.html">Tests</a><br><a href="pages/glossary.html">Glossary</a></div>
-      <div><h3>Contact</h3><a href="pages/contacts.html">contacts@kazyna.edu</a><br><span>© 2026 Kazyna Economics</span></div>
+      <div>
+        <a class="navbar__logo" href="index.html" style="margin-bottom: 0.8rem; display: inline-flex;">
+          <span class="navbar__mark">К</span>
+          <span style="color: var(--color-gold-light); font-weight: 900;">Kazyna Economics</span>
+        </a>
+        <p style="font-size: 0.88rem; max-width: 280px;">Economics education platform for olympiad preparation.</p>
+      </div>
+      <div>
+        <h3>Topics</h3>
+        <div class="footer__links">
+          <a href="pages/microeconomics.html">Microeconomics</a>
+          <a href="pages/macroeconomics.html">Macroeconomics</a>
+          <a href="pages/olympiads.html">Olympiad Prep</a>
+        </div>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <div class="footer__links">
+          <a href="pages/formulas.html">Formulas</a>
+          <a href="pages/articles.html">Articles</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer__links">
+          <a href="pages/contacts.html">Get in touch</a>
+          <span style="font-size: 0.82rem; opacity: 0.6;">© 2026 Kazyna</span>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <!-- Search modal -->
   <div class="search-modal" data-search-modal aria-hidden="true">
     <div class="search-modal__panel" role="dialog" aria-modal="true" aria-label="Search">
-      <button class="icon-button" data-search-close aria-label="Close search">×</button>
-      <input class="search-modal__field" data-search-input placeholder="Search GDP, elasticity, olympiad..." aria-label="Search query">
+      <button class="icon-button" data-search-close aria-label="Close search" style="margin-bottom: 0.5rem;">×</button>
+      <input class="search-modal__field" data-search-input placeholder="Search topics..." aria-label="Search query">
       <div class="search-modal__results" data-search-results></div>
     </div>
   </div>
+
   <button class="icon-button scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
+
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/navigation.js" defer></script>
-  <script src="assets/js/i18n.js" defer></script>
-  <script src="assets/js/seo.js" defer></script>
+  <script src="assets/js/tabs.js" defer></script>
 </body>
 </html>
