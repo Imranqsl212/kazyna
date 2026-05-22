@@ -7,7 +7,7 @@
   position: fixed;
   inset: 0 0 auto;
   height: 3px;
-  z-index: 100;
+  z-index: 110;
   background: linear-gradient(
     90deg,
     var(--color-felt) 0%,
@@ -17,7 +17,7 @@
   opacity: 0.6;
 }
 
-/* Minimal background pattern */
+/* Kyrgyz ethno background pattern — Shyrdak inspired */
 .page::before {
   content: "";
   position: fixed;
@@ -25,8 +25,8 @@
   pointer-events: none;
   z-index: 0;
   opacity: var(--ornament-opacity);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23c8392b' stroke-width='0.5'%3E%3Cpath d='M40 20 L50 40 L40 60 L30 40 Z'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: 80px 80px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23grad)' stroke-width='1.5'%3E%3C!-- Koshkar-muiz (ram horns) motif --%3E%3Cpath d='M60 15 Q75 25 75 45 Q75 65 60 75 Q45 65 45 45 Q45 25 60 15' stroke-linecap='round'/%3E%3Cpath d='M60 15 Q45 25 45 45 Q45 65 60 75 Q75 65 75 45 Q75 25 60 15' stroke-linecap='round'/%3E%3C!-- Center diamond --%3E%3Cpath d='M60 35 L70 50 L60 65 L50 50 Z' stroke-linejoin='round'/%3E%3C!-- Corner flourishes --%3E%3Ccircle cx='20' cy='20' r='8' stroke-width='1'/%3E%3Ccircle cx='100' cy='20' r='8' stroke-width='1'/%3E%3Ccircle cx='20' cy='100' r='8' stroke-width='1'/%3E%3Ccircle cx='100' cy='100' r='8' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 120px 120px;
 }
 
 .page > *:not(.gov-stripe) {
@@ -60,6 +60,34 @@
   border-top: none;
 }
 
+/* ============================================================
+   Page-specific Ethno Backgrounds
+   ============================================================ */
+
+/* Macroeconomics page — Tunduk (yurt crown) pattern */
+.page.macro-page::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cdefs%3E%3ClinearGradient id='macro-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%238b1a1a;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23macro-grad)' stroke-width='1.2'%3E%3C!-- Tunduk crown --%3E%3Cpath d='M70 10 L85 30 L85 50 L70 60 L55 50 L55 30 Z' stroke-linejoin='round'/%3E%3Cpath d='M70 20 L80 35 L80 48 L70 55 L60 48 L60 35 Z' stroke-linejoin='round'/%3E%3C!-- Radiating lines --%3E%3Cline x1='70' y1='10' x2='70' y2='0' stroke-linecap='round'/%3E%3Cline x1='85' y1='30' x2='95' y2='25' stroke-linecap='round'/%3E%3Cline x1='55' y1='30' x2='45' y2='25' stroke-linecap='round'/%3E%3C!-- Decorative circles --%3E%3Ccircle cx='25' cy='25' r='6' stroke-width='1'/%3E%3Ccircle cx='115' cy='25' r='6' stroke-width='1'/%3E%3Ccircle cx='25' cy='115' r='6' stroke-width='1'/%3E%3Ccircle cx='115' cy='115' r='6' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 140px 140px;
+}
+
+/* Microeconomics page — Market pattern */
+.page.micro-page::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='130' viewBox='0 0 130 130'%3E%3Cdefs%3E%3ClinearGradient id='micro-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231a6b5a;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23micro-grad)' stroke-width='1.2'%3E%3C!-- Supply-demand curves --%3E%3Cpath d='M20 100 Q65 30 110 20' stroke-linecap='round'/%3E%3Cpath d='M20 20 Q65 90 110 100' stroke-linecap='round'/%3E%3C!-- Equilibrium point --%3E%3Ccircle cx='65' cy='60' r='4' stroke-width='1.5'/%3E%3C!-- Decorative elements --%3E%3Crect x='10' y='10' width='15' height='15' stroke-width='1' transform='rotate(45 17.5 17.5)'/%3E%3Crect x='105' y='105' width='15' height='15' stroke-width='1' transform='rotate(45 112.5 112.5)'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 130px 130px;
+}
+
+/* Olympiad page — Competition pattern */
+.page.olympiad-page::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cdefs%3E%3ClinearGradient id='olympiad-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231a6b5a;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23olympiad-grad)' stroke-width='1.3'%3E%3C!-- Trophy/medal shape --%3E%3Cpath d='M75 15 L85 35 L75 45 L65 35 Z' stroke-linejoin='round'/%3E%3Cpath d='M75 45 L60 60 L90 60 Z' stroke-linejoin='round'/%3E%3Ccircle cx='75' cy='80' r='15' stroke-width='1.2'/%3E%3C!-- Stars --%3E%3Cpath d='M30 30 L33 38 L42 38 L35 43 L38 51 L30 46 L22 51 L25 43 L18 38 L27 38 Z' stroke-linejoin='round'/%3E%3Cpath d='M120 30 L123 38 L132 38 L125 43 L128 51 L120 46 L112 51 L115 43 L108 38 L117 38 Z' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 150px 150px;
+}
+
+/* Articles page — Scroll pattern */
+.page.articles-page::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='125' height='125' viewBox='0 0 125 125'%3E%3Cdefs%3E%3ClinearGradient id='articles-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23articles-grad)' stroke-width='1.2'%3E%3C!-- Scroll --%3E%3Crect x='20' y='30' width='85' height='65' rx='3' stroke-linejoin='round'/%3E%3Cline x1='30' y1='45' x2='95' y2='45' stroke-linecap='round'/%3E%3Cline x1='30' y1='55' x2='95' y2='55' stroke-linecap='round'/%3E%3Cline x1='30' y1='65' x2='85' y2='65' stroke-linecap='round'/%3E%3C!-- Decorative corners --%3E%3Ccircle cx='15' cy='15' r='5' stroke-width='1'/%3E%3Ccircle cx='110' cy='15' r='5' stroke-width='1'/%3E%3Ccircle cx='15' cy='110' r='5' stroke-width='1'/%3E%3Ccircle cx='110' cy='110' r='5' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 125px 125px;
+}
+
 /* Hero frame */
 .hero__frame {
   padding: clamp(2rem, 4vw, 3rem);
@@ -80,6 +108,83 @@
   height: 2px;
   background: linear-gradient(90deg, var(--color-felt), var(--color-gold), var(--color-felt));
   opacity: 0.5;
+}
+
+.hero__frame::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background-image: url("../images/OIP\ \(3\).webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  border-radius: var(--radius-lg);
+}
+
+/* ============================================================
+   Section Decorations — Kyrgyz Ethno Elements
+   ============================================================ */
+
+/* Decorative top border for sections */
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  opacity: 0.3;
+}
+
+/* Section header ornament accent */
+.section__header {
+  position: relative;
+}
+
+.section__header::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -20px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/OIP\ \(2\).webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+/* Koshkar-muiz corner ornaments on cards */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 2 L10 6 L8 8 L6 6 Z' fill='%23c8392b' opacity='0.4'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+/* Decorative divider between sections */
+.section + .section::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  opacity: 0.4;
 }
 
 /* Badge official */
@@ -119,4 +224,473 @@
 /* Content band pattern — minimal */
 .content-band::before {
   display: none;
+}
+
+/* ============================================================
+   Dark Mode Ethno Adjustments
+   ============================================================ */
+
+[data-theme="dark"] .page::before {
+  opacity: calc(var(--ornament-opacity) * 1.5);
+}
+
+[data-theme="dark"] .page.macro-page::before,
+[data-theme="dark"] .page.micro-page::before,
+[data-theme="dark"] .page.olympiad-page::before,
+[data-theme="dark"] .page.articles-page::before {
+  opacity: calc(var(--ornament-opacity) * 1.8);
+}
+
+[data-theme="dark"] .hero::before {
+  opacity: 0.12;
+}
+
+[data-theme="dark"] .footer::before {
+  opacity: 0.10;
+}
+
+[data-theme="dark"] .hero__frame::after {
+  opacity: 0.08;
+}
+
+[data-theme="dark"] .article-card__media::before {
+  opacity: 0.08;
+}
+
+/* Formulas page — Math pattern */
+.page.formulas-page::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='135' height='135' viewBox='0 0 135 135'%3E%3Cdefs%3E%3ClinearGradient id='formulas-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231a6b5a;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23formulas-grad)' stroke-width='1.2'%3E%3Crect x='25' y='25' width='85' height='85' stroke-linejoin='round'/%3E%3Ccircle cx='67.5' cy='67.5' r='35' stroke-width='1'/%3E%3Cline x1='25' y1='67.5' x2='110' y2='67.5' stroke-linecap='round'/%3E%3Cline x1='67.5' y1='25' x2='67.5' y2='110' stroke-linecap='round'/%3E%3Cpath d='M15 15 L20 20 L15 25 L10 20 Z' stroke-linejoin='round'/%3E%3Cpath d='M120 15 L125 20 L120 25 L115 20 Z' stroke-linejoin='round'/%3E%3Cpath d='M15 120 L20 125 L15 130 L10 125 Z' stroke-linejoin='round'/%3E%3Cpath d='M120 120 L125 125 L120 130 L115 125 Z' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 135px 135px;
+}
+
+/* Article pages — Detailed pattern */
+.page.article-page::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cdefs%3E%3ClinearGradient id='article-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%231a6b5a;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23article-grad)' stroke-width='1.1'%3E%3Crect x='15' y='15' width='110' height='110' rx='5' stroke-linejoin='round'/%3E%3Crect x='25' y='25' width='90' height='90' rx='3' stroke-linejoin='round'/%3E%3Ccircle cx='20' cy='20' r='4' stroke-width='1'/%3E%3Ccircle cx='120' cy='20' r='4' stroke-width='1'/%3E%3Ccircle cx='20' cy='120' r='4' stroke-width='1'/%3E%3Ccircle cx='120' cy='120' r='4' stroke-width='1'/%3E%3Cpath d='M70 40 L80 70 L70 100 L60 70 Z' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 140px 140px;
+}
+
+/* About page — Heritage pattern */
+.page.about-page::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='145' height='145' viewBox='0 0 145 145'%3E%3Cdefs%3E%3ClinearGradient id='about-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231a6b5a;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23about-grad)' stroke-width='1.2'%3E%3Ccircle cx='72.5' cy='72.5' r='50' stroke-width='1.2'/%3E%3Ccircle cx='72.5' cy='72.5' r='35' stroke-width='1'/%3E%3Ccircle cx='72.5' cy='72.5' r='20' stroke-width='1'/%3E%3Cline x1='72.5' y1='22.5' x2='72.5' y2='10' stroke-linecap='round'/%3E%3Cline x1='122.5' y1='72.5' x2='135' y2='72.5' stroke-linecap='round'/%3E%3Cline x1='72.5' y1='122.5' x2='72.5' y2='135' stroke-linecap='round'/%3E%3Cline x1='22.5' y1='72.5' x2='10' y2='72.5' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 145px 145px;
+}
+
+/* Contacts page — Connection pattern */
+.page.contacts-page::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='130' height='130' viewBox='0 0 130 130'%3E%3Cdefs%3E%3ClinearGradient id='contacts-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none' stroke='url(%23contacts-grad)' stroke-width='1.2'%3E%3Ccircle cx='65' cy='65' r='8' stroke-width='1.5'/%3E%3Ccircle cx='25' cy='25' r='5' stroke-width='1'/%3E%3Ccircle cx='105' cy='25' r='5' stroke-width='1'/%3E%3Ccircle cx='25' cy='105' r='5' stroke-width='1'/%3E%3Ccircle cx='105' cy='105' r='5' stroke-width='1'/%3E%3Cline x1='65' y1='65' x2='25' y2='25' stroke-linecap='round'/%3E%3Cline x1='65' y1='65' x2='105' y2='25' stroke-linecap='round'/%3E%3Cline x1='65' y1='65' x2='25' y2='105' stroke-linecap='round'/%3E%3Cline x1='65' y1='65' x2='105' y2='105' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 130px 130px;
+}
+
+
+/* ============================================================
+   Page Ornament Images — Kyrgyz Ethnic Integration
+   ============================================================ */
+
+.page-ornament {
+  position: absolute;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+  object-fit: contain;
+}
+
+.page-ornament--left {
+  left: -80px;
+  top: 20px;
+  width: 200px;
+  height: 400px;
+}
+
+.page-ornament--right {
+  right: -100px;
+  top: 50px;
+  width: 300px;
+  height: 300px;
+}
+
+.page-ornament--center {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  width: 300px;
+  height: 300px;
+}
+
+.page-ornament--footer {
+  position: absolute;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.page-ornament--footer-left {
+  left: -60px;
+  bottom: 20px;
+  width: 180px;
+  height: 180px;
+}
+
+.page-ornament--footer-right {
+  right: -80px;
+  bottom: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+/* Adjust container for ornaments */
+.section .container {
+  position: relative;
+}
+
+/* Hero section ornament enhancements */
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    url("../images/OIP.webp"),
+    url("../images/OIP\ \(1\).webp");
+  background-position: 
+    left 10% top 15%,
+    right -5% top 5%;
+  background-size: 
+    280px 280px,
+    320px 320px;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section divider ornament enhancement */
+.section + .section::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='8' viewBox='0 0 80 8'%3E%3Cdefs%3E%3ClinearGradient id='divider-grad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%23d4a017;stop-opacity:0' /%3E%3Cstop offset='20%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3Cstop offset='50%25' style='stop-color:%23c8392b;stop-opacity:1' /%3E%3Cstop offset='80%25' style='stop-color:%23d4a017;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23d4a017;stop-opacity:0' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='2' width='80' height='4' fill='url(%23divider-grad)' rx='2'/%3E%3Ccircle cx='10' cy='4' r='1.5' fill='%23d4a017' opacity='0.6'/%3E%3Ccircle cx='40' cy='4' r='1.5' fill='%23c8392b' opacity='0.8'/%3E%3Ccircle cx='70' cy='4' r='1.5' fill='%23d4a017' opacity='0.6'/%3E%3C/svg%3E");
+  background-size: 80px 8px;
+}
+
+/* Topic card ornament accents */
+.topic-card {
+  position: relative;
+}
+
+.topic-card::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 140px;
+  height: 140px;
+  background-image: url("../images/OIP\ \(1\).webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Article card media ornament overlay */
+.article-card__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.article-card__media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    url("../images/OIP\ \(2\).webp"),
+    url("../images/OIP\ \(3\).webp");
+  background-position: 
+    right -20px top -20px,
+    left -30px bottom -30px;
+  background-size: 
+    200px 200px,
+    180px 180px;
+  background-repeat: no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Footer ornament integration */
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: 
+    url("../images/OIP.webp"),
+    url("../images/OIP\ \(1\).webp");
+  background-position: 
+    left -40px bottom -20px,
+    right -60px bottom -40px;
+  background-size: 
+    220px 220px,
+    240px 240px;
+  background-repeat: no-repeat;
+  opacity: 0.06;
+}
+
+.footer__inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero frame ornament enhancement */
+.hero__frame {
+  position: relative;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(255, 255, 255, 0.96) 100%);
+}
+
+.hero__frame::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background-image: url("../images/OIP\ \(3\).webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  border-radius: var(--radius-lg);
+}
+
+/* Section header ornament accent */
+.section__header {
+  position: relative;
+}
+
+.section__header::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -20px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/OIP\ \(2\).webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+/* Responsive ornament adjustments */
+@media (max-width: 1024px) {
+  .page-ornament {
+    opacity: 0.08;
+  }
+  
+  .page-ornament--left {
+    left: -120px;
+    width: 150px;
+    height: 300px;
+  }
+  
+  .page-ornament--right {
+    right: -150px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .page-ornament--center {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero::before {
+    background-size: 
+      220px 220px,
+      250px 250px;
+    opacity: 0.06;
+  }
+
+  .article-card__media::before {
+    background-size: 
+      150px 150px,
+      140px 140px;
+    opacity: 0.05;
+  }
+
+  .footer::before {
+    background-size: 
+      180px 180px,
+      200px 200px;
+    opacity: 0.05;
+  }
+
+  .hero__frame::after {
+    width: 100px;
+    height: 100px;
+    opacity: 0.04;
+  }
+
+  .section__header::before {
+    width: 80px;
+    height: 80px;
+    opacity: 0.03;
+  }
+
+  .card::before {
+    width: 120px;
+    height: 120px;
+    opacity: 0.06;
+  }
+
+  .article-card::before {
+    width: 120px;
+    height: 120px;
+    opacity: 0.06;
+  }
+
+  .concept-box::before {
+    width: 110px;
+    height: 110px;
+    opacity: 0.05;
+  }
+
+  .formula-card__formula::before {
+    width: 100px;
+    height: 100px;
+    opacity: 0.04;
+  }
+
+  .feature::before {
+    width: 110px;
+    height: 110px;
+    opacity: 0.05;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-ornament {
+    display: none;
+  }
+
+  .hero::before {
+    background-size: 
+      180px 180px,
+      200px 200px;
+    opacity: 0.04;
+  }
+
+  .article-card__media::before {
+    opacity: 0.03;
+  }
+
+  .footer::before {
+    background-size: 
+      150px 150px,
+      170px 170px;
+    opacity: 0.03;
+  }
+
+  .hero__frame::after {
+    width: 80px;
+    height: 80px;
+    opacity: 0.02;
+  }
+
+  .section__header::before {
+    display: none;
+  }
+
+  .topic-card::after {
+    display: none;
+  }
+
+  .card::before {
+    width: 100px;
+    height: 100px;
+    opacity: 0.04;
+  }
+
+  .article-card::before {
+    width: 100px;
+    height: 100px;
+    opacity: 0.04;
+  }
+
+  .concept-box::before {
+    width: 100px;
+    height: 100px;
+    opacity: 0.03;
+  }
+
+  .formula-card__formula::before {
+    width: 90px;
+    height: 90px;
+    opacity: 0.03;
+  }
+
+  .feature::before {
+    width: 100px;
+    height: 100px;
+    opacity: 0.03;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero::before {
+    background-size: 
+      140px 140px,
+      160px 160px;
+    opacity: 0.03;
+  }
+
+  .footer::before {
+    background-size: 
+      120px 120px,
+      140px 140px;
+    opacity: 0.02;
+  }
+
+  .card::before {
+    width: 80px;
+    height: 80px;
+    opacity: 0.03;
+  }
+
+  .article-card::before {
+    width: 80px;
+    height: 80px;
+    opacity: 0.03;
+  }
+
+  .concept-box::before {
+    width: 80px;
+    height: 80px;
+    opacity: 0.02;
+  }
+
+  .formula-card__formula::before {
+    width: 70px;
+    height: 70px;
+    opacity: 0.02;
+  }
+
+  .feature::before {
+    width: 80px;
+    height: 80px;
+    opacity: 0.02;
+  }
 }

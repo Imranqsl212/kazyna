@@ -1,8 +1,7 @@
 (function () {
   const root = document.documentElement;
-  const stored = localStorage.getItem("kazyna-theme");
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  root.dataset.theme = stored || (prefersDark ? "dark" : "light");
+  // Always use light theme
+  root.dataset.theme = "light";
 
   function injectStripe() {
     if (document.querySelector(".gov-stripe")) return;
