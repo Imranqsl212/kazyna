@@ -30,9 +30,10 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/chrome.js"></script>
-  </head>
+      <script src="../assets/js/i18n.js"></script>
+</head>
   <body class="page formulas-page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress">
       <div class="progress__bar" data-progress-bar></div>
     </div>
@@ -46,18 +47,19 @@
           <a class="navbar__link" href="../index.html">Home</a
           ><a class="navbar__link" href="microeconomics.html">Microeconomics</a
           ><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a
-          ><a class="navbar__link" href="olympiads.html">Olympiad Prep</a><a class="navbar__link" href="about.html">About Us</a>
+          ><a class="navbar__link" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a><a class="navbar__link" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button class="icon-button navbar__burger" data-burger>☰</button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
     <main id="main">
       <section class="section">
         <div class="container">
-          <span class="badge">Formula library</span>
-          <h1>Equations with context, not just symbols.</h1>
+          <span class="badge" data-i18n="formulas.badge">Formula library</span>
+          <h1 data-i18n="formulas.title">Equations with context, not just symbols.</h1>
           <p class="text-lead">
             Use these cards for quick recall, copy formulas into notes, and
             connect each equation to the model where it belongs.
@@ -105,8 +107,8 @@
         <div>
           <h3>Topics</h3>
           <div class="footer__links">
-            <a href="microeconomics.html">Microeconomics</a>
-            <a href="macroeconomics.html">Macroeconomics</a>
+            <a href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+            <a href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
             <a href="olympiads.html">Olympiad Prep</a>
           </div>
         </div>
@@ -206,7 +208,7 @@
         <input
           class="search-modal__field"
           data-search-input
-          placeholder="Search topics..."
+          placeholder="Search topics..." data-i18n-placeholder="search.placeholder"
           aria-label="Search query"
         />
         <div class="search-modal__results" data-search-results></div>

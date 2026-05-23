@@ -25,9 +25,10 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/chrome.js"></script>
-  </head>
+      <script src="../assets/js/i18n.js"></script>
+</head>
   <body class="page article-page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress">
       <div class="progress__bar" data-progress-bar></div>
     </div>
@@ -38,14 +39,15 @@
           <span class="navbar__brand-text">Kazyna Economics</span>
         </a>
         <nav class="navbar__links" data-nav-links aria-label="Main navigation">
-          <a class="navbar__link" href="../index.html">Home</a>
-          <a class="navbar__link" href="microeconomics.html">Microeconomics</a>
-          <a class="navbar__link" href="macroeconomics.html">Macroeconomics</a>
-          <a class="navbar__link navbar__link--active" href="olympiads.html">Olympiad Prep</a>
-          <a class="navbar__link" href="about.html">About Us</a>
+          <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
+          <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+          <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
+          <a class="navbar__link navbar__link--active" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a>
+          <a class="navbar__link" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button class="icon-button navbar__burger" data-burger>☰</button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
@@ -63,72 +65,172 @@
 
           <div class="article__content">
             <section>
-              <h2>The PARSE Framework</h2>
+              <h2>The Advanced PARSE Framework</h2>
               <p>
                 Top olympiad performers don't solve problems randomly—they follow systematic frameworks that ensure 
-                comprehensive analysis and reduce errors. The PARSE framework provides a structured approach to 
-                any economics problem: <strong>P</strong>roblem identification, <strong>A</strong>ssumptions clarification, 
-                <strong>R</strong>elevant models selection, <strong>S</strong>olution development, and <strong>E</strong>valuation of results.
+                comprehensive analysis while minimizing errors and maximizing efficiency. The PARSE framework provides 
+                a structured approach to any economics problem: <strong>P</strong>roblem identification and scope definition, 
+                <strong>A</strong>ssumptions clarification and validation, <strong>R</strong>elevant models selection and 
+                adaptation, <strong>S</strong>olution development and execution, and <strong>E</strong>valuation and 
+                verification of results. This framework has been refined through analysis of thousands of successful 
+                competition solutions and represents best practices from top international performers.
               </p>
 
-              <h3>P - Problem Identification</h3>
+              <h3>P - Problem Identification and Scope Definition</h3>
               <p>
-                Before jumping into calculations, spend time understanding what the problem is actually asking. 
-                Many students lose points not because they can't do economics, but because they solve the wrong question. 
-                Read the problem twice, underline key terms, and identify the specific economic concept being tested.
+                Before jumping into calculations or analysis, invest significant time understanding exactly what the 
+                problem is asking and defining the scope of your analysis. Many students lose points not because they 
+                can't do economics, but because they solve the wrong question or address only part of what's being asked. 
+                Read the problem statement at least twice, underlining key terms, constraints, and specific questions.
               </p>
               <p>
-                Look for signal words that indicate the type of analysis required: "equilibrium" suggests finding 
-                where supply equals demand, "welfare" indicates consumer and producer surplus analysis, "policy" 
-                implies comparing before-and-after scenarios. These words guide your analytical approach.
-              </p>
-
-              <h3>A - Assumptions Clarification</h3>
-              <p>
-                Economics problems always involve assumptions, whether stated explicitly or implied. Successful 
-                competitors identify these assumptions early and use them to guide their analysis. Common assumptions 
-                include perfect competition, rational actors, ceteris paribus conditions, and specific market structures.
+                Look for signal words that indicate the type and scope of analysis required: "equilibrium" suggests 
+                finding where supply equals demand and analyzing stability, "welfare" indicates consumer and producer 
+                surplus analysis with potential deadweight loss calculations, "policy" implies comparing before-and-after 
+                scenarios with attention to distributional effects, "short-run versus long-run" requires understanding 
+                different time horizons and adjustment mechanisms.
               </p>
               <p>
-                When assumptions aren't stated, use standard economic assumptions for the context. For microeconomics 
-                problems, assume profit maximization for firms and utility maximization for consumers unless told otherwise. 
-                For macroeconomics, assume standard relationships between variables unless the problem specifies exceptions.
-              </p>
-
-              <h3>R - Relevant Models Selection</h3>
-              <p>
-                Choose the appropriate economic model based on the problem context. This requires deep familiarity 
-                with when to apply different frameworks. Supply and demand for market analysis, production functions 
-                for firm behavior, IS-LM for macroeconomic policy, and game theory for strategic interactions.
+                Identify the economic actors involved and their objectives: consumers maximizing utility subject to 
+                budget constraints, firms maximizing profit subject to cost and demand conditions, governments pursuing 
+                policy objectives subject to political and economic constraints, or markets achieving equilibrium through 
+                price and quantity adjustments. Understanding who is making decisions and what they're trying to achieve 
+                guides your analytical approach.
               </p>
               <p>
-                Don't force complex models onto simple problems, but don't oversimplify complex scenarios either. 
-                The key is matching model sophistication to problem requirements. When in doubt, start with the 
-                simplest applicable model and add complexity only if needed.
+                Define the scope of your analysis explicitly: Are you analyzing a single market (partial equilibrium) 
+                or multiple interconnected markets (general equilibrium)? Are you focusing on efficiency, equity, or both? 
+                Are you considering static effects at a point in time or dynamic effects over time? Clear scope definition 
+                prevents analysis that is either too narrow to address the question or too broad to complete within time constraints.
               </p>
 
-              <h3>S - Solution Development</h3>
+              <h3>A - Assumptions Clarification and Validation</h3>
               <p>
-                Work systematically through your chosen model, showing each step clearly. Use consistent notation 
-                throughout your solution, and explain your reasoning at each stage. Judges appreciate seeing your 
-                thought process, not just your final answer.
+                Economics problems always involve assumptions, whether stated explicitly or implied by context. Successful 
+                competitors identify these assumptions early, validate their appropriateness, and use them consistently 
+                throughout their analysis. Assumptions about market structure, information availability, time horizons, 
+                and behavioral patterns fundamentally shape your analytical approach and conclusions.
               </p>
               <p>
-                For graphical solutions, draw large, clear diagrams with properly labeled axes and curves. 
-                Use arrows to show changes and clearly mark important points like equilibria or optima. 
-                A well-executed graph often communicates economic understanding better than paragraphs of text.
+                When assumptions aren't stated explicitly, use standard economic assumptions appropriate for the context 
+                while noting any that seem questionable. For microeconomics problems, typically assume: rational actors 
+                maximizing well-defined objectives, perfect information unless otherwise specified, competitive markets 
+                unless market power is indicated, and standard preferences and technology unless special cases are described.
+              </p>
+              <p>
+                For macroeconomics problems, standard assumptions include: aggregate relationships that hold at the 
+                economy-wide level, policy makers who can implement announced policies credibly, markets that clear 
+                through price adjustments (though possibly with lags), and economic agents who form expectations rationally 
+                based on available information. Question these assumptions when problems provide contrary information.
+              </p>
+              <p>
+                Validate assumptions against problem context and real-world plausibility. If a problem describes a market 
+                with "many small firms selling identical products," perfect competition assumptions are appropriate. If it 
+                describes "a few large firms with significant market power," oligopoly analysis is needed. Mismatched 
+                assumptions and analytical frameworks lead to incorrect conclusions regardless of technical execution quality.
+              </p>
+              <p>
+                State your key assumptions explicitly when they significantly affect your analysis or when alternative 
+                assumptions might lead to different conclusions. This demonstrates economic sophistication and protects 
+                against misinterpretation of your approach. For example: "Assuming consumers have standard downward-sloping 
+                demand curves (no Giffen goods), a price increase will reduce quantity demanded."
               </p>
 
-              <h3>E - Evaluation of Results</h3>
+              <h3>R - Relevant Models Selection and Adaptation</h3>
               <p>
-                Always check whether your answer makes economic sense. Does the direction of change align with 
-                economic theory? Are the magnitudes reasonable? This final step catches many errors and demonstrates 
-                economic intuition that judges value highly.
+                Choose appropriate economic models based on problem context, stated assumptions, and analytical objectives. 
+                This requires deep familiarity with when to apply different frameworks and how to adapt standard models 
+                to specific problem requirements. The key is matching model sophistication to problem complexity—neither 
+                oversimplifying complex scenarios nor overcomplicating straightforward problems.
               </p>
               <p>
-                Consider the broader implications of your solution. What would happen in the long run? Are there 
-                welfare implications? How might different stakeholders be affected? This deeper analysis often 
-                distinguishes excellent responses from merely correct ones.
+                For market analysis problems, select models based on market structure and competitive conditions: 
+                perfect competition for markets with many small firms and identical products, monopoly for single sellers 
+                with significant barriers to entry, oligopoly for markets with few firms and strategic interdependence, 
+                and monopolistic competition for markets with many firms but differentiated products. Each structure 
+                requires different analytical tools and leads to different conclusions.
+              </p>
+              <p>
+                For consumer and firm behavior problems, choose optimization frameworks appropriate to the decision context: 
+                utility maximization subject to budget constraints for consumer choice, profit maximization subject to 
+                cost and demand conditions for firm behavior, and constrained optimization using Lagrangian methods for 
+                complex multi-variable problems. Understand when corner solutions or Kuhn-Tucker conditions apply.
+              </p>
+              <p>
+                For macroeconomic problems, select models based on time horizon and policy focus: IS-LM for short-run 
+                analysis of fiscal and monetary policy effects, AD-AS for analysis of price level and output determination, 
+                Solow growth model for long-run growth analysis, and open economy models for international trade and 
+                finance issues. Understand how these models complement each other and when to use integrated approaches.
+              </p>
+              <p>
+                Adapt standard models to specific problem requirements rather than forcing problems into rigid frameworks. 
+                This might involve modifying utility functions to incorporate specific preferences, adjusting production 
+                functions to reflect particular technologies, or extending basic models to include additional variables 
+                or constraints mentioned in the problem. Flexibility in model application distinguishes advanced competitors.
+              </p>
+
+              <h3>S - Solution Development and Execution</h3>
+              <p>
+                Work systematically through your chosen analytical framework, showing each step clearly and explaining 
+                your reasoning at each stage. Judges appreciate seeing your thought process, not just your final answer. 
+                Use consistent notation throughout your solution, define variables clearly, and maintain logical flow 
+                from assumptions through analysis to conclusions.
+              </p>
+              <p>
+                For mathematical solutions, follow systematic procedures: set up equations or optimization problems 
+                correctly, solve step-by-step showing all work, check solutions for mathematical validity (do they 
+                satisfy constraints and first-order conditions?), and interpret results economically. Mathematical 
+                correctness without economic interpretation often receives only partial credit.
+              </p>
+              <p>
+                For graphical solutions, draw large, clear diagrams that tell coherent economic stories. Label axes 
+                with variable names and units, draw curves with economically appropriate shapes, use arrows to show 
+                changes and shifts, mark important points (equilibria, optima, intersections) clearly, and ensure 
+                your graphs support rather than contradict your analytical conclusions.
+              </p>
+              <p>
+                Integrate mathematical, graphical, and verbal analysis rather than treating them as separate components. 
+                Use graphs to visualize relationships derived mathematically, employ mathematics to quantify relationships 
+                shown graphically, and explain both mathematical and graphical results in clear economic language. 
+                This integration demonstrates comprehensive understanding and improves communication clarity.
+              </p>
+              <p>
+                Maintain awareness of economic intuition throughout solution development. If your analysis suggests 
+                that higher prices lead to higher quantity demanded (without explaining Giffen goods or Veblen effects), 
+                you've likely made an error. Economic results should generally conform to theoretical expectations 
+                unless special circumstances apply that you can identify and explain.
+              </p>
+
+              <h3>E - Evaluation and Verification of Results</h3>
+              <p>
+                Always check whether your answers make economic sense and satisfy the requirements of the original problem. 
+                This evaluation phase catches many errors and demonstrates economic intuition that judges value highly. 
+                Ask yourself: Do the directions of changes align with economic theory? Are the magnitudes reasonable? 
+                Do the results answer the specific questions asked?
+              </p>
+              <p>
+                Verify mathematical results through multiple approaches when possible. Check that optimization solutions 
+                satisfy first-order conditions, second-order conditions, and any constraints. Ensure that equilibrium 
+                solutions actually represent market clearing with no excess demand or supply. Confirm that welfare 
+                calculations are consistent with your market analysis.
+              </p>
+              <p>
+                Consider the broader implications and limitations of your analysis. What would happen in the long run 
+                if you've done short-run analysis? How might different assumptions change your conclusions? Are there 
+                welfare implications for different stakeholders? What policy recommendations follow from your analysis? 
+                This broader perspective often distinguishes excellent responses from merely correct ones.
+              </p>
+              <p>
+                Check that your solution addresses all parts of multi-part questions and that different parts are 
+                consistent with each other. If part (a) establishes certain market conditions, ensure that part (b) 
+                builds appropriately on those conditions rather than contradicting them. Consistency across problem 
+                parts demonstrates systematic economic thinking.
+              </p>
+              <p>
+                When time permits, consider alternative approaches or sensitivity analysis. How would your conclusions 
+                change with different parameter values or assumptions? Are there other economic models that might apply 
+                to this problem? This additional analysis shows sophisticated economic understanding and often provides 
+                insights that strengthen your primary solution approach.
               </p>
             </section>
 

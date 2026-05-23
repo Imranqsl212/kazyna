@@ -10,23 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/chrome.js"></script>
-  </head>
+      <script src="../assets/js/i18n.js"></script>
+</head>
   <body class="page article-page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress"><div class="progress__bar" data-progress-bar></div></div>
     <div class="gov-stripe" aria-hidden="true"></div>
     <header class="navbar">
       <div class="navbar__inner container">
         <a class="navbar__logo" href="../index.html"><span class="navbar__mark">К</span><span class="navbar__brand-text">Kazyna Economics</span></a>
         <nav class="navbar__links" data-nav-links aria-label="Main navigation">
-          <a class="navbar__link" href="../index.html">Home</a>
-          <a class="navbar__link" href="microeconomics.html">Microeconomics</a>
-          <a class="navbar__link" href="macroeconomics.html">Macroeconomics</a>
-          <a class="navbar__link" href="olympiads.html">Olympiad Prep</a>
-          <a class="navbar__link" href="about.html">About Us</a>
+          <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
+          <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+          <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
+          <a class="navbar__link" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a>
+          <a class="navbar__link" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button class="icon-button navbar__burger" data-burger>☰</button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
@@ -112,7 +114,7 @@
     <div class="search-modal" data-search-modal aria-hidden="true">
       <div class="search-modal__panel" role="dialog" aria-modal="true" aria-label="Search">
         <button class="icon-button" data-search-close aria-label="Close search" style="margin-bottom: 0.5rem">×</button>
-        <input class="search-modal__field" data-search-input placeholder="Search topics..." aria-label="Search query" />
+        <input class="search-modal__field" data-search-input placeholder="Search topics..." data-i18n-placeholder="search.placeholder" aria-label="Search query" />
         <div class="search-modal__results" data-search-results></div>
       </div>
     </div>

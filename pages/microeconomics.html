@@ -26,9 +26,10 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/chrome.js"></script>
-  </head>
+      <script src="../assets/js/i18n.js"></script>
+</head>
   <body class="page micro-page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress">
       <div class="progress__bar" data-progress-bar></div>
     </div>
@@ -42,18 +43,19 @@
           <a class="navbar__link" href="../index.html">Home</a
           ><a class="navbar__link" href="microeconomics.html">Microeconomics</a
           ><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a
-          ><a class="navbar__link" href="olympiads.html">Olympiad Prep</a><a class="navbar__link" href="about.html">About Us</a>
+          ><a class="navbar__link" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a><a class="navbar__link" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button class="icon-button navbar__burger" data-burger>☰</button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
     <main id="main">
       <section class="section">
         <div class="container">
-          <span class="badge">Micro track</span>
-          <h1>Microeconomics: incentives, choices, markets, and strategy.</h1>
+          <span class="badge" data-i18n="micro.page.badge">Micro track</span>
+          <h1 data-i18n="micro.page.title">Microeconomics: incentives, choices, markets, and strategy.</h1>
           <p class="text-lead">
             Microeconomics is the language of marginal thinking. This page gives
             you the core models needed for essays, graphs, calculations, and
@@ -70,7 +72,7 @@
       <section class="section section--tight">
         <div class="container grid grid--two">
           <article class="card">
-            <h2>Supply and demand</h2>
+            <h2 data-i18n="micro.card.sd.title">Supply and demand</h2>
             <p class="muted">
               Demand slopes down because buyers usually want less at higher
               prices. Supply slopes up because higher prices make production
@@ -81,7 +83,7 @@
             <a class="topic-card__link" href="micro-supply-demand.html">Read article</a>
           </article>
           <article class="card">
-            <h2>Elasticity</h2>
+            <h2 data-i18n="micro.card.el.title">Elasticity</h2>
             <p class="muted">
               Elasticity measures responsiveness. Olympiad questions often ask
               whether total revenue rises or falls after a price change. If
@@ -91,7 +93,7 @@
             <a class="topic-card__link" href="micro-elasticity.html">Read article</a>
           </article>
           <article class="card">
-            <h2>Utility and consumer behavior</h2>
+            <h2 data-i18n="micro.card.ut.title">Utility and consumer behavior</h2>
             <p class="muted">
               Consumers allocate income until marginal utility per unit of money
               is equal across goods. The principle is not about perfect
@@ -100,7 +102,7 @@
             <a class="topic-card__link" href="micro-utility.html">Read article</a>
           </article>
           <article class="card">
-            <h2>Production costs</h2>
+            <h2 data-i18n="micro.card.co.title">Production costs</h2>
             <p class="muted">
               Fixed costs do not change with output in the short run. Variable
               costs do. Marginal cost cuts average cost at its minimum. This one
@@ -109,7 +111,7 @@
             <a class="topic-card__link" href="micro-costs.html">Read article</a>
           </article>
           <article class="card">
-            <h2>Market structures</h2>
+            <h2 data-i18n="micro.card.ms.title">Market structures</h2>
             <p class="muted">
               Perfect competition has many price takers. Monopoly restricts
               output where marginal revenue equals marginal cost. Monopolistic
@@ -119,7 +121,7 @@
             <a class="topic-card__link" href="micro-market-structures.html">Read article</a>
           </article>
           <article class="card" id="game-theory">
-            <h2>Game theory basics</h2>
+            <h2 data-i18n="micro.card.gt.title">Game theory basics</h2>
             <p class="muted">
               Start with the payoff matrix. Check each player's best response
               for every rival action. A dominant strategy is best in all cases;
@@ -128,7 +130,7 @@
             <a class="topic-card__link" href="micro-game-theory.html">Read article</a>
           </article>
           <article class="card">
-            <h2>Opportunity cost</h2>
+            <h2 data-i18n="micro.card.oc.title">Opportunity cost</h2>
             <p class="muted">
               Opportunity cost is the value of the next best alternative. It
               turns vague sacrifice into a measurable comparison and is the
@@ -137,7 +139,7 @@
             <a class="topic-card__link" href="micro-opportunity-cost.html">Read article</a>
           </article>
           <article class="card">
-            <h2>Comparative advantage</h2>
+            <h2 data-i18n="micro.card.ca.title">Comparative advantage</h2>
             <p class="muted">
               The producer with lower opportunity cost has comparative
               advantage. Even if one side is better at everything, both sides
@@ -171,8 +173,8 @@
         <div>
           <h3>Topics</h3>
           <div class="footer__links">
-            <a href="microeconomics.html">Microeconomics</a>
-            <a href="macroeconomics.html">Macroeconomics</a>
+            <a href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+            <a href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
             <a href="olympiads.html">Olympiad Prep</a>
           </div>
         </div>
@@ -272,7 +274,7 @@
         <input
           class="search-modal__field"
           data-search-input
-          placeholder="Search topics..."
+          placeholder="Search topics..." data-i18n-placeholder="search.placeholder"
           aria-label="Search query"
         />
         <div class="search-modal__results" data-search-results></div>

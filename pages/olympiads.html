@@ -26,9 +26,10 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/chrome.js"></script>
-  </head>
+      <script src="../assets/js/i18n.js"></script>
+</head>
   <body class="page olympiad-page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress">
       <div class="progress__bar" data-progress-bar></div>
     </div>
@@ -42,18 +43,19 @@
           <a class="navbar__link" href="../index.html">Home</a
           ><a class="navbar__link" href="microeconomics.html">Microeconomics</a
           ><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a
-          ><a class="navbar__link" href="olympiads.html">Olympiad Prep</a><a class="navbar__link" href="about.html">About Us</a>
+          ><a class="navbar__link" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a><a class="navbar__link" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button class="icon-button navbar__burger" data-burger>☰</button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
     <main id="main">
       <section class="section">
         <div class="container">
-          <span class="badge">Olympiad preparation</span>
-          <h1>Train like an economist, write like a finalist.</h1>
+          <span class="badge" data-i18n="olympiad.page.badge">Olympiad preparation</span>
+          <h1 data-i18n="olympiad.page.title">Train like an economist, write like a finalist.</h1>
           <p class="text-lead">
             Olympiad success comes from model fluency, careful diagrams, clean
             assumptions, and fast reflection after mistakes.
@@ -69,7 +71,7 @@
       <section class="section section--tight" id="roadmap">
         <div class="container">
           <div class="section__header">
-            <div><h2>12-week roadmap</h2></div>
+            <div><h2 data-i18n="olympiad.roadmap.title">12-week roadmap</h2></div>
             <p class="text-lead">
               A realistic plan for students balancing school, contests, and deep
               study.
@@ -77,14 +79,14 @@
           </div>
           <div class="timeline">
             <article class="timeline__item card">
-              <h3>Weeks 1-2: Foundations</h3>
+              <h3 data-i18n="olympiad.week1.title">Weeks 1-2: Foundations</h3>
               <p class="muted">
                 Scarcity, opportunity cost, demand, supply, GDP, inflation, and
                 graph hygiene. Solve short drills daily.
               </p>
             </article>
             <article class="timeline__item card">
-              <h3>Weeks 3-5: Core models</h3>
+              <h3 data-i18n="olympiad.week2.title">Weeks 3-5: Core models</h3>
               <p class="muted">
                 Elasticity, market structures, fiscal policy, monetary policy,
                 exchange rates, and AD-AS. Write one paragraph explanation after
@@ -92,14 +94,14 @@
               </p>
             </article>
             <article class="timeline__item card">
-              <h3>Weeks 6-8: Advanced reasoning</h3>
+              <h3 data-i18n="olympiad.week3.title">Weeks 6-8: Advanced reasoning</h3>
               <p class="muted">
                 Game theory, externalities, IS-LM, growth, inequality, and
                 policy evaluation. Practice mixed sets under time pressure.
               </p>
             </article>
             <article class="timeline__item card">
-              <h3>Weeks 9-12: Contest simulation</h3>
+              <h3 data-i18n="olympiad.week4.title">Weeks 9-12: Contest simulation</h3>
               <p class="muted">
                 Full mock papers, post-mortems, formula recall, and essay
                 outlines. Track recurring errors and rebuild weak models.
@@ -112,7 +114,7 @@
       <section class="section section--tight">
         <div class="container">
           <div class="section__header">
-            <div><h2>Essential Preparation Guides</h2></div>
+            <div><h2 data-i18n="olympiad.guides.title">Essential Preparation Guides</h2></div>
             <p class="text-lead">
               Comprehensive strategies and techniques for mastering every aspect of olympiad competition.
             </p>
@@ -158,6 +160,22 @@
               </p>
               <a class="topic-card__link" href="olympiad-mental-preparation.html">Read guide</a>
             </div>
+            <div class="topic-card">
+              <span class="topic-card__number">Guide 06</span>
+              <h4 class="topic-card__title">Advanced Techniques</h4>
+              <p class="topic-card__desc">
+                Master sophisticated mathematical modeling, complex graphical analysis, behavioral economics, and advanced econometric methods for top-level performance.
+              </p>
+              <a class="topic-card__link" href="olympiad-advanced-techniques.html">Read guide</a>
+            </div>
+            <div class="topic-card">
+              <span class="topic-card__number">Guide 07</span>
+              <h4 class="topic-card__title">Common Mistakes Prevention</h4>
+              <p class="topic-card__desc">
+                Learn from frequent errors in conceptual understanding, calculations, time management, and develop systematic prevention strategies.
+              </p>
+              <a class="topic-card__link" href="olympiad-common-mistakes.html">Read guide</a>
+            </div>
           </div>
         </div>
       </section>
@@ -185,8 +203,8 @@
         <div>
           <h3>Topics</h3>
           <div class="footer__links">
-            <a href="microeconomics.html">Microeconomics</a>
-            <a href="macroeconomics.html">Macroeconomics</a>
+            <a href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+            <a href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
             <a href="olympiads.html">Olympiad Prep</a>
           </div>
         </div>
@@ -286,7 +304,7 @@
         <input
           class="search-modal__field"
           data-search-input
-          placeholder="Search topics..."
+          placeholder="Search topics..." data-i18n-placeholder="search.placeholder"
           aria-label="Search query"
         />
         <div class="search-modal__results" data-search-results></div>

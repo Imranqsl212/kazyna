@@ -25,9 +25,10 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/chrome.js"></script>
-  </head>
+      <script src="../assets/js/i18n.js"></script>
+</head>
   <body class="page article-page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress">
       <div class="progress__bar" data-progress-bar></div>
     </div>
@@ -38,14 +39,15 @@
           <span class="navbar__brand-text">Kazyna Economics</span>
         </a>
         <nav class="navbar__links" data-nav-links aria-label="Main navigation">
-          <a class="navbar__link" href="../index.html">Home</a>
-          <a class="navbar__link" href="microeconomics.html">Microeconomics</a>
-          <a class="navbar__link" href="macroeconomics.html">Macroeconomics</a>
-          <a class="navbar__link navbar__link--active" href="olympiads.html">Olympiad Prep</a>
-          <a class="navbar__link" href="about.html">About Us</a>
+          <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
+          <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+          <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
+          <a class="navbar__link navbar__link--active" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a>
+          <a class="navbar__link" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button class="icon-button navbar__burger" data-burger>☰</button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
@@ -67,87 +69,212 @@
               <p>
                 Successful olympiad participants don't just know economics—they know how to manage their time under pressure. 
                 The key is dividing your competition time into three strategic phases that maximize both accuracy and coverage.
+                This systematic approach has been refined through analysis of thousands of competition performances and represents
+                the optimal balance between speed and precision under high-stakes conditions.
               </p>
 
-              <h3>Phase 1: Quick Survey (10% of total time)</h3>
+              <h3>Phase 1: Strategic Reconnaissance (10-15% of total time)</h3>
               <p>
-                Before diving into any problem, spend the first 10% of your allocated time scanning the entire exam. 
-                This reconnaissance phase serves multiple purposes: identifying easy wins, spotting time-intensive problems, 
-                and mentally categorizing questions by difficulty and type.
+                Before diving into any problem, spend the first 10-15% of your allocated time conducting systematic reconnaissance 
+                of the entire exam. This phase serves multiple critical purposes: identifying easy wins that build confidence, 
+                spotting time-intensive problems that require strategic planning, mentally categorizing questions by difficulty 
+                and type, and developing an overall time allocation strategy based on actual exam content rather than assumptions.
               </p>
               <p>
-                During this phase, mark problems with a simple coding system: ★ for immediate confidence, 
-                ◆ for moderate difficulty, and ● for complex or time-consuming questions. This visual system 
-                helps you make strategic decisions throughout the exam.
-              </p>
-
-              <h3>Phase 2: Strategic Execution (75% of total time)</h3>
-              <p>
-                Begin with your ★ problems—these build confidence and secure guaranteed points early. 
-                The psychological benefit of early success cannot be overstated; it creates momentum and 
-                reduces anxiety for more challenging sections.
+                During reconnaissance, use a sophisticated coding system beyond simple difficulty ratings. Mark problems with: 
+                ★ for immediate confidence (can solve in under 3 minutes), ◆ for moderate difficulty requiring standard 
+                techniques (5-8 minutes), ● for complex problems requiring advanced analysis (10+ minutes), and ⚠ for 
+                problems with unusual formats or unfamiliar contexts that may require extra interpretation time.
               </p>
               <p>
-                For calculation-heavy problems, always show your work clearly. Even if your final answer 
-                is incorrect, partial credit for proper methodology can be substantial. Use consistent 
-                notation and label your graphs clearly—judges appreciate organized thinking.
+                Pay special attention to point values and time recommendations if provided. Calculate points per minute for 
+                different problem types to identify the most efficient use of your time. Sometimes a complex 20-point problem 
+                is less valuable than two straightforward 8-point problems that take the same total time. This economic 
+                thinking about opportunity costs applies directly to competition strategy.
               </p>
               <p>
-                When tackling essay questions, spend 2-3 minutes outlining your response before writing. 
-                A clear structure with introduction, main arguments, and conclusion demonstrates economic 
-                reasoning skills that judges value highly.
+                Use reconnaissance time to identify problems that build on each other or share common themes. Sometimes 
+                solving one problem provides insights or intermediate results useful for others. Recognizing these connections 
+                early allows you to sequence problems strategically, using insights from easier problems to tackle more 
+                challenging ones efficiently.
               </p>
 
-              <h3>Phase 3: Review and Optimization (15% of total time)</h3>
+              <h3>Phase 2: Strategic Execution (70-75% of total time)</h3>
               <p>
-                Reserve the final portion of your time for strategic review. Don't just check arithmetic—
-                verify that your economic logic is sound. Ask yourself: "Does this answer make economic sense?" 
-                Many students lose points not from calculation errors, but from answers that violate basic 
-                economic principles.
+                The execution phase requires disciplined adherence to your reconnaissance-based strategy while maintaining 
+                flexibility for unexpected developments. Begin with your ★ problems to build momentum and secure guaranteed 
+                points early. The psychological benefit of early success cannot be overstated—it creates positive momentum, 
+                reduces anxiety for more challenging sections, and provides a foundation of points that reduces pressure 
+                on later problems.
+              </p>
+              <p>
+                For calculation-heavy problems, develop systematic approaches that minimize errors while maximizing speed. 
+                Always show your work clearly, using consistent notation and logical step-by-step progression. Even if 
+                your final answer is incorrect, partial credit for proper methodology can be substantial. Create personal 
+                shorthand for common economic terms and relationships to speed up writing without sacrificing clarity.
+              </p>
+              <p>
+                When tackling essay questions, invest 15-20% of allocated time in detailed outlining before writing. 
+                Create structured outlines with: clear thesis statement, main arguments with supporting evidence, 
+                counterarguments or limitations to address, and conclusion that synthesizes insights. This planning 
+                investment pays dividends through more coherent arguments and faster writing during execution.
+              </p>
+              <p>
+                Implement the "time boxing" technique for complex problems: allocate specific time limits based on 
+                point values and difficulty assessments, then stick to these limits ruthlessly. If you haven't made 
+                substantial progress within your allocated time, move to the next problem rather than falling into 
+                the sunk cost fallacy. Mark incomplete problems clearly for potential return during review phase.
+              </p>
+              <p>
+                Maintain awareness of your overall pacing throughout execution. Check your progress against planned 
+                milestones every 20-30 minutes. If you're ahead of schedule, use extra time for thorough work on 
+                high-value problems rather than rushing to finish early. If you're behind schedule, identify lower-value 
+                problems to skip or approach more efficiently rather than compromising quality on everything.
+              </p>
+
+              <h3>Phase 3: Strategic Review and Optimization (15-20% of total time)</h3>
+              <p>
+                The review phase goes far beyond checking arithmetic—it's about strategic optimization of your entire 
+                response portfolio. Begin with systematic verification of high-value problems where small errors could 
+                be costly. Check that your economic logic is sound by asking: "Does this answer make economic sense?" 
+                Many students lose points not from calculation errors, but from answers that violate basic economic principles.
+              </p>
+              <p>
+                Prioritize review time based on potential impact rather than spending equal time on all problems. 
+                Focus on: high-point problems where errors are costly, problems where you felt uncertain during 
+                execution, calculations involving multiple steps where errors compound, and essay responses where 
+                you can add supporting evidence or strengthen arguments within time constraints.
+              </p>
+              <p>
+                Use the review phase strategically to attempt previously skipped problems if time permits. Often, 
+                solving other problems provides insights or confidence that makes previously difficult problems 
+                more approachable. However, don't sacrifice thorough review of completed work for speculative 
+                attempts at new problems unless you're confident in your existing responses.
+              </p>
+              <p>
+                Implement systematic error-checking procedures: verify that supply and demand curves shift in 
+                correct directions, ensure elasticity calculations have appropriate signs and magnitudes, confirm 
+                that welfare analysis results align with theoretical expectations, and check that policy recommendations 
+                follow logically from your economic analysis. These quick checks catch many errors that could 
+                otherwise undermine otherwise excellent work.
               </p>
             </section>
 
             <section>
-              <h2>Problem-Type Time Allocation</h2>
+              <h2>Advanced Problem-Type Time Allocation</h2>
               <p>
-                Different question types require different time investments. Understanding these patterns 
-                helps you allocate time more effectively during the competition.
+                Different question types require fundamentally different time investments and cognitive approaches. 
+                Understanding these patterns enables precise time allocation that maximizes points per minute while 
+                ensuring adequate attention to high-value, complex problems. Advanced competitors develop intuitive 
+                feel for optimal time allocation through systematic practice and analysis of their performance patterns.
               </p>
 
-              <h3>Multiple Choice Questions (1-2 minutes each)</h3>
+              <h3>Multiple Choice Questions (1-3 minutes each)</h3>
               <p>
-                These should be your fastest point-earners. If you can't solve a multiple choice question 
-                within 2 minutes, mark your best guess and move on. The opportunity cost of spending 
-                5 minutes on a single multiple choice question is too high.
+                Multiple choice questions should be your fastest point-earners, but they often contain sophisticated 
+                economic reasoning that requires systematic approach rather than quick guessing. Develop a structured 
+                approach: read the question carefully to identify the economic concept being tested, eliminate obviously 
+                incorrect answers using economic logic, apply relevant economic principles to remaining options, and 
+                select the best answer based on economic reasoning rather than test-taking tricks.
               </p>
               <p>
-                Use elimination strategies: cross out obviously incorrect answers first, then apply 
-                economic reasoning to remaining options. Remember that extreme answers ("always," "never") 
-                are often incorrect in economics, where context matters greatly.
+                Use elimination strategies systematically rather than randomly. Cross out answers that violate basic 
+                economic principles (like upward-sloping demand curves without explanation), contain extreme language 
+                ("always," "never") that ignores economic complexity, or make claims unsupported by standard economic 
+                theory. Remember that in economics, context matters greatly, so absolute statements are often incorrect.
+              </p>
+              <p>
+                For calculation-based multiple choice questions, estimate answers quickly before calculating precisely. 
+                If your estimate suggests the answer should be around 50 and the choices are 5, 50, 500, and 5000, 
+                you can often identify the correct answer without detailed calculation. This estimation skill becomes 
+                crucial when time pressure mounts during competitions.
+              </p>
+              <p>
+                When genuinely uncertain between two plausible answers, apply economic intuition about relationships 
+                and magnitudes. Does the answer make sense given the economic context? Are the magnitudes reasonable? 
+                Would this result align with what economic theory predicts? This economic reasoning often reveals 
+                the correct answer even when detailed analysis is impossible under time constraints.
               </p>
 
-              <h3>Short Answer Problems (5-8 minutes each)</h3>
+              <h3>Short Answer Problems (5-12 minutes each)</h3>
               <p>
-                These problems typically require calculations or brief explanations. Start by identifying 
-                what economic concept is being tested, then apply the appropriate formula or framework. 
-                Show your work step-by-step, as partial credit is common.
+                Short answer problems typically require focused application of specific economic concepts or techniques. 
+                Success depends on quickly identifying the relevant economic framework, applying it systematically, 
+                and communicating results clearly. Begin by identifying what economic concept is being tested—is this 
+                about elasticity, market equilibrium, consumer optimization, or policy analysis?
               </p>
               <p>
-                For graphical problems, draw large, clear diagrams with properly labeled axes. 
-                Use arrows to show shifts and clearly mark equilibrium points. A well-drawn graph 
-                can earn points even if your explanation has minor errors.
+                For calculation problems, show your work step-by-step using consistent notation and clear labeling. 
+                Start with the relevant formula or economic relationship, substitute given values carefully, perform 
+                calculations systematically, and interpret results economically. Even if your final numerical answer 
+                is incorrect, clear methodology often earns substantial partial credit.
+              </p>
+              <p>
+                For graphical problems, invest time in drawing large, clear diagrams with properly labeled axes, 
+                curves, and important points. Use arrows to show shifts and changes, clearly mark equilibrium points 
+                with coordinates when possible, and ensure your graph tells a coherent economic story that supports 
+                your analysis. A well-executed graph often communicates economic understanding more effectively than 
+                paragraphs of text.
+              </p>
+              <p>
+                When problems ask for explanations or interpretations, structure your responses with clear topic 
+                sentences, supporting economic reasoning, and specific examples when appropriate. Avoid vague 
+                statements like "supply increases"—instead specify "supply increases due to lower input costs, 
+                shifting the supply curve rightward and leading to lower equilibrium price and higher equilibrium quantity."
               </p>
 
-              <h3>Essay Questions (15-25 minutes each)</h3>
+              <h3>Essay Questions (20-35 minutes each)</h3>
               <p>
-                Long-form responses require the most strategic time management. Spend 20% of your 
-                allocated time planning your response. Create a brief outline that includes your 
-                thesis, main supporting arguments, and conclusion.
+                Long-form responses require the most sophisticated time management because they demand both breadth 
+                of economic knowledge and depth of analytical reasoning. Allocate time systematically: 20% for 
+                planning and outlining, 65% for writing and development, 15% for review and refinement. This 
+                distribution ensures adequate planning while leaving time for quality improvement.
               </p>
               <p>
-                Structure your essays with clear topic sentences and logical flow. Use specific 
-                economic terminology correctly—this demonstrates mastery to judges. Include relevant 
-                examples or case studies when possible, as they show applied understanding.
+                During the planning phase, create detailed outlines that include: clear thesis statement that 
+                takes a position on the economic issue, main arguments with specific supporting evidence, 
+                counterarguments or limitations to acknowledge, economic concepts and terminology to incorporate, 
+                and conclusion that synthesizes insights and implications. This planning investment prevents 
+                mid-essay confusion and ensures coherent argumentation.
+              </p>
+              <p>
+                Structure your essays with clear organizational frameworks that demonstrate economic sophistication. 
+                Use topic sentences that state economic arguments clearly, develop each argument with theoretical 
+                support and empirical evidence, connect arguments to broader economic principles and policy implications, 
+                and maintain logical flow that builds toward your conclusion. Judges appreciate essays that demonstrate 
+                both economic knowledge and analytical reasoning skills.
+              </p>
+              <p>
+                Include specific economic terminology correctly and consistently throughout your essays. Terms like 
+                "deadweight loss," "consumer surplus," "market failure," and "externality" have precise meanings 
+                that demonstrate economic literacy when used appropriately. However, prioritize clarity over 
+                complexity—use sophisticated concepts to enhance your analysis, not to show off vocabulary.
+              </p>
+              <p>
+                Reserve time for strategic revision that strengthens arguments and improves clarity. Look for 
+                opportunities to add supporting evidence, clarify economic relationships, strengthen transitions 
+                between arguments, and ensure your conclusion effectively synthesizes your analysis. This revision 
+                time often transforms good essays into excellent ones that earn top scores.
+              </p>
+
+              <h3>Complex Multi-Part Problems (15-25 minutes each)</h3>
+              <p>
+                Multi-part problems require careful time allocation across components while maintaining coherence 
+                throughout your response. Read all parts before beginning to ensure your approach to early parts 
+                doesn't preclude answering later parts effectively. Sometimes later parts provide insights that 
+                inform how to approach earlier components most efficiently.
+              </p>
+              <p>
+                Allocate time proportionally to point values and difficulty levels of different parts, but maintain 
+                flexibility for unexpected challenges. If one part proves more difficult than anticipated, don't 
+                sacrifice all remaining parts—sometimes partial answers to multiple parts earn more points than 
+                complete answers to fewer parts.
+              </p>
+              <p>
+                Maintain consistency in assumptions, notation, and economic frameworks across all parts of multi-part 
+                problems. If you assume perfect competition in part (a), don't switch to monopoly assumptions in 
+                part (b) without explicit justification. This consistency demonstrates systematic economic thinking 
+                that judges value highly.
               </p>
             </section>
 

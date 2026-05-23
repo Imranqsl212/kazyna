@@ -55,9 +55,10 @@
         }
       }
     </script>
-  </head>
+      <script src="assets/js/i18n.js"></script>
+</head>
   <body class="page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress" aria-hidden="true">
       <div class="progress__bar" data-progress-bar></div>
     </div>
@@ -86,8 +87,8 @@
           <a class="navbar__link" href="pages/macroeconomics.html"
             >Macroeconomics</a
           >
-          <a class="navbar__link" href="pages/olympiads.html">Olympiad Prep</a>
-          <a class="navbar__link" href="pages/about.html">About Us</a>
+          <a class="navbar__link" href="pages/olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a>
+          <a class="navbar__link" href="pages/about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button
@@ -99,6 +100,7 @@
           >
             ☰
           </button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
@@ -112,18 +114,18 @@
         >
           <div class="hero__frame ornament-corner">
             <span class="badge badge--official"
-              >◆ Economics Education Platform</span
+               data-i18n="index.hero.badge">◆ Economics Education Platform</span
             >
-            <h1 class="hero__title">Master Economics. Win Olympiads.</h1>
-            <p class="hero__subtitle text-lead">
+            <h1 class="hero__title" data-i18n="index.hero.title">Master Economics. Win Olympiads.</h1>
+            <p class="hero__subtitle text-lead" data-i18n="index.hero.subtitle">
               Clear theory, practical examples, and olympiad strategies for
               ambitious students.
             </p>
             <div class="hero__actions">
-              <a class="button button--primary" href="#tab-olympiad"
+              <a class="button button--primary" href="#tab-olympiad" data-i18n="index.hero.cta1"
                 >Start Learning</a
               >
-              <a class="button button--ghost" href="pages/olympiads.html"
+              <a class="button button--ghost" href="pages/olympiads.html" data-i18n="index.hero.cta2"
                 >Olympiad Guide</a
               >
             </div>
@@ -143,8 +145,8 @@
                 aria-controls="tab-olympiad"
                 data-tab="olympiad"
               >
-                <span class="tabs__btn-icon">🏆</span> Economics for Olympiad
-                Preparation
+                <span class="tabs__btn-icon">🏆</span><span data-i18n="index.tab.olympiad"> Economics for Olympiad
+                Preparation</span>
               </button>
               <button
                 class="tabs__btn"
@@ -153,7 +155,7 @@
                 aria-controls="tab-micro"
                 data-tab="micro"
               >
-                <span class="tabs__btn-icon">µ</span> Microeconomics
+                <span class="tabs__btn-icon">µ</span><span data-i18n="index.tab.micro"> Microeconomics</span>
               </button>
               <button
                 class="tabs__btn"
@@ -162,7 +164,7 @@
                 aria-controls="tab-macro"
                 data-tab="macro"
               >
-                <span class="tabs__btn-icon">Σ</span> Macroeconomics
+                <span class="tabs__btn-icon">Σ</span><span data-i18n="index.tab.macro"> Macroeconomics</span>
               </button>
             </div>
 
@@ -174,9 +176,9 @@
             >
               <div class="section__header">
                 <div>
-                  <h2>Economics for Olympiad Preparation</h2>
+                  <h2 data-i18n="index.olympiad.title">Economics for Olympiad Preparation</h2>
                 </div>
-                <p class="text-lead">
+                <p class="text-lead" data-i18n="index.olympiad.subtitle">
                   Systematic approach from core concepts to problem-solving and
                   essay writing.
                 </p>
@@ -184,12 +186,12 @@
 
               <div class="grid grid--three">
                 <div class="topic-card">
-                  <span class="topic-card__number">Guide 01</span>
-                  <h4 class="topic-card__title">Time Management Mastery</h4>
-                  <p class="topic-card__desc">
+                  <span class="topic-card__number" data-i18n="index.olympiad.g1.num">Guide 01</span>
+                  <h4 class="topic-card__title" data-i18n="index.olympiad.g1.title">Time Management Mastery</h4>
+                  <p class="topic-card__desc" data-i18n="index.olympiad.g1.desc">
                     Learn strategic time allocation, the 3-phase competition approach, and stress management techniques for optimal performance under pressure.
                   </p>
-                  <a class="topic-card__link" href="pages/olympiad-time-management.html">Read guide</a>
+                  <a class="topic-card__link" href="pages/olympiad-time-management.html" data-i18n="card.read_guide">Read guide</a>
                 </div>
                 <div class="topic-card">
                   <span class="topic-card__number">Guide 02</span>
@@ -223,6 +225,22 @@
                   </p>
                   <a class="topic-card__link" href="pages/olympiad-mental-preparation.html">Read guide</a>
                 </div>
+                <div class="topic-card">
+                  <span class="topic-card__number">Guide 06</span>
+                  <h4 class="topic-card__title">Advanced Techniques</h4>
+                  <p class="topic-card__desc">
+                    Master sophisticated mathematical modeling, complex graphical analysis, behavioral economics, and advanced econometric methods for top-level performance.
+                  </p>
+                  <a class="topic-card__link" href="pages/olympiad-advanced-techniques.html">Read guide</a>
+                </div>
+                <div class="topic-card">
+                  <span class="topic-card__number">Guide 07</span>
+                  <h4 class="topic-card__title">Common Mistakes Prevention</h4>
+                  <p class="topic-card__desc">
+                    Learn from frequent errors in conceptual understanding, calculations, time management, and develop systematic prevention strategies.
+                  </p>
+                  <a class="topic-card__link" href="pages/olympiad-common-mistakes.html">Read guide</a>
+                </div>
               </div>
             </div>
 
@@ -230,9 +248,9 @@
             <div class="tabs__panel" id="tab-micro" role="tabpanel">
               <div class="section__header">
                 <div>
-                  <h2>Microeconomics</h2>
+                  <h2 data-i18n="index.micro.title">Microeconomics</h2>
                 </div>
-                <p class="text-lead">
+                <p class="text-lead" data-i18n="index.micro.subtitle">
                   Individual behavior, markets, and firm decisions.
                 </p>
               </div>
@@ -320,9 +338,9 @@
             <div class="tabs__panel" id="tab-macro" role="tabpanel">
               <div class="section__header">
                 <div>
-                  <h2>Macroeconomics</h2>
+                  <h2 data-i18n="index.macro.title">Macroeconomics</h2>
                 </div>
-                <p class="text-lead">
+                <p class="text-lead" data-i18n="index.macro.subtitle">
                   National economies, policy, growth, and international trade.
                 </p>
               </div>
@@ -429,8 +447,8 @@
         <div>
           <h3>Topics</h3>
           <div class="footer__links">
-            <a href="pages/microeconomics.html">Microeconomics</a>
-            <a href="pages/macroeconomics.html">Macroeconomics</a>
+            <a href="pages/microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+            <a href="pages/macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
             <a href="pages/olympiads.html">Olympiad Prep</a>
           </div>
         </div>
@@ -530,7 +548,7 @@
         <input
           class="search-modal__field"
           data-search-input
-          placeholder="Search topics..."
+          placeholder="Search topics..." data-i18n-placeholder="search.placeholder"
           aria-label="Search query"
         />
         <div class="search-modal__results" data-search-results></div>

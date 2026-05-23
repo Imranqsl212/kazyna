@@ -26,9 +26,10 @@
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/chrome.js"></script>
-  </head>
+      <script src="../assets/js/i18n.js"></script>
+</head>
   <body class="page macro-page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress">
       <div class="progress__bar" data-progress-bar></div>
     </div>
@@ -42,17 +43,18 @@
           <a class="navbar__link" href="../index.html">Home</a
           ><a class="navbar__link" href="microeconomics.html">Microeconomics</a
           ><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a
-          ><a class="navbar__link" href="olympiads.html">Olympiad Prep</a><a class="navbar__link" href="about.html">About Us</a>
+          ><a class="navbar__link" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a><a class="navbar__link" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button class="icon-button navbar__burger" data-burger>☰</button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
     <main id="main">
       <section class="section">
         <div class="container">
-          <span class="badge">Macro track</span>
+          <span class="badge" data-i18n="macro.page.badge">Macro track</span>
           <h1>
             Macroeconomics: the economy from 10,000 meters and from the policy
             desk.
@@ -83,7 +85,7 @@
           </aside>
           <div class="article-body stack">
             <article class="card" id="gdp">
-              <h2>GDP explained</h2>
+              <h2 data-i18n="macro.card.gdp.title">GDP explained</h2>
               <p>
                 Gross domestic product measures the market value of final goods
                 and services produced inside a country during a period. The
@@ -107,7 +109,7 @@
               <a class="topic-card__link" href="macro-gdp.html">Read full article</a>
             </article>
             <article class="card" id="inflation">
-              <h2>Inflation and price indices</h2>
+              <h2 data-i18n="macro.card.inf.title">Inflation and price indices</h2>
               <p>
                 Inflation is a sustained rise in the general price level.
                 Students should separate a one-time price jump from continuing
@@ -123,7 +125,7 @@
               <a class="topic-card__link" href="macro-inflation.html">Read full article</a>
             </article>
             <article class="card" id="unemployment">
-              <h2>Unemployment</h2>
+              <h2 data-i18n="macro.card.unemp.title">Unemployment</h2>
               <p>
                 Unemployment is not one thing. Frictional unemployment is search
                 time, structural unemployment is skill or location mismatch,
@@ -135,7 +137,7 @@
               <a class="topic-card__link" href="macro-unemployment.html">Read full article</a>
             </article>
             <article class="card" id="policy">
-              <h2>Fiscal and monetary policy</h2>
+              <h2 data-i18n="macro.card.pol.title">Fiscal and monetary policy</h2>
               <p>
                 Fiscal policy uses spending, taxes, and transfers. Expansionary
                 fiscal policy can lift aggregate demand, but it may raise debt
@@ -150,7 +152,7 @@
               </div>
             </article>
             <article class="card">
-              <h2>Exchange rates and open economy logic</h2>
+              <h2 data-i18n="macro.card.ex.title">Exchange rates and open economy logic</h2>
               <p>
                 An appreciation makes imports cheaper and exports less
                 competitive; a depreciation does the reverse. Exchange rates
@@ -161,7 +163,7 @@
               <a class="topic-card__link" href="macro-exchange-rates.html">Read full article</a>
             </article>
             <article class="card" id="models">
-              <h2>IS-LM and AD-AS models</h2>
+              <h2 data-i18n="macro.card.islm.title">IS-LM and AD-AS models</h2>
               <p>
                 IS-LM is a short-run model of goods and money market
                 equilibrium. IS shifts with fiscal policy, investment
@@ -177,7 +179,7 @@
               <a class="topic-card__link" href="macro-monetary-policy.html">Read about policy models</a>
             </article>
             <article class="card" id="growth">
-              <h2>Economic growth and recessions</h2>
+              <h2 data-i18n="macro.card.gr.title">Economic growth and recessions</h2>
               <p>
                 Long-run growth comes from labor, capital, human capital,
                 technology, institutions, and productivity. Recessions occur
@@ -214,8 +216,8 @@
         <div>
           <h3>Topics</h3>
           <div class="footer__links">
-            <a href="microeconomics.html">Microeconomics</a>
-            <a href="macroeconomics.html">Macroeconomics</a>
+            <a href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+            <a href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
             <a href="olympiads.html">Olympiad Prep</a>
           </div>
         </div>
@@ -315,7 +317,7 @@
         <input
           class="search-modal__field"
           data-search-input
-          placeholder="Search topics..."
+          placeholder="Search topics..." data-i18n-placeholder="search.placeholder"
           aria-label="Search query"
         />
         <div class="search-modal__results" data-search-results></div>

@@ -411,9 +411,10 @@
       }
     </style>
     <script src="../assets/js/chrome.js"></script>
-  </head>
+      <script src="../assets/js/i18n.js"></script>
+</head>
   <body class="page about-page">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
     <div class="progress">
       <div class="progress__bar" data-progress-bar></div>
     </div>
@@ -429,11 +430,11 @@
           <span class="navbar__brand-text">Kazyna Economics</span>
         </a>
         <nav class="navbar__links" data-nav-links aria-label="Main navigation">
-          <a class="navbar__link" href="../index.html">Home</a>
-          <a class="navbar__link" href="microeconomics.html">Microeconomics</a>
-          <a class="navbar__link" href="macroeconomics.html">Macroeconomics</a>
-          <a class="navbar__link" href="olympiads.html">Olympiad Prep</a>
-          <a class="navbar__link navbar__link--active" href="about.html">About Us</a>
+          <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
+          <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
+          <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
+          <a class="navbar__link" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a>
+          <a class="navbar__link navbar__link--active" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
           <button
@@ -443,6 +444,7 @@
             aria-label="Open menu"
             aria-expanded="false"
           >☰</button>
+                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
         </div>
       </div>
     </header>
@@ -452,8 +454,8 @@
       <!-- ===== HERO ===== -->
       <section class="about-hero">
         <div class="container about-hero__inner">
-          <div class="about-hero__badge">◆ About Us</div>
-          <h1 class="about-hero__title">Kazyna Economics</h1>
+          <div class="about-hero__badge" data-i18n="about.hero.badge">◆ About Us</div>
+          <h1 class="about-hero__title" data-i18n="about.hero.title">Kazyna Economics</h1>
           <p class="about-hero__subtitle">
             An educational project combining macro and microeconomics with olympiad preparation — built by students, for students.
           </p>
@@ -465,8 +467,8 @@
         <div class="container">
           <div class="about-who__grid">
             <div>
-              <span class="about-who__label">Who we are</span>
-              <h2 class="about-who__title">A platform where economics comes alive</h2>
+              <span class="about-who__label" data-i18n="about.who.label">Who we are</span>
+              <h2 class="about-who__title" data-i18n="about.who.title">A platform where economics comes alive</h2>
               <p class="about-who__text">
                 Kazyna Economics is an educational project which combines the study of two fields in economics: macro and micro, as well as including educational materials for preparation for olympiads.
               </p>
@@ -492,8 +494,8 @@
       <section class="about-offer">
         <div class="container">
           <div class="about-offer__header">
-            <span class="about-who__label" style="display:block; text-align:center; margin-bottom:0.6rem;">What we offer</span>
-            <h2>Everything you need to master economics</h2>
+            <span class="about-who__label" style="display:block; text-align:center; margin-bottom:0.6rem;" data-i18n="about.offer.label">What we offer</span>
+            <h2 data-i18n="about.offer.title">Everything you need to master economics</h2>
             <p>From core theory to olympiad strategy — structured, clear, and built for ambitious students.</p>
           </div>
           <div class="about-offer__grid">
@@ -548,8 +550,8 @@
         <div class="container">
           <div class="about-team__inner">
             <div>
-              <span class="about-team__label">The team</span>
-              <h2 class="about-team__title">Made by students who love economics</h2>
+              <span class="about-team__label" data-i18n="about.team.label">The team</span>
+              <h2 class="about-team__title" data-i18n="about.team.title">Made by students who love economics</h2>
               <p class="about-team__text">
                 This website was created by a group of high school students passionate about economics, all of whom have backgrounds in this field through various programs.
               </p>
@@ -557,10 +559,10 @@
                 We know what it's like to prepare for olympiads, to struggle with a concept at midnight, and to finally understand a model that seemed impossible. That experience shaped every page of this platform.
               </p>
               <div class="about-team__tags">
-                <span class="about-team__tag">International Baccalaureate</span>
-                <span class="about-team__tag">AP Economics</span>
-                <span class="about-team__tag">Olympiad Competitors</span>
-                <span class="about-team__tag">Kyrgyzstan</span>
+                <span class="about-team__tag" data-i18n="about.team.tag1">International Baccalaureate</span>
+                <span class="about-team__tag" data-i18n="about.team.tag2">AP Economics</span>
+                <span class="about-team__tag" data-i18n="about.team.tag3">Olympiad Competitors</span>
+                <span class="about-team__tag" data-i18n="about.team.tag4">Kyrgyzstan</span>
               </div>
             </div>
             <div class="about-team__quote">
@@ -577,13 +579,13 @@
       <section class="about-cta">
         <div class="container">
           <div class="about-cta__inner">
-            <h2 class="about-cta__title">Ready to start learning?</h2>
+            <h2 class="about-cta__title" data-i18n="about.cta.title">Ready to start learning?</h2>
             <p class="about-cta__text">
               Explore our topics, read the articles, and use the formulas. Everything is free and built for you.
             </p>
             <div class="about-cta__actions">
-              <a class="button button--primary" href="../index.html#tab-olympiad">Start Learning</a>
-              <a class="button button--ghost" href="articles.html" style="color:#fff; border-color:rgba(255,255,255,0.25);">Browse Articles</a>
+              <a class="button button--primary" href="../index.html#tab-olympiad" data-i18n="about.cta.btn1">Start Learning</a>
+              <a class="button button--ghost" href="articles.html" style="color:#fff; border-color:rgba(255,255,255,0.25);" data-i18n="about.cta.btn2">Browse Articles</a>
             </div>
           </div>
         </div>
@@ -670,7 +672,7 @@
     <div class="search-modal" data-search-modal aria-hidden="true">
       <div class="search-modal__panel" role="dialog" aria-modal="true" aria-label="Search">
         <button class="icon-button" data-search-close aria-label="Close search" style="margin-bottom: 0.5rem">×</button>
-        <input class="search-modal__field" data-search-input placeholder="Search topics..." aria-label="Search query" />
+        <input class="search-modal__field" data-search-input placeholder="Search topics..." data-i18n-placeholder="search.placeholder" aria-label="Search query" />
         <div class="search-modal__results" data-search-results></div>
       </div>
     </div>
