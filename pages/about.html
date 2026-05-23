@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About | Kazyna Economics</title>
+    <title>About Us | Kazyna Economics</title>
     <meta
       name="description"
-      content="Kazyna Economics mission, philosophy, and vision for economics education and olympiad culture in Kyrgyzstan."
+      content="Kazyna Economics is an educational project combining macro and microeconomics with olympiad preparation materials, created by high school students passionate about economics."
     />
     <meta
       name="keywords"
-      content="Kazyna Economics, about, economics education, Kyrgyzstan olympiad"
+      content="Kazyna Economics, about, economics education, Kyrgyzstan olympiad, IB economics, AP economics"
     />
-    <meta property="og:title" content="About Kazyna Economics" />
+    <meta property="og:title" content="About Us | Kazyna Economics" />
     <meta
       property="og:description"
-      content="A modern economics education platform with Kyrgyz cultural identity."
+      content="An educational platform built by students, for students — combining macro, micro, and olympiad prep."
     />
-    <meta property="og:image" content="../assets/images/og-kazyna.svg" />
+    <meta property="og:image" content="../assets/images/about_us.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,6 +25,391 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      /* ── About Hero ── */
+      .about-hero {
+        min-height: 60vh;
+        padding: clamp(4rem, 8vw, 8rem) 0 clamp(3rem, 5vw, 5rem);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background-image: url("../assets/images/about_us.jpeg");
+        background-size: cover;
+        background-position: center 35%;
+        background-repeat: no-repeat;
+      }
+
+      .about-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(26, 22, 16, 0.75) 0%,
+          rgba(42, 32, 20, 0.65) 50%,
+          rgba(20, 28, 38, 0.70) 100%
+        );
+        z-index: 0;
+      }
+
+      .about-hero__inner {
+        position: relative;
+        z-index: 1;
+        max-width: 720px;
+      }
+
+      .about-hero__badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 6px;
+        background: rgba(156, 175, 136, 0.20);
+        color: #b8c9a4;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border: 1px solid rgba(156, 175, 136, 0.30);
+        margin-bottom: 1.2rem;
+      }
+
+      .about-hero__title {
+        color: #fff;
+        font-family: var(--font-heading);
+        font-size: clamp(2.4rem, 5vw, 4.5rem);
+        line-height: 1.05;
+        margin: 0 0 1.2rem;
+        letter-spacing: -0.02em;
+      }
+
+      .about-hero__subtitle {
+        color: rgba(255, 255, 255, 0.82);
+        font-size: clamp(1rem, 1.5vw, 1.18rem);
+        line-height: 1.65;
+        max-width: 600px;
+        margin: 0;
+      }
+
+      /* ── Who We Are ── */
+      .about-who {
+        padding: clamp(3.5rem, 6vw, 6rem) 0;
+        background: var(--color-cream-warm);
+      }
+
+      .about-who__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+
+      .about-who__label {
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.10em;
+        color: var(--color-sage);
+        margin-bottom: 0.6rem;
+        display: block;
+      }
+
+      .about-who__title {
+        font-family: var(--font-heading);
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        color: var(--color-graphite);
+        line-height: 1.1;
+        margin: 0 0 1.4rem;
+      }
+
+      .about-who__text {
+        color: var(--color-ink-soft);
+        font-size: 1.02rem;
+        line-height: 1.75;
+        margin: 0 0 1rem;
+      }
+
+      .about-who__text:last-child {
+        margin-bottom: 0;
+      }
+
+      .about-who__visual {
+        position: relative;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        aspect-ratio: 4/3;
+        box-shadow: 0 24px 60px rgba(0,0,0,0.15);
+      }
+
+      .about-who__visual img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+
+      .about-who__visual::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          160deg,
+          transparent 60%,
+          rgba(156, 175, 136, 0.15) 100%
+        );
+        border-radius: inherit;
+      }
+
+      /* ── What We Offer ── */
+      .about-offer {
+        padding: clamp(3.5rem, 6vw, 6rem) 0;
+        background: var(--color-cream);
+      }
+
+      .about-offer__header {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 3rem;
+      }
+
+      .about-offer__header h2 {
+        font-family: var(--font-heading);
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        color: var(--color-graphite);
+        margin: 0 0 0.8rem;
+      }
+
+      .about-offer__header p {
+        color: var(--color-ink-soft);
+        font-size: 1.02rem;
+        line-height: 1.65;
+        margin: 0;
+      }
+
+      .about-offer__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.4rem;
+      }
+
+      .offer-card {
+        padding: 1.8rem 1.6rem;
+        border: 1px solid var(--color-line);
+        border-radius: var(--radius-md);
+        background: var(--color-card);
+        box-shadow: var(--shadow-card);
+        position: relative;
+        overflow: hidden;
+        transition: transform var(--transition), box-shadow var(--transition);
+      }
+
+      .offer-card::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--color-sage), var(--color-terracotta));
+      }
+
+      .offer-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 36px rgba(156, 175, 136, 0.15);
+      }
+
+      .offer-card__icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, rgba(156, 175, 136, 0.15), rgba(212, 165, 116, 0.15));
+        border: 1px solid rgba(156, 175, 136, 0.20);
+      }
+
+      .offer-card__title {
+        font-family: var(--font-heading);
+        font-size: 1.15rem;
+        color: var(--color-graphite);
+        margin: 0 0 0.6rem;
+        line-height: 1.2;
+      }
+
+      .offer-card__desc {
+        color: var(--color-ink-soft);
+        font-size: 0.92rem;
+        line-height: 1.65;
+        margin: 0;
+      }
+
+      /* ── Who Made This ── */
+      .about-team {
+        padding: clamp(3.5rem, 6vw, 6rem) 0;
+        background: var(--color-cream-warm);
+      }
+
+      .about-team__inner {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 3rem;
+        align-items: start;
+      }
+
+      .about-team__label {
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.10em;
+        color: var(--color-terracotta);
+        margin-bottom: 0.6rem;
+        display: block;
+      }
+
+      .about-team__title {
+        font-family: var(--font-heading);
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        color: var(--color-graphite);
+        line-height: 1.1;
+        margin: 0 0 1.4rem;
+      }
+
+      .about-team__text {
+        color: var(--color-ink-soft);
+        font-size: 1.02rem;
+        line-height: 1.75;
+        margin: 0 0 1rem;
+      }
+
+      .about-team__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1.4rem;
+      }
+
+      .about-team__tag {
+        padding: 0.35rem 0.85rem;
+        border-radius: 6px;
+        background: rgba(156, 175, 136, 0.12);
+        border: 1px solid rgba(156, 175, 136, 0.22);
+        color: var(--color-sage-deep);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .about-team__quote {
+        padding: 2rem 2rem 2rem 2.4rem;
+        border-left: 4px solid var(--color-terracotta);
+        background: var(--color-card);
+        border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        box-shadow: var(--shadow-card);
+        position: relative;
+      }
+
+      .about-team__quote::before {
+        content: "\201C";
+        position: absolute;
+        top: -0.5rem;
+        left: 1.2rem;
+        font-family: var(--font-heading);
+        font-size: 5rem;
+        color: var(--color-terracotta);
+        opacity: 0.18;
+        line-height: 1;
+      }
+
+      .about-team__quote p {
+        font-family: var(--font-heading);
+        font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+        color: var(--color-graphite);
+        line-height: 1.5;
+        font-style: italic;
+        margin: 0 0 1rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      .about-team__quote cite {
+        font-size: 0.85rem;
+        color: var(--color-ink-soft);
+        font-style: normal;
+        font-weight: 600;
+      }
+
+      /* ── CTA ── */
+      .about-cta {
+        padding: clamp(3rem, 5vw, 5rem) 0;
+        background: linear-gradient(135deg, #2a2018 0%, #1e1a14 100%);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .about-cta::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%239caf88' stroke-width='1' opacity='0.08'%3E%3Cpath d='M60 15 Q75 25 75 45 Q75 65 60 75 Q45 65 45 45 Q45 25 60 15'/%3E%3Cpath d='M60 35 L70 50 L60 65 L50 50 Z'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: 120px 120px;
+        pointer-events: none;
+      }
+
+      .about-cta__inner {
+        position: relative;
+        z-index: 1;
+        max-width: 560px;
+        margin: 0 auto;
+      }
+
+      .about-cta__title {
+        font-family: var(--font-heading);
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        color: #fff;
+        margin: 0 0 1rem;
+        line-height: 1.1;
+      }
+
+      .about-cta__text {
+        color: rgba(247, 245, 243, 0.72);
+        font-size: 1.02rem;
+        line-height: 1.65;
+        margin: 0 0 2rem;
+      }
+
+      .about-cta__actions {
+        display: flex;
+        gap: 0.8rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 900px) {
+        .about-who__grid,
+        .about-team__inner {
+          grid-template-columns: 1fr;
+        }
+
+        .about-who__visual {
+          aspect-ratio: 16/9;
+          order: -1;
+        }
+
+        .about-offer__grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .about-offer__grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
     <script src="../assets/js/chrome.js"></script>
   </head>
   <body class="page about-page">
@@ -32,105 +417,178 @@
     <div class="progress">
       <div class="progress__bar" data-progress-bar></div>
     </div>
+
+    <!-- Top ethno stripe -->
+    <div class="gov-stripe" aria-hidden="true"></div>
+
+    <!-- Navbar -->
     <header class="navbar">
       <div class="navbar__inner container">
-        <a class="navbar__logo" href="../index.html"
-          ><span class="navbar__mark">K</span
-          ><span class="navbar__brand-text">Kazyna Economics</span></a
-        >
+        <a class="navbar__logo" href="../index.html" aria-label="Kazyna Economics home">
+          <span class="navbar__mark">К</span>
+          <span class="navbar__brand-text">Kazyna Economics</span>
+        </a>
         <nav class="navbar__links" data-nav-links aria-label="Main navigation">
-          <a class="navbar__link" href="../index.html">Home</a
-          ><a class="navbar__link" href="microeconomics.html">Microeconomics</a
-          ><a class="navbar__link" href="macroeconomics.html">Macroeconomics</a
-          ><a class="navbar__link" href="olympiads.html">Olympiad Prep</a>
+          <a class="navbar__link" href="../index.html">Home</a>
+          <a class="navbar__link" href="microeconomics.html">Microeconomics</a>
+          <a class="navbar__link" href="macroeconomics.html">Macroeconomics</a>
+          <a class="navbar__link" href="olympiads.html">Olympiad Prep</a>
+          <a class="navbar__link navbar__link--active" href="about.html">About Us</a>
         </nav>
         <div class="navbar__actions">
-          <button class="icon-button navbar__burger" data-burger>☰</button>
+          <button
+            class="icon-button navbar__burger"
+            type="button"
+            data-burger
+            aria-label="Open menu"
+            aria-expanded="false"
+          >☰</button>
         </div>
       </div>
     </header>
+
     <main id="main">
-      <section class="section">
-        <div class="container">
-          <span class="badge">About Kazyna</span>
-          <h1>
-            A learning platform for students who want economics to feel alive.
-          </h1>
-          <p class="text-lead">
-            Kazyna means treasure. For us, the treasure is disciplined thinking:
-            seeing incentives, trade-offs, evidence, and the human story inside
-            economic systems.
+
+      <!-- ===== HERO ===== -->
+      <section class="about-hero">
+        <div class="container about-hero__inner">
+          <div class="about-hero__badge">◆ About Us</div>
+          <h1 class="about-hero__title">Kazyna Economics</h1>
+          <p class="about-hero__subtitle">
+            An educational project combining macro and microeconomics with olympiad preparation — built by students, for students.
           </p>
         </div>
       </section>
-      <section class="section content-band">
-        <div class="container grid grid--two">
-          <div>
-            <h2>Mission</h2>
-            <p>
-              We help school and university students build a deep economics
-              foundation, prepare for olympiads, and express ideas with clarity.
-              The platform combines international editorial quality with Kyrgyz
-              ornament geometry, warm colors, and a sense of academic ceremony.
-            </p>
-          </div>
-          <div>
-            <h2>Philosophy</h2>
-            <p>
-              Students learn best when models feel usable. A graph should not be
-              decoration; it should be a thinking instrument. A formula should
-              not be memorized in isolation; it should answer a precise
-              question.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container grid grid--three">
-          <article class="card">
-            <h3>Readable depth</h3>
-            <p class="muted">
-              Long articles are structured with takeaways, examples, and
-              navigation for calm reading.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Olympiad culture</h3>
-            <p class="muted">
-              We train habits: define assumptions, draw carefully, calculate
-              cleanly, evaluate trade-offs.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Kyrgyz identity</h3>
-            <p class="muted">
-              The visual language draws on felt patterns, geometric rhythm, gold
-              accents, and deep blue editorial calm.
-            </p>
-          </article>
-        </div>
-      </section>
-      <section class="section section--tight">
+
+      <!-- ===== WHO WE ARE ===== -->
+      <section class="about-who">
         <div class="container">
-          <h2>FAQ</h2>
-          <div class="grid grid--two">
-            <article class="card">
-              <h3>Is this only for olympiads?</h3>
-              <p class="muted">
-                No. The platform works for school, university, debate, policy
-                curiosity, and contest preparation.
+          <div class="about-who__grid">
+            <div>
+              <span class="about-who__label">Who we are</span>
+              <h2 class="about-who__title">A platform where economics comes alive</h2>
+              <p class="about-who__text">
+                Kazyna Economics is an educational project which combines the study of two fields in economics: macro and micro, as well as including educational materials for preparation for olympiads.
               </p>
-            </article>
-            <article class="card">
-              <h3>Do I need advanced math?</h3>
-              <p class="muted">
-                You need comfort with percentages, graphs, ratios, and logical
-                reasoning. Advanced math helps later, but clarity comes first.
+              <p class="about-who__text">
+                Our platform serves as an educational tool for those studying economics. To ensure that this criterion is met, it also consists of relevant articles and formulas — everything you need in one place.
               </p>
-            </article>
+              <p class="about-who__text">
+                Kazyna Economics provides accessible, useful information and educational materials for those who want to dive deeper into economics.
+              </p>
+            </div>
+            <div class="about-who__visual">
+              <img
+                src="../assets/images/about_us.jpeg"
+                alt="Kazyna Economics team"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- ===== WHAT WE OFFER ===== -->
+      <section class="about-offer">
+        <div class="container">
+          <div class="about-offer__header">
+            <span class="about-who__label" style="display:block; text-align:center; margin-bottom:0.6rem;">What we offer</span>
+            <h2>Everything you need to master economics</h2>
+            <p>From core theory to olympiad strategy — structured, clear, and built for ambitious students.</p>
+          </div>
+          <div class="about-offer__grid">
+            <div class="offer-card">
+              <div class="offer-card__icon">📊</div>
+              <h3 class="offer-card__title">Macroeconomics</h3>
+              <p class="offer-card__desc">
+                GDP, inflation, fiscal and monetary policy, AD-AS models, economic growth, and balance of payments — explained with depth and clarity.
+              </p>
+            </div>
+            <div class="offer-card">
+              <div class="offer-card__icon">µ</div>
+              <h3 class="offer-card__title">Microeconomics</h3>
+              <p class="offer-card__desc">
+                Supply and demand, elasticity, consumer theory, market structures, game theory, and factor markets — from fundamentals to advanced topics.
+              </p>
+            </div>
+            <div class="offer-card">
+              <div class="offer-card__icon">🏆</div>
+              <h3 class="offer-card__title">Olympiad Preparation</h3>
+              <p class="offer-card__desc">
+                Systematic approach from core concepts to problem-solving and essay writing. Build the habits that win competitions.
+              </p>
+            </div>
+            <div class="offer-card">
+              <div class="offer-card__icon">📝</div>
+              <h3 class="offer-card__title">Articles</h3>
+              <p class="offer-card__desc">
+                In-depth articles on key economics topics — structured with takeaways, examples, and clear explanations for calm, effective reading.
+              </p>
+            </div>
+            <div class="offer-card">
+              <div class="offer-card__icon">Σ</div>
+              <h3 class="offer-card__title">Formulas</h3>
+              <p class="offer-card__desc">
+                A complete reference of economics formulas — each one explained in context so you understand when and why to use it.
+              </p>
+            </div>
+            <div class="offer-card">
+              <div class="offer-card__icon">🎯</div>
+              <h3 class="offer-card__title">Accessible Learning</h3>
+              <p class="offer-card__desc">
+                No paywalls, no fluff. Just clear, well-structured content for anyone who wants to understand economics at a serious level.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== WHO MADE THIS ===== -->
+      <section class="about-team">
+        <div class="container">
+          <div class="about-team__inner">
+            <div>
+              <span class="about-team__label">The team</span>
+              <h2 class="about-team__title">Made by students who love economics</h2>
+              <p class="about-team__text">
+                This website was created by a group of high school students passionate about economics, all of whom have backgrounds in this field through various programs.
+              </p>
+              <p class="about-team__text">
+                We know what it's like to prepare for olympiads, to struggle with a concept at midnight, and to finally understand a model that seemed impossible. That experience shaped every page of this platform.
+              </p>
+              <div class="about-team__tags">
+                <span class="about-team__tag">International Baccalaureate</span>
+                <span class="about-team__tag">AP Economics</span>
+                <span class="about-team__tag">Olympiad Competitors</span>
+                <span class="about-team__tag">Kyrgyzstan</span>
+              </div>
+            </div>
+            <div class="about-team__quote">
+              <p>
+                "Kazyna Economics provides accessible, useful information and educational materials for those who want to dive deeper into economics."
+              </p>
+              <cite>— Kazyna Economics Team</cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CTA ===== -->
+      <section class="about-cta">
+        <div class="container">
+          <div class="about-cta__inner">
+            <h2 class="about-cta__title">Ready to start learning?</h2>
+            <p class="about-cta__text">
+              Explore our topics, read the articles, and use the formulas. Everything is free and built for you.
+            </p>
+            <div class="about-cta__actions">
+              <a class="button button--primary" href="../index.html#tab-olympiad">Start Learning</a>
+              <a class="button button--ghost" href="articles.html" style="color:#fff; border-color:rgba(255,255,255,0.25);">Browse Articles</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <!-- ===== FOOTER ===== -->
@@ -144,9 +602,7 @@
             style="margin-bottom: 0.8rem; display: inline-flex"
           >
             <span class="navbar__mark">К</span>
-            <span style="color: var(--color-gold-light); font-weight: 900"
-              >Kazyna Economics</span
-            >
+            <span style="color: var(--color-terracotta-light); font-weight: 900">Kazyna Economics</span>
           </a>
           <p style="font-size: 0.88rem; max-width: 280px">
             Platform to study Economics
@@ -165,6 +621,7 @@
           <div class="footer__links">
             <a href="formulas.html">Formulas</a>
             <a href="articles.html">Articles</a>
+            <a href="about.html">About Us</a>
           </div>
         </div>
         <div>
@@ -176,59 +633,31 @@
               rel="noopener noreferrer"
               aria-label="Instagram"
               class="social-link social-link--instagram"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path
-                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-                ></path>
-                <circle cx="17.5" cy="6.5" r="1.5"></circle></svg
-            ></a>
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <circle cx="17.5" cy="6.5" r="1.5"></circle>
+            </svg></a>
             <a
               href="mailto:omorbekovnurs@gmail.com"
               aria-label="Gmail"
               class="social-link social-link--gmail"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                <path d="M7 10l5 3.5L17 10"></path></svg
-            ></a>
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="M7 10l5 3.5L17 10"></path>
+            </svg></a>
             <a
               href="https://wa.me/996701400657"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
               class="social-link social-link--whatsapp"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-                ></path>
-                <circle cx="9" cy="10" r="1"></circle>
-                <circle cx="12" cy="10" r="1"></circle>
-                <circle cx="15" cy="10" r="1"></circle></svg
-            ></a>
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              <circle cx="9" cy="10" r="1"></circle>
+              <circle cx="12" cy="10" r="1"></circle>
+              <circle cx="15" cy="10" r="1"></circle>
+            </svg></a>
           </div>
           <p style="font-size: 0.82rem; opacity: 0.6; margin-top: 1rem">
             © 2026 Kazyna
@@ -239,37 +668,14 @@
 
     <!-- Search modal -->
     <div class="search-modal" data-search-modal aria-hidden="true">
-      <div
-        class="search-modal__panel"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Search"
-      >
-        <button
-          class="icon-button"
-          data-search-close
-          aria-label="Close search"
-          style="margin-bottom: 0.5rem"
-        >
-          ×
-        </button>
-        <input
-          class="search-modal__field"
-          data-search-input
-          placeholder="Search topics..."
-          aria-label="Search query"
-        />
+      <div class="search-modal__panel" role="dialog" aria-modal="true" aria-label="Search">
+        <button class="icon-button" data-search-close aria-label="Close search" style="margin-bottom: 0.5rem">×</button>
+        <input class="search-modal__field" data-search-input placeholder="Search topics..." aria-label="Search query" />
         <div class="search-modal__results" data-search-results></div>
       </div>
     </div>
 
-    <button
-      class="icon-button scroll-top"
-      data-scroll-top
-      aria-label="Scroll to top"
-    >
-      ↑
-    </button>
+    <button class="icon-button scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
 
     <script src="../assets/js/main.js" defer></script>
     <script src="../assets/js/navigation.js" defer></script>
