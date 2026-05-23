@@ -1,34 +1,58 @@
 :root {
   color-scheme: light;
 
-  /* Minimal palette */
-  --color-ink: #1a1a1a;
-  --color-ink-soft: #666666;
-  --color-graphite: #0a0a0a;
-  --color-navy: #8b1a1a;
-  --color-navy-2: #6b1212;
-
-  /* Warm earth tones */
-  --color-sand: #f5f5f0;
-  --color-sand-2: #fafaf8;
-  --color-felt: #c8392b;
-  --color-felt-deep: #9b2335;
-  --color-gold: #d4a017;
-  --color-gold-light: #e8b830;
-  --color-ivory: #ffffff;
-  --color-wool: #e8d5b0;
-  --color-teal: #1a6b5a;
+  /* Modern Ethno Palette - Inspired by Kyrgyz Heritage */
+  --color-ink: #2c3e50;
+  --color-ink-soft: #7f8c8d;
+  --color-graphite: #34495e;
+  
+  /* Primary Ethno Colors */
+  --color-sage: #9caf88;
+  --color-sage-light: #b8c9a4;
+  --color-sage-deep: #7a8f6b;
+  
+  --color-terracotta: #d4a574;
+  --color-terracotta-light: #e6c19a;
+  --color-terracotta-deep: #b8925f;
+  
+  --color-cream: #f7f5f3;
+  --color-cream-warm: #faf8f6;
+  --color-cream-soft: #f2ede8;
+  
+  /* Accent Colors */
+  --color-dusty-blue: #8fa4b3;
+  --color-dusty-rose: #d4a5a5;
+  --color-warm-stone: #c7b299;
+  --color-soft-lavender: #b8a9c9;
+  
+  /* Traditional Kyrgyz Inspired */
+  --color-yurt-red: #c85a54;
+  --color-sky-blue: #87ceeb;
+  --color-mountain-grey: #95a5a6;
+  
+  /* Legacy mappings for compatibility */
+  --color-navy: var(--color-sage-deep);
+  --color-navy-2: var(--color-sage);
+  --color-sand: var(--color-cream);
+  --color-sand-2: var(--color-cream-warm);
+  --color-felt: var(--color-terracotta);
+  --color-felt-deep: var(--color-terracotta-deep);
+  --color-gold: var(--color-warm-stone);
+  --color-gold-light: var(--color-terracotta-light);
+  --color-ivory: var(--color-cream-warm);
+  --color-wool: var(--color-cream-soft);
+  --color-teal: var(--color-dusty-blue);
 
   /* Legacy aliases */
-  --color-red: #c8392b;
-  --color-red-deep: #9b2335;
-  --color-white: #ffffff;
-  --color-line: rgba(0, 0, 0, 0.08);
-  --color-card: rgba(255, 255, 255, 0.98);
-  --color-success: #1a7a52;
+  --color-red: var(--color-yurt-red);
+  --color-red-deep: var(--color-terracotta-deep);
+  --color-white: var(--color-cream-warm);
+  --color-line: rgba(156, 175, 136, 0.15);
+  --color-card: rgba(250, 248, 246, 0.97);
+  --color-success: var(--color-sage-deep);
 
-  --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.06);
-  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.04);
+  --shadow-soft: 0 8px 32px rgba(156, 175, 136, 0.12);
+  --shadow-card: 0 2px 12px rgba(212, 165, 116, 0.08);
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -38,27 +62,47 @@
   --font-heading: "Playfair Display", Georgia, serif;
   --font-body: "Manrope", "Inter", system-ui, sans-serif;
   --transition: 200ms ease;
-  --ornament-opacity: 0.03;
+  --ornament-opacity: 0.045;
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
-  --color-ink: #e8e8e8;
-  --color-ink-soft: #a0a0a0;
-  --color-graphite: #f5f5f5;
-  --color-navy: #8b1a1a;
-  --color-navy-2: #6b1212;
-  --color-sand: #1a1a1a;
-  --color-sand-2: #0f0f0f;
-  --color-gold: #e8b830;
-  --color-gold-light: #f5d060;
-  --color-ivory: #0a0a0a;
-  --color-wool: #2a1a08;
-  --color-white: #0f0f0f;
-  --color-line: rgba(255, 255, 255, 0.08);
-  --color-card: rgba(20, 20, 20, 0.98);
-  --color-success: #4ecf9a;
+  
+  /* Dark mode with warm ethno tones */
+  --color-ink: #f7f5f3;
+  --color-ink-soft: #c7b299;
+  --color-graphite: #f2ede8;
+  
+  /* Darker versions of ethno colors */
+  --color-sage: #6b7a5a;
+  --color-sage-light: #7a8f6b;
+  --color-sage-deep: #5a6b4a;
+  
+  --color-terracotta: #a67c52;
+  --color-terracotta-light: #b8925f;
+  --color-terracotta-deep: #8f6b45;
+  
+  --color-cream: #2a2520;
+  --color-cream-warm: #1f1c18;
+  --color-cream-soft: #332e28;
+  
+  /* Dark accent colors */
+  --color-dusty-blue: #6b7a85;
+  --color-dusty-rose: #a67c7c;
+  --color-warm-stone: #9c8a75;
+  --color-soft-lavender: #8a7a9c;
+  
+  /* Traditional colors adjusted for dark mode */
+  --color-yurt-red: #a64a45;
+  --color-sky-blue: #6b9cb8;
+  --color-mountain-grey: #7a8a8b;
+  
+  --color-white: var(--color-cream);
+  --color-line: rgba(156, 175, 136, 0.15);
+  --color-card: rgba(42, 37, 32, 0.95);
+  --color-success: var(--color-sage-light);
+  
   --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.40);
   --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.30);
-  --ornament-opacity: 0.05;
+  --ornament-opacity: 0.08;
 }

@@ -16,6 +16,7 @@
 
   .hero { min-height: auto; }
   .hero-visual { min-height: 400px; }
+  .hero-nature { min-height: 320px; }
   .toc { position: static; }
   .grid--four { grid-template-columns: repeat(2, 1fr); }
 }
@@ -54,6 +55,8 @@
     height: 110px;
     font-size: 2rem;
   }
+
+  .hero-nature { min-height: 260px; }
 
   .tabs__btn {
     padding: 0.8rem 1rem;

@@ -72,7 +72,7 @@ canvas {
 
 /* Content band — dark ethno section */
 .content-band {
-  background: linear-gradient(135deg, #1a0800, #2a1200);
+  background: linear-gradient(135deg, #2a2018, #3a2e22);
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -80,11 +80,11 @@ canvas {
 
 .content-band h2,
 .content-band h3 {
-  color: var(--color-gold-light);
+  color: var(--color-terracotta-light);
 }
 
 .content-band p {
-  color: rgba(245, 230, 200, 0.78);
+  color: rgba(247, 245, 243, 0.78);
 }
 
 /* Stack utility */
