@@ -11,27 +11,44 @@
   const searchInput = document.querySelector("[data-search-input]");
   const searchResults = document.querySelector("[data-search-results]");
 
-  document.querySelectorAll("[data-search-open]").forEach((node) => node.setAttribute("aria-label", node.getAttribute("aria-label") || "Open search"));
-  document.querySelectorAll("[data-theme-toggle]").forEach((node) => node.setAttribute("aria-label", node.getAttribute("aria-label") || "Toggle theme"));
-  document.querySelectorAll("[data-burger]").forEach((node) => node.setAttribute("aria-label", node.getAttribute("aria-label") || "Open menu"));
-  document.querySelectorAll("[data-search-close]").forEach((node) => node.setAttribute("aria-label", node.getAttribute("aria-label") || "Close search"));
-  document.querySelectorAll("[data-scroll-top]").forEach((node) => node.setAttribute("aria-label", node.getAttribute("aria-label") || "Scroll to top"));
+  function _t(key, fallback) {
+    return (window.kazynaI18n && window.kazynaI18n.t(key) !== key) ? window.kazynaI18n.t(key) : fallback;
+  }
+
+  function applyAriaLabels() {
+    document.querySelectorAll("[data-search-open]").forEach((node) => node.setAttribute("aria-label", _t("aria.open_search", "Open search")));
+    document.querySelectorAll("[data-theme-toggle]").forEach((node) => {
+      const dark = document.documentElement.dataset.theme === "dark";
+      node.setAttribute("aria-label", dark ? _t("aria.theme_light", "Switch to light theme") : _t("aria.theme_dark", "Switch to dark theme"));
+    });
+    document.querySelectorAll("[data-burger]").forEach((node) => node.setAttribute("aria-label", _t("aria.open_menu", "Open menu")));
+    document.querySelectorAll("[data-search-close]").forEach((node) => node.setAttribute("aria-label", _t("aria.close_search", "Close search")));
+    document.querySelectorAll("[data-scroll-top]").forEach((node) => node.setAttribute("aria-label", _t("aria.scroll_top", "Scroll to top")));
+  }
+
+  applyAriaLabels();
+  window.addEventListener("kazyna:languagechange", applyAriaLabels);
 
   const base = location.pathname.includes("/pages/") ? "" : "pages/";
-  const searchIndex = [
-    { title: "GDP explained", category: "Macro", url: `${base}article-single.html`, text: "GDP C I G net exports income expenditure value added" },
-    { title: "Inflation deep dive", category: "Macro", url: `${base}article-inflation.html`, text: "CPI deflator demand pull cost push expectations" },
-    { title: "Fiscal and monetary policy", category: "Macro", url: `${base}article-fiscal-policy.html`, text: "multiplier crowding out interest rates central bank" },
-    { title: "Unemployment types", category: "Macro", url: `${base}macroeconomics.html#unemployment`, text: "frictional structural cyclical natural NAIRU" },
-    { title: "Supply and demand", category: "Micro", url: `${base}article-supply-demand.html`, text: "equilibrium surplus shortage shifts" },
-    { title: "Elasticity masterclass", category: "Micro", url: `${base}article-elasticity.html`, text: "PED income cross price revenue" },
-    { title: "Game theory basics", category: "Micro", url: `${base}microeconomics.html#game-theory`, text: "Nash dominant strategy payoff matrix" },
-    { title: "Formula library", category: "Formulas", url: `${base}formulas.html`, text: "equations KaTeX macro micro" },
-    { title: "Olympiad roadmap", category: "Olympiads", url: `${base}olympiads.html#roadmap`, text: "weekly plan problem solving strategy" },
-    { title: "Practice tests", category: "Tests", url: `${base}tests.html`, text: "macro micro olympiad timer feedback score" },
-    { title: "Glossary", category: "Terms", url: `${base}glossary.html`, text: "economics terms definitions" },
-    { title: "Contacts", category: "About", url: `${base}contacts.html`, text: "message email programs" }
-  ];
+
+  function getSearchIndex() {
+    const T = (key, fb) => _t(key, fb);
+    return [
+      { title: T("search.idx.gdp","GDP explained"), category: T("search.cat.macro","Macro"), url: `${base}article-single.html`, text: "GDP C I G net exports income expenditure value added ВВП" },
+      { title: T("search.idx.inflation","Inflation deep dive"), category: T("search.cat.macro","Macro"), url: `${base}article-inflation.html`, text: "CPI deflator demand pull cost push expectations инфляция" },
+      { title: T("search.idx.fiscal","Fiscal and monetary policy"), category: T("search.cat.macro","Macro"), url: `${base}article-fiscal-policy.html`, text: "multiplier crowding out interest rates central bank мультипликатор" },
+      { title: T("search.idx.unemployment","Unemployment types"), category: T("search.cat.macro","Macro"), url: `${base}macroeconomics.html#unemployment`, text: "frictional structural cyclical natural NAIRU безработица" },
+      { title: T("search.idx.supply_demand","Supply and demand"), category: T("search.cat.micro","Micro"), url: `${base}article-supply-demand.html`, text: "equilibrium surplus shortage shifts спрос предложение" },
+      { title: T("search.idx.elasticity","Elasticity masterclass"), category: T("search.cat.micro","Micro"), url: `${base}article-elasticity.html`, text: "PED income cross price revenue эластичность" },
+      { title: T("search.idx.game_theory","Game theory basics"), category: T("search.cat.micro","Micro"), url: `${base}microeconomics.html#game-theory`, text: "Nash dominant strategy payoff matrix теория игр" },
+      { title: T("search.idx.formulas","Formula library"), category: T("search.cat.formulas","Formulas"), url: `${base}formulas.html`, text: "equations KaTeX macro micro формулы" },
+      { title: T("search.idx.olympiad","Olympiad roadmap"), category: T("search.cat.olympiads","Olympiads"), url: `${base}olympiads.html#roadmap`, text: "weekly plan problem solving strategy олимпиада" },
+      { title: T("search.idx.tests","Practice tests"), category: T("search.cat.tests","Tests"), url: `${base}tests.html`, text: "macro micro olympiad timer feedback score тесты" },
+      { title: T("search.idx.glossary","Glossary"), category: T("search.cat.terms","Terms"), url: `${base}glossary.html`, text: "economics terms definitions глоссарий" },
+      { title: T("search.idx.contacts","Contacts"), category: T("search.cat.about","About"), url: `${base}contacts.html`, text: "message email programs контакты" }
+    ];
+  }
+  const searchIndex = getSearchIndex();
 
   function updateProgress() {
     const max = document.documentElement.scrollHeight - window.innerHeight;
@@ -56,16 +73,17 @@
   function renderSearch(query) {
     if (!searchResults) return;
     const normalized = query.trim().toLowerCase();
+    const currentIndex = getSearchIndex();
     const items = normalized
-      ? searchIndex.filter((item) => `${item.title} ${item.category} ${item.text}`.toLowerCase().includes(normalized))
-      : searchIndex.slice(0, 5);
+      ? currentIndex.filter((item) => `${item.title} ${item.category} ${item.text}`.toLowerCase().includes(normalized))
+      : currentIndex.slice(0, 5);
 
     searchResults.innerHTML = items.map((item) => `
       <a class="search-result" href="${item.url}">
         <strong>${item.title}</strong>
         <span class="badge">${item.category}</span>
       </a>
-    `).join("") || "<p class=\"muted\">No results yet. Try macro, elasticity, GDP, or olympiad.</p>";
+    `).join("") || `<p class="muted">${_t("search.no_results","No results yet. Try macro, elasticity, GDP, or olympiad.")}</p>`;
     if (window.kazynaI18n) window.kazynaI18n.applyTranslations(searchResults);
   }
 
@@ -110,7 +128,7 @@
       event.preventDefault();
       const btn = form.querySelector("button[type=submit]");
       const original = btn?.textContent;
-      if (btn) btn.textContent = "✓ Sent (demo)";
+      if (btn) btn.textContent = _t("form.sent", "✓ Sent (demo)");
       setTimeout(() => {
         if (btn && original) btn.textContent = original;
         form.reset();
@@ -128,6 +146,10 @@
     renderSearch("");
     searchInput.addEventListener("input", () => renderSearch(searchInput.value));
   }
+  window.addEventListener("kazyna:languagechange", () => {
+    // Rebuild search index with new language
+    if (searchInput) renderSearch(searchInput.value || "");
+  });
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeSearch();
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {

@@ -216,10 +216,12 @@
   padding: clamp(3rem, 7vw, 7rem) 0 4rem;
   position: relative;
   overflow: hidden;
-  background-image: url("../images/Kyrgyzstan-Sacred-Natural-Sites-and-Biodiversity.jpg");
-  background-size: cover;
-  background-position: center 40%;
-  background-repeat: no-repeat;
+  background: linear-gradient(
+    165deg,
+    #f6f6f6 0%,
+    #f2f1ef 52%,
+    #ece9e4 100%
+  );
 }
 
 .hero::before {
@@ -229,10 +231,10 @@
   pointer-events: none;
   z-index: 0;
   background: linear-gradient(
-    135deg,
-    rgba(20, 6, 0, 0.72) 0%,
-    rgba(30, 12, 0, 0.60) 45%,
-    rgba(10, 18, 35, 0.65) 100%
+    130deg,
+    rgba(196, 159, 117, 0.12) 0%,
+    rgba(196, 159, 117, 0.08) 46%,
+    rgba(196, 159, 117, 0.04) 100%
   );
 }
 
@@ -371,17 +373,17 @@
 /* ---- Hero Nature Background — text overrides ---- */
 .hero .hero__title,
 .hero .hero__frame {
-  color: #fff;
+  color: #5f4a2f;
 }
 
 .hero .hero__subtitle {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(95, 74, 47, 0.82);
 }
 
 .hero .badge--official {
-  background: rgba(212, 165, 116, 0.20);
-  color: var(--color-terracotta-light);
-  border-color: rgba(212, 165, 116, 0.40);
+  background: rgba(196, 159, 117, 0.14);
+  color: #8b6a40;
+  border-color: rgba(196, 159, 117, 0.34);
 }
 
 /* ---- Hero Nature Photo (side card — unused) ---- */

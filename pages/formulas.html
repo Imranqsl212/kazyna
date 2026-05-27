@@ -60,7 +60,7 @@
         <div class="container">
           <span class="badge" data-i18n="formulas.badge">Formula library</span>
           <h1 data-i18n="formulas.title">Equations with context, not just symbols.</h1>
-          <p class="text-lead">
+          <p class="text-lead" data-i18n="formulas.subtitle">
             Use these cards for quick recall, copy formulas into notes, and
             connect each equation to the model where it belongs.
           </p>
@@ -72,11 +72,11 @@
             <button
               class="filter-bar__button filter-bar__button--active"
               data-formula-filter="all"
-            >
-              All</button
-            ><button class="filter-bar__button" data-formula-filter="macro">
+              data-i18n="formulas.filter.all"
+            >All</button
+            ><button class="filter-bar__button" data-formula-filter="macro" data-i18n="formulas.filter.macro">
               Macro</button
-            ><button class="filter-bar__button" data-formula-filter="micro">
+            ><button class="filter-bar__button" data-formula-filter="micro" data-i18n="formulas.filter.micro">
               Micro
             </button>
           </div>
@@ -100,27 +100,25 @@
               >Kazyna Economics</span
             >
           </a>
-          <p style="font-size: 0.88rem; max-width: 280px">
-            Platform to study Economics
-          </p>
+          <p style="font-size: 0.88rem; max-width: 280px" data-i18n="footer.tagline">Platform to study Economics</p>
         </div>
         <div>
-          <h3>Topics</h3>
+          <h3 data-i18n="footer.topics">Topics</h3>
           <div class="footer__links">
             <a href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
             <a href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
-            <a href="olympiads.html">Olympiad Prep</a>
+            <a href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a>
           </div>
         </div>
         <div>
-          <h3>Resources</h3>
+          <h3 data-i18n="footer.resources">Resources</h3>
           <div class="footer__links">
-            <a href="formulas.html">Formulas</a>
-            <a href="articles.html">Articles</a>
+            <a href="formulas.html" data-i18n="footer.formulas">Formulas</a>
+            <a href="articles.html" data-i18n="footer.articles">Articles</a>
           </div>
         </div>
         <div>
-          <h3>Contact</h3>
+          <h3 data-i18n="footer.contact">Contact</h3>
           <div class="social-links">
             <a
               href="https://www.instagram.com/kazyna_economics?igsh=d3hlMml0dDBpNGZl"
@@ -182,9 +180,7 @@
                 <circle cx="15" cy="10" r="1"></circle></svg
             ></a>
           </div>
-          <p style="font-size: 0.82rem; opacity: 0.6; margin-top: 1rem">
-            © 2026 Казына
-          </p>
+          <p style="font-size: 0.82rem; opacity: 0.6; margin-top: 1rem" data-i18n="footer.copyright">© 2026 Kazyna</p>
         </div>
       </div>
     </footer>
