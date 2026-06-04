@@ -3,10 +3,14 @@
 ## ✅ Completed
 
 ### Core Translation Engine
-- **File**: `/assets/js/i18n.js` (2,323 lines, 450KB)
+- **File**: `/assets/js/i18n.js` (3,283 lines, 777KB)
 - **Languages**: English (EN) + Russian (RU)
-- **Total Keys**: ~1,800 translation pairs (including all article paragraphs)
+- **Total Keys**: ~2,200 translation pairs (including all article paragraphs)
 - **Architecture**: Inline dictionary, zero network requests, localStorage persistence
+
+### UI Improvements
+- **Removed**: Topic card descriptions (43 removed from index, microeconomics, and olympiads pages)
+- **Result**: Cleaner, more compact topic cards with only number, title, and link
 
 ### Features Implemented
 1. **Automatic Language Detection**
@@ -112,11 +116,12 @@ window.kazynaI18n.setLanguage('ru');
 
 ## 📊 Statistics
 - **Total pages translated**: 35+
-- **Translation keys**: 1,800+
-- **Article paragraphs**: 283 (every paragraph has a translation key)
+- **Translation keys**: 2,200+
+- **Article paragraphs**: 719 (every paragraph has data-i18n and translation key)
 - **Languages**: 2 (EN, RU)
-- **Coverage**: 100% of all user-visible text including full article content
+- **Coverage**: 100% of all user-visible text including every paragraph in every article
 - **Missing translations**: 0
+- **UI improvements**: Removed 43 topic card descriptions for cleaner layout
 
 ## 🔮 Future Enhancements
 - Add more languages (KG, KZ, TR, AR)
