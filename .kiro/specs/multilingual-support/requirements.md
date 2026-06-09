@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This document defines the requirements for adding full multilingual support (Russian and English) to the Kazyna Economics static website. The site is a pure HTML/CSS/JS project with ~36 pages across `index.html` and `/pages/`. A partial i18n infrastructure already exists — `data-i18n` attributes are present on some elements, a language-toggle button exists in the navbar, and `formulas.js` already holds bilingual data — but the core `i18n.js` engine has not yet been built and many pages still contain hardcoded text.
+This document defines the requirements for adding full multilingual support (Russian and English) to the Эконова static website. The site is a pure HTML/CSS/JS project with ~36 pages across `index.html` and `/pages/`. A partial i18n infrastructure already exists — `data-i18n` attributes are present on some elements, a language-toggle button exists in the navbar, and `formulas.js` already holds bilingual data — but the core `i18n.js` engine has not yet been built and many pages still contain hardcoded text.
 
 The feature must deliver: a lightweight, zero-dependency translation engine loaded from local JSON files; complete text coverage across all pages and all dynamically rendered content; a language switcher with instant switching and localStorage persistence; browser language auto-detection on first visit; URL-based locale selection (`?lang=ru` / `?lang=en`); per-language SEO meta tags and hreflang links; and an architecture that makes adding future languages (KG, KZ, TR, AR, etc.) trivial.
 
@@ -17,7 +17,7 @@ The feature must deliver: a lightweight, zero-dependency translation engine load
 - **data-i18n**: An HTML attribute placed on elements whose `textContent` should be replaced by the result of `t(value)` when translations are applied.
 - **data-i18n-placeholder**: An HTML attribute placed on `<input>` and `<textarea>` elements whose `placeholder` should be replaced by `t(value)`.
 - **data-i18n-aria-label**: An HTML attribute placed on interactive elements whose `aria-label` should be replaced by `t(value)`.
-- **kazyna:languagechange**: A custom DOM event dispatched on `window` after the Active_Language changes, carrying the new language code in `event.detail.lang`. Consumed by `formulas.js` and any other module that renders dynamic content.
+- **econova:languagechange**: A custom DOM event dispatched on `window` after the Active_Language changes, carrying the new language code in `event.detail.lang`. Consumed by `formulas.js` and any other module that renders dynamic content.
 - **hreflang**: An HTML `<link rel="alternate" hreflang="...">` tag injected into `<head>` to signal alternate-language versions of a page to search engines.
 - **SEO_Module**: The existing `assets/js/seo.js` file, which will be extended to inject per-language meta tags and hreflang links.
 
@@ -31,7 +31,7 @@ The feature must deliver: a lightweight, zero-dependency translation engine load
 
 #### Acceptance Criteria
 
-1. THE I18n_Engine SHALL expose a global `window.kazynaI18n` object containing the `t()` function, an `applyTranslations(root)` function, and a `setLanguage(lang)` function.
+1. THE I18n_Engine SHALL expose a global `window.econovaI18n` object containing the `t()` function, an `applyTranslations(root)` function, and a `setLanguage(lang)` function.
 2. WHEN the I18n_Engine initialises, THE I18n_Engine SHALL load the Locale_File for the Active_Language synchronously from the pre-fetched in-memory bundle (no XHR or fetch calls at runtime).
 3. WHEN `t(key)` is called with a Translation_Key that exists in the active Locale_File, THE I18n_Engine SHALL return the corresponding translated string.
 4. IF `t(key)` is called with a Translation_Key that does not exist in the active Locale_File and does not exist in the English Locale_File, THEN THE I18n_Engine SHALL return the Translation_Key string unchanged as a last-resort fallback.
@@ -74,8 +74,8 @@ The feature must deliver: a lightweight, zero-dependency translation engine load
 2. WHEN the Language_Switcher is clicked, THE I18n_Engine SHALL call `setLanguage()` with the opposite language code and re-apply all translations to `document.body` without triggering a page reload.
 3. WHEN the Active_Language is English, THE Language_Switcher SHALL display the label `RU` to indicate the available switch target.
 4. WHEN the Active_Language is Russian, THE Language_Switcher SHALL display the label `EN` to indicate the available switch target.
-5. WHEN `setLanguage(lang)` is called, THE I18n_Engine SHALL save the selected language code to `localStorage` under the key `kazyna-language`.
-6. WHEN `setLanguage(lang)` is called, THE I18n_Engine SHALL dispatch the `kazyna:languagechange` custom event on `window` with `{ detail: { lang } }`.
+5. WHEN `setLanguage(lang)` is called, THE I18n_Engine SHALL save the selected language code to `localStorage` under the key `econova-language`.
+6. WHEN `setLanguage(lang)` is called, THE I18n_Engine SHALL dispatch the `econova:languagechange` custom event on `window` with `{ detail: { lang } }`.
 7. WHEN `setLanguage(lang)` is called, THE I18n_Engine SHALL update the `lang` attribute on the `<html>` element to the new language code.
 
 ### Requirement 5: Language Detection and Persistence
@@ -84,10 +84,10 @@ The feature must deliver: a lightweight, zero-dependency translation engine load
 
 #### Acceptance Criteria
 
-1. WHEN a visitor loads any page for the first time with no `kazyna-language` key in localStorage and no `?lang` URL parameter, THE I18n_Engine SHALL read `navigator.language`.
+1. WHEN a visitor loads any page for the first time with no `econova-language` key in localStorage and no `?lang` URL parameter, THE I18n_Engine SHALL read `navigator.language`.
 2. IF `navigator.language` starts with `ru`, THEN THE I18n_Engine SHALL set the Active_Language to `ru`.
 3. IF `navigator.language` does not start with `ru`, THEN THE I18n_Engine SHALL set the Active_Language to `en`.
-4. WHEN a visitor loads any page and `localStorage` contains a `kazyna-language` value of `ru` or `en`, THE I18n_Engine SHALL use that stored value as the Active_Language, overriding browser detection.
+4. WHEN a visitor loads any page and `localStorage` contains a `econova-language` value of `ru` or `en`, THE I18n_Engine SHALL use that stored value as the Active_Language, overriding browser detection.
 5. WHEN a visitor loads any page with a `?lang=ru` or `?lang=en` URL parameter, THE I18n_Engine SHALL use the parameter value as the Active_Language, overriding both localStorage and browser detection.
 6. IF the `?lang` URL parameter contains a value other than `ru` or `en`, THEN THE I18n_Engine SHALL ignore the parameter and fall back to localStorage or browser detection, treating the invalid parameter as if no parameter was provided.
 
@@ -122,11 +122,11 @@ The feature must deliver: a lightweight, zero-dependency translation engine load
 
 #### Acceptance Criteria
 
-1. WHEN the `kazyna:languagechange` event fires, THE `formulas.js` module SHALL re-render all formula cards using the translated title, explanation, example, and badge text for the new language.
+1. WHEN the `econova:languagechange` event fires, THE `formulas.js` module SHALL re-render all formula cards using the translated title, explanation, example, and badge text for the new language.
 2. WHEN the search modal renders results, THE `main.js` module SHALL call `applyTranslations()` on the results container so that any `data-i18n` attributes in result markup are resolved.
 3. WHEN a contact form or newsletter form is submitted, THE `main.js` module SHALL display the submission feedback message using `t("form.sent")` for the active language.
-4. WHEN the `kazyna:languagechange` event fires, THE `main.js` module SHALL update all hardcoded aria-labels (search open, theme toggle, burger menu, search close, scroll-to-top) to their translated equivalents via `t()`.
-5. WHEN the `kazyna:languagechange` event fires, THE `main.js` module SHALL update the theme toggle aria-label to the translated dark/light theme switch string for the active language.
+4. WHEN the `econova:languagechange` event fires, THE `main.js` module SHALL update all hardcoded aria-labels (search open, theme toggle, burger menu, search close, scroll-to-top) to their translated equivalents via `t()`.
+5. WHEN the `econova:languagechange` event fires, THE `main.js` module SHALL update the theme toggle aria-label to the translated dark/light theme switch string for the active language.
 6. WHEN the search input returns no results, THE `main.js` module SHALL display the empty-state message using `t("search.empty")` for the active language.
 
 ### Requirement 9: Complete Text Coverage

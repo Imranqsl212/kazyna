@@ -1,5 +1,5 @@
 /* ============================================================
-   Tabs — Kazyna Economics
+   Tabs — Эконова
    Handles the three-tab system on the homepage
    ============================================================ */
 (function () {

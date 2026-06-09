@@ -100,13 +100,13 @@ Each article has structured keys:
 ### For Developers
 ```javascript
 // Get translation
-const text = window.kazynaI18n.t('nav.home');
+const text = window.econovaI18n.t('nav.home');
 
 // Apply translations to DOM
-window.kazynaI18n.applyTranslations(document.body);
+window.econovaI18n.applyTranslations(document.body);
 
 // Change language programmatically
-window.kazynaI18n.setLanguage('ru');
+window.econovaI18n.setLanguage('ru');
 ```
 
 ### Adding New Translations

@@ -12,7 +12,7 @@
   const searchResults = document.querySelector("[data-search-results]");
 
   function _t(key, fallback) {
-    return (window.kazynaI18n && window.kazynaI18n.t(key) !== key) ? window.kazynaI18n.t(key) : fallback;
+    return (window.econovaI18n && window.econovaI18n.t(key) !== key) ? window.econovaI18n.t(key) : fallback;
   }
 
   function applyAriaLabels() {
@@ -27,7 +27,7 @@
   }
 
   applyAriaLabels();
-  window.addEventListener("kazyna:languagechange", applyAriaLabels);
+  window.addEventListener("econova:languagechange", applyAriaLabels);
 
   const base = location.pathname.includes("/pages/") ? "" : "pages/";
 
@@ -41,10 +41,9 @@
       { title: T("search.idx.supply_demand","Supply and demand"), category: T("search.cat.micro","Micro"), url: `${base}article-supply-demand.html`, text: "equilibrium surplus shortage shifts спрос предложение" },
       { title: T("search.idx.elasticity","Elasticity masterclass"), category: T("search.cat.micro","Micro"), url: `${base}article-elasticity.html`, text: "PED income cross price revenue эластичность" },
       { title: T("search.idx.game_theory","Game theory basics"), category: T("search.cat.micro","Micro"), url: `${base}microeconomics.html#game-theory`, text: "Nash dominant strategy payoff matrix теория игр" },
-      { title: T("search.idx.formulas","Formula library"), category: T("search.cat.formulas","Formulas"), url: `${base}formulas.html`, text: "equations KaTeX macro micro формулы" },
       { title: T("search.idx.olympiad","Olympiad roadmap"), category: T("search.cat.olympiads","Olympiads"), url: `${base}olympiads.html#roadmap`, text: "weekly plan problem solving strategy олимпиада" },
-      { title: T("search.idx.tests","Practice tests"), category: T("search.cat.tests","Tests"), url: `${base}tests.html`, text: "macro micro olympiad timer feedback score тесты" },
-      { title: T("search.idx.glossary","Glossary"), category: T("search.cat.terms","Terms"), url: `${base}glossary.html`, text: "economics terms definitions глоссарий" },
+      { title: T("search.idx.articles","Articles"), category: T("search.cat.articles","Articles"), url: `${base}articles.html`, text: "economics articles explanations macro micro olympiad статьи" },
+      { title: T("search.idx.formulas","Formula library"), category: T("search.cat.formulas","Formulas"), url: `${base}formulas.html`, text: "equations formulas GDP elasticity multiplier формулы" },
       { title: T("search.idx.contacts","Contacts"), category: T("search.cat.about","About"), url: `${base}contacts.html`, text: "message email programs контакты" }
     ];
   }
@@ -84,7 +83,7 @@
         <span class="badge">${item.category}</span>
       </a>
     `).join("") || `<p class="muted">${_t("search.no_results","No results yet. Try macro, elasticity, GDP, or olympiad.")}</p>`;
-    if (window.kazynaI18n) window.kazynaI18n.applyTranslations(searchResults);
+    if (window.econovaI18n) window.econovaI18n.applyTranslations(searchResults);
   }
 
   function animateCounters() {
@@ -118,7 +117,7 @@
     themeToggle.addEventListener("click", () => {
       const next = root.dataset.theme === "dark" ? "light" : "dark";
       root.dataset.theme = next;
-      localStorage.setItem("kazyna-theme", next);
+      localStorage.setItem("econova-theme", next);
       syncThemeIcon();
     });
   }
@@ -146,7 +145,7 @@
     renderSearch("");
     searchInput.addEventListener("input", () => renderSearch(searchInput.value));
   }
-  window.addEventListener("kazyna:languagechange", () => {
+  window.addEventListener("econova:languagechange", () => {
     // Rebuild search index with new language
     if (searchInput) renderSearch(searchInput.value || "");
   });

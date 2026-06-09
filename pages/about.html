@@ -3,28 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us | Kazyna Economics</title>
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#f7f5f3" />
+    <title>About Us | Эконова</title>
     <meta
       name="description"
-      content="Kazyna Economics is an educational project combining macro and microeconomics with olympiad preparation materials, created by high school students passionate about economics."
+      content="Эконова is an educational project combining macro and microeconomics with olympiad preparation materials, created by high school students passionate about economics."
     />
     <meta
       name="keywords"
-      content="Kazyna Economics, about, economics education, Kyrgyzstan olympiad, IB economics, AP economics"
+      content="Эконова, about, economics education, Kyrgyzstan olympiad, IB economics, AP economics"
     />
-    <meta property="og:title" content="About Us | Kazyna Economics" />
+    <meta property="og:title" content="About Us | Эконова" />
+    <meta property="og:site_name" content="Эконова" />
+    <meta property="og:url" content="https://econova.kg/pages/about" />
     <meta
       property="og:description"
       content="An educational platform built by students, for students — combining macro, micro, and olympiad prep."
     />
-    <meta property="og:image" content="../assets/images/about_us.jpeg" />
+    <meta property="og:image" content="../assets/images/logo.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="../assets/images/logo.jpg" />
+    <link rel="canonical" href="https://econova.kg/pages/about" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260609-2" />
     <style>
       /* ── About Hero ── */
       .about-hero {
@@ -410,8 +417,8 @@
         }
       }
     </style>
-    <script src="../assets/js/chrome.js"></script>
-      <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/chrome.js?v=20260609-2"></script>
+      <script src="../assets/js/i18n.js?v=20260609-2"></script>
 </head>
   <body class="page about-page">
     <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
@@ -425,26 +432,30 @@
     <!-- Navbar -->
     <header class="navbar">
       <div class="navbar__inner container">
-        <a class="navbar__logo" href="../index.html" aria-label="Kazyna Economics home">
-          <span class="navbar__mark">К</span>
-          <span class="navbar__brand-text">Kazyna Economics</span>
+        <a class="navbar__logo" href="../index.html" aria-label="Econova home">
+          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+          <span class="navbar__brand-text">Econova</span>
         </a>
         <nav class="navbar__links" data-nav-links aria-label="Main navigation">
           <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
           <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
           <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
           <a class="navbar__link" href="olympiads.html" data-i18n="nav.olympiad">Olympiad Prep</a>
-          <a class="navbar__link navbar__link--active" href="about.html" data-i18n="nav.about">About Us</a>
+          <a class="navbar__link" href="articles.html" data-i18n="nav.articles">Articles</a>
+          <a class="navbar__link" href="formulas.html" data-i18n="nav.formulas">Formulas</a>
+          <a class="navbar__link" href="about.html" data-i18n="nav.about">About Us</a>
         </nav>
         <div class="navbar__actions">
-          <button
-            class="icon-button navbar__burger"
-            type="button"
-            data-burger
-            aria-label="Open menu"
-            aria-expanded="false"
-          >☰</button>
-                  <button class="language-toggle" data-lang-toggle aria-label="Switch language">RU</button>
+          <button class="icon-button" type="button" data-search-open aria-label="Open search">⌕</button>
+          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
+          <select class="language-toggle" data-lang-toggle aria-label="Switch language">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="ky">KG</option>
+            <option value="fr">FR</option>
+            <option value="es">ES</option>
+            <option value="zh">中文</option>
+          </select>
         </div>
       </div>
     </header>
@@ -455,7 +466,7 @@
       <section class="about-hero">
         <div class="container about-hero__inner">
           <div class="about-hero__badge" data-i18n="about.hero.badge">◆ About Us</div>
-          <h1 class="about-hero__title" data-i18n="about.hero.title">Kazyna Economics</h1>
+          <h1 class="about-hero__title" data-i18n="about.hero.title">Эконова</h1>
           <p class="about-hero__subtitle">
             <span data-i18n="about.hero.subtitle">An educational project combining macro and microeconomics with olympiad preparation — built by students, for students.</span>
           </p>
@@ -470,19 +481,19 @@
               <span class="about-who__label" data-i18n="about.who.label">Who we are</span>
               <h2 class="about-who__title" data-i18n="about.who.title">A platform where economics comes alive</h2>
               <p class="about-who__text" data-i18n="about.who.text1">
-                Kazyna Economics is an educational project which combines the study of two fields in economics: macro and micro, as well as including educational materials for preparation for olympiads.
+                Эконова is an educational project which combines the study of two fields in economics: macro and micro, as well as including educational materials for preparation for olympiads.
               </p>
               <p class="about-who__text" data-i18n="about.who.text2">
                 Our platform serves as an educational tool for those studying economics. To ensure that this criterion is met, it also consists of relevant articles and formulas — everything you need in one place.
               </p>
               <p class="about-who__text" data-i18n="about.who.text3">
-                Kazyna Economics provides accessible, useful information and educational materials for those who want to dive deeper into economics.
+                Эконова provides accessible, useful information and educational materials for those who want to dive deeper into economics.
               </p>
             </div>
             <div class="about-who__visual">
               <img
                 src="../assets/images/about_us.jpeg"
-                alt="Kazyna Economics team"
+                alt="Эконова team"
                 loading="lazy"
               />
             </div>
@@ -567,9 +578,9 @@
             </div>
             <div class="about-team__quote">
               <p>
-                "<span data-i18n="about.team.quote">Kazyna Economics provides accessible, useful information and educational materials for those who want to dive deeper into economics.</span>"
+                "<span data-i18n="about.team.quote">Эконова provides accessible, useful information and educational materials for those who want to dive deeper into economics.</span>"
               </p>
-              <cite data-i18n="about.team.cite">— Kazyna Economics Team</cite>
+              <cite data-i18n="about.team.cite">— Эконова Team</cite>
             </div>
           </div>
         </div>
@@ -603,8 +614,8 @@
             href="../index.html"
             style="margin-bottom: 0.8rem; display: inline-flex"
           >
-            <span class="navbar__mark">К</span>
-            <span style="color: var(--color-terracotta-light); font-weight: 900">Kazyna Economics</span>
+            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+            <span style="color: var(--color-terracotta-light); font-weight: 900">Эконова</span>
           </a>
           <p style="font-size: 0.88rem; max-width: 280px" data-i18n="footer.tagline">Platform to study Economics</p>
         </div>
@@ -659,7 +670,7 @@
               <circle cx="15" cy="10" r="1"></circle>
             </svg></a>
           </div>
-          <p style="font-size: 0.82rem; opacity: 0.6; margin-top: 1rem" data-i18n="footer.copyright">© 2026 Kazyna</p>
+          <p style="font-size: 0.82rem; opacity: 0.6; margin-top: 1rem" data-i18n="footer.copyright">© 2026 Эконова</p>
         </div>
       </div>
     </footer>
@@ -675,8 +686,8 @@
 
     <button class="icon-button scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
 
-    <script src="../assets/js/main.js" defer></script>
-    <script src="../assets/js/navigation.js" defer></script>
-    <script src="../assets/js/tabs.js" defer></script>
+    <script src="../assets/js/main.js?v=20260609-2" defer></script>
+    <script src="../assets/js/navigation.js?v=20260609-2" defer></script>
+    <script src="../assets/js/tabs.js?v=20260609-2" defer></script>
   </body>
 </html>

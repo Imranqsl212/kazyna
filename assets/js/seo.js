@@ -44,7 +44,7 @@
   document.querySelectorAll('script[type="application/ld+json"]').forEach((node) => {
     try {
       const data = JSON.parse(node.textContent);
-      if (data.url && data.url.includes("kazyna-economics.local")) {
+      if (data.url && data.url.includes("econova.local")) {
         data.url = origin + "/";
         node.textContent = JSON.stringify(data);
       }

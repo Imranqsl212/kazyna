@@ -16,7 +16,7 @@
   if (!mount) return;
 
   function lang() {
-    return localStorage.getItem("kazyna-language") === "ru" ? "ru" : "en";
+    return localStorage.getItem("econova-language") === "ru" ? "ru" : "en";
   }
 
   function pick(formula, key) {
@@ -63,5 +63,5 @@
     }
   });
 
-  window.addEventListener("kazyna:languagechange", () => render(document.querySelector("[data-formula-filter].filter-bar__button--active")?.dataset.formulaFilter || "all"));
+  window.addEventListener("econova:languagechange", () => render(document.querySelector("[data-formula-filter].filter-bar__button--active")?.dataset.formulaFilter || "all"));
 })();

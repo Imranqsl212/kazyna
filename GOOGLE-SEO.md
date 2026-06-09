@@ -1,16 +1,16 @@
-# Как попасть в Google — Kazyna Economics
+# Как попасть в Google — Эконова
 
-**Живой сайт:** [https://kazyna-iota.vercel.app/](https://kazyna-iota.vercel.app/)
+**Живой сайт:** [https://econova.kg/](https://econova.kg/)
 
 Сайт подготовлен технически (`robots.txt`, `sitemap.xml`, meta-теги, canonical). **В поиске вы появитесь только после индексации Google** — это делается вручную за 1–3 дня (иногда 1–2 недели).
 
 ## 1. Проверьте, что сайт доступен
 
-- [https://kazyna-iota.vercel.app/](https://kazyna-iota.vercel.app/)
-- [https://kazyna-iota.vercel.app/robots.txt](https://kazyna-iota.vercel.app/robots.txt)
-- [https://kazyna-iota.vercel.app/sitemap.xml](https://kazyna-iota.vercel.app/sitemap.xml)
+- [https://econova.kg/](https://econova.kg/)
+- [https://econova.kg/robots.txt](https://econova.kg/robots.txt)
+- [https://econova.kg/sitemap.xml](https://econova.kg/sitemap.xml)
 
-Если у вас свой домен (например `kazyna.kg`), подключите его в Vercel → Settings → Domains.
+Если у вас свой домен (например `econova.kg`), подключите его в Vercel → Settings → Domains.
 
 ## 2. Google Search Console
 
@@ -25,12 +25,12 @@
 
    - или через DNS у регистратора домена
 4. **Файлы Sitemap** → добавьте **полный URL** (не только путь):
-   `https://kazyna-iota.vercel.app/sitemap.xml`
+   `https://econova.kg/sitemap.xml`
 
    Если была ошибка «Не удалось обработать»:
    - удалите старый sitemap (три точки → Удалить);
    - подождите 2 минуты после деплоя Vercel;
-   - откройте [sitemap.xml](https://kazyna-iota.vercel.app/sitemap.xml) в браузере — должен быть XML со списком URL;
+   - откройте [sitemap.xml](https://econova.kg/sitemap.xml) в браузере — должен быть XML со списком URL;
    - добавьте sitemap заново.
 
 5. **Проверка URL** → вставьте главную → **Запросить индексирование**
@@ -58,7 +58,7 @@
 
 ## 6. Проверка
 
-Через 3–7 дней в Google: `site:kazyna-iota.vercel.app`
+Через 3–7 дней в Google: `site:econova.kg`
 
 Если страниц 0 — снова Search Console → «Запросить индексирование» и проверьте, что `robots.txt` не блокирует сайт.
 

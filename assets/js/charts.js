@@ -9,7 +9,7 @@
   };
 
   function getLabels() {
-    const t = window.kazynaI18n ? window.kazynaI18n.t : (k) => k;
+    const t = window.econovaI18n ? window.econovaI18n.t : (k) => k;
     return [
       t("chart.households"),
       t("chart.firms"),
@@ -35,7 +35,7 @@
     chartInstances.push(chart);
   });
 
-  window.addEventListener("kazyna:languagechange", () => {
+  window.addEventListener("econova:languagechange", () => {
     const labels = getLabels();
     chartInstances.forEach((chart) => {
       chart.data.labels = labels;
