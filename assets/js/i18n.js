@@ -44,7 +44,7 @@
       "footer.contact": "Contact",
       "footer.formulas": "Formulas",
       "footer.articles": "Articles",
-      "footer.copyright": "© 2026 Эконова",
+      "footer.copyright": "© 2026 Econova",
 
       /* Buttons / generic */
       "btn.read_guide": "Read guide",
@@ -1625,7 +1625,7 @@
       "footer.contact": "Контакты",
       "footer.formulas": "Формулы",
       "footer.articles": "Статьи",
-      "footer.copyright": "© 2026 Эконова",
+      "footer.copyright": "© 2026 Econova",
 
       /* Buttons / generic */
       "btn.read_guide": "Читать гайд",
@@ -3321,7 +3321,7 @@
     "contacts.title": "Биз менен экономикалык ойчулдардын кийинки муунун түзүңүз.",
     "footer.articles": "Макалалар",
     "footer.contact": "Байланыштар",
-    "footer.copyright": "© 2026 Эконова",
+    "footer.copyright": "© 2026 Econova",
     "footer.formulas": "Формулалар",
     "footer.resources": "Ресурстар",
     "footer.tagline": "Экономиканы изилдөө үчүн платформа",
@@ -4862,7 +4862,7 @@
     "contacts.title": "Construisez avec nous la prochaine génération de penseurs économiques.",
     "footer.articles": "Articles",
     "footer.contact": "Contact",
-    "footer.copyright": "© 2026 Эконова",
+    "footer.copyright": "© 2026 Econova",
     "footer.formulas": "Formules",
     "footer.resources": "Ressources",
     "footer.tagline": "Plateforme pour étudier l'économie",
@@ -6403,7 +6403,7 @@
     "contacts.title": "Construya la próxima generación de pensadores económicos con nosotros.",
     "footer.articles": "Artículos",
     "footer.contact": "Contacto",
-    "footer.copyright": "© 2026 Эконова",
+    "footer.copyright": "© 2026 Econova",
     "footer.formulas": "Fórmulas",
     "footer.resources": "Recursos",
     "footer.tagline": "Plataforma para estudiar Economía",
@@ -7944,7 +7944,7 @@
     "contacts.title": "与我们一起培养下一代经济思想家。",
     "footer.articles": "文章",
     "footer.contact": "联系方式",
-    "footer.copyright": "© 2026 Эконова",
+    "footer.copyright": "© 2026 Econova",
     "footer.formulas": "公式",
     "footer.resources": "资源",
     "footer.tagline": "学习经济学的平台",
