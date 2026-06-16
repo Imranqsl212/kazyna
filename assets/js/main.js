@@ -12,7 +12,7 @@
   const searchResults = document.querySelector("[data-search-results]");
 
   function _t(key, fallback) {
-    return (window.econovaI18n && window.econovaI18n.t(key) !== key) ? window.econovaI18n.t(key) : fallback;
+    return (window.econlyxI18n && window.econlyxI18n.t(key) !== key) ? window.econlyxI18n.t(key) : fallback;
   }
 
   function applyAriaLabels() {
@@ -27,7 +27,7 @@
   }
 
   applyAriaLabels();
-  window.addEventListener("econova:languagechange", applyAriaLabels);
+  window.addEventListener("econlyx:languagechange", applyAriaLabels);
 
   const base = location.pathname.includes("/pages/") ? "" : "pages/";
 
@@ -83,7 +83,7 @@
         <span class="badge">${item.category}</span>
       </a>
     `).join("") || `<p class="muted">${_t("search.no_results","No results yet. Try macro, elasticity, GDP, or olympiad.")}</p>`;
-    if (window.econovaI18n) window.econovaI18n.applyTranslations(searchResults);
+    if (window.econlyxI18n) window.econlyxI18n.applyTranslations(searchResults);
   }
 
   function animateCounters() {
@@ -117,7 +117,7 @@
     themeToggle.addEventListener("click", () => {
       const next = root.dataset.theme === "dark" ? "light" : "dark";
       root.dataset.theme = next;
-      localStorage.setItem("econova-theme", next);
+      localStorage.setItem("econlyx-theme", next);
       syncThemeIcon();
     });
   }
@@ -145,7 +145,7 @@
     renderSearch("");
     searchInput.addEventListener("input", () => renderSearch(searchInput.value));
   }
-  window.addEventListener("econova:languagechange", () => {
+  window.addEventListener("econlyx:languagechange", () => {
     // Rebuild search index with new language
     if (searchInput) renderSearch(searchInput.value || "");
   });

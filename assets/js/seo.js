@@ -1,5 +1,5 @@
 (function () {
-  const productionOrigin = "https://econova.com";
+  const productionOrigin = "https://econlyx.com";
   const isLocal =
     location.hostname === "localhost" ||
     location.hostname === "127.0.0.1" ||
@@ -49,7 +49,7 @@
   document.querySelectorAll('script[type="application/ld+json"]').forEach((node) => {
     try {
       const data = JSON.parse(node.textContent);
-      if (data.url && /econova\.(local|kg)/.test(data.url)) {
+      if (data.url && /econlyx\.(local|kg)/.test(data.url)) {
         data.url = productionOrigin + "/";
         node.textContent = JSON.stringify(data, null, 2);
       }

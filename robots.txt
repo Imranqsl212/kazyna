@@ -1,5 +1,5 @@
-# Econova production robots policy
+# Econlyx production robots policy
 User-agent: *
 Allow: /
 
-Sitemap: https://econova.com/sitemap.xml
+Sitemap: https://econlyx.com/sitemap.xml

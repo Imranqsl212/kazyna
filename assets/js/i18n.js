@@ -1,7 +1,7 @@
 /* ============================================================
-   Эконова — i18n Engine
+   Econlyx — i18n Engine
    Inline bilingual dictionary. Zero network requests.
-   Exposes: window.econovaI18n = { t, applyTranslations, setLanguage }
+   Exposes: window.econlyxI18n = { t, applyTranslations, setLanguage }
    ============================================================ */
 (function () {
   'use strict';
@@ -44,7 +44,7 @@
       "footer.contact": "Contact",
       "footer.formulas": "Formulas",
       "footer.articles": "Articles",
-      "footer.copyright": "© 2026 Econova",
+      "footer.copyright": "© 2026 Econlyx",
 
       /* Buttons / generic */
       "btn.read_guide": "Read guide",
@@ -137,13 +137,13 @@
 
       /* ── ABOUT PAGE ── */
       "about.hero.badge": "◆ About Us",
-      "about.hero.title": "Эконова",
+      "about.hero.title": "Econlyx",
       "about.hero.subtitle": "An educational project combining macro and microeconomics with olympiad preparation — built by students, for students.",
       "about.who.label": "Who we are",
       "about.who.title": "A platform where economics comes alive",
-      "about.who.text1": "Эконова is an educational project which combines the study of two fields in economics: macro and micro, as well as including educational materials for preparation for olympiads.",
+      "about.who.text1": "Econlyx is an educational project which combines the study of two fields in economics: macro and micro, as well as including educational materials for preparation for olympiads.",
       "about.who.text2": "Our platform serves as an educational tool for those studying economics. To ensure that this criterion is met, it also consists of relevant articles and formulas — everything you need in one place.",
-      "about.who.text3": "Эконова provides accessible, useful information and educational materials for those who want to dive deeper into economics.",
+      "about.who.text3": "Econlyx provides accessible, useful information and educational materials for those who want to dive deeper into economics.",
       "about.offer.label": "What we offer",
       "about.offer.title": "Everything you need to master economics",
       "about.offer.subtitle": "From core theory to olympiad strategy — structured, clear, and built for ambitious students.",
@@ -167,8 +167,8 @@
       "about.team.tag2": "AP Economics",
       "about.team.tag3": "Olympiad Competitors",
       "about.team.tag4": "Kyrgyzstan",
-      "about.team.quote": "Эконова provides accessible, useful information and educational materials for those who want to dive deeper into economics.",
-      "about.team.cite": "— Команда Эконова",
+      "about.team.quote": "Econlyx provides accessible, useful information and educational materials for those who want to dive deeper into economics.",
+      "about.team.cite": "— Команда Econlyx",
       "about.cta.title": "Ready to start learning?",
       "about.cta.text": "Explore our topics, read the articles, and use the formulas. Everything is free and built for you.",
       "about.cta.btn1": "Start Learning",
@@ -194,7 +194,7 @@
       /* ── CONTACTS PAGE ── */
       "contacts.badge": "Contacts",
       "contacts.title": "Build the next generation of economic thinkers with us.",
-      "contacts.subtitle": "For partnerships, school programs, olympiad clubs, and editorial collaboration, reach the Эконова team.",
+      "contacts.subtitle": "For partnerships, school programs, olympiad clubs, and editorial collaboration, reach the Econlyx team.",
       "contacts.form.title": "Send a message",
       "contacts.form.name": "Name",
       "contacts.form.name_ph": "Your name",
@@ -275,21 +275,21 @@
       "olympiad.g7.desc": "Learn from frequent errors in conceptual understanding, calculations, time management, and develop systematic prevention strategies.",
 
       /* ── SEO meta (per-page) ── */
-      "seo.index.title": "Эконова | Kyrgyz Olympiad Preparation Platform",
-      "seo.index.desc": "Эконова — a Kyrgyz economics education platform for olympiad preparation. Master macroeconomics, microeconomics, and competition strategy.",
-      "seo.about.title": "About Us | Эконова",
-      "seo.about.desc": "Эконова is an educational project combining macro and microeconomics with olympiad preparation materials, created by high school students passionate about economics.",
-      "seo.articles.title": "Articles | Эконова",
+      "seo.index.title": "Econlyx | Kyrgyz Olympiad Preparation Platform",
+      "seo.index.desc": "Econlyx — a Kyrgyz economics education platform for olympiad preparation. Master macroeconomics, microeconomics, and competition strategy.",
+      "seo.about.title": "About Us | Econlyx",
+      "seo.about.desc": "Econlyx is an educational project combining macro and microeconomics with olympiad preparation materials, created by high school students passionate about economics.",
+      "seo.articles.title": "Articles | Econlyx",
       "seo.articles.desc": "Premium economics articles for macroeconomics, microeconomics, and olympiad preparation.",
-      "seo.formulas.title": "Economic Formulas | Эконова",
+      "seo.formulas.title": "Economic Formulas | Econlyx",
       "seo.formulas.desc": "Interactive economics formula cards with KaTeX, examples, explanations, and copy buttons.",
-      "seo.contacts.title": "Contacts | Эконова",
-      "seo.contacts.desc": "Contact Эконова for partnerships, olympiad programs, and economics education inquiries.",
-      "seo.macro.title": "Macroeconomics | Эконова",
+      "seo.contacts.title": "Contacts | Econlyx",
+      "seo.contacts.desc": "Contact Econlyx for partnerships, olympiad programs, and economics education inquiries.",
+      "seo.macro.title": "Macroeconomics | Econlyx",
       "seo.macro.desc": "Long-form macroeconomics lessons on GDP, inflation, unemployment, fiscal policy, monetary policy, exchange rates, IS-LM, AD-AS, and growth.",
-      "seo.micro.title": "Microeconomics | Эконова",
+      "seo.micro.title": "Microeconomics | Econlyx",
       "seo.micro.desc": "Microeconomics lessons on demand, supply, elasticity, utility, market structures, game theory, production costs, and comparative advantage.",
-      "seo.olympiad.title": "Olympiad Preparation | Эконова",
+      "seo.olympiad.title": "Olympiad Preparation | Econlyx",
       "seo.olympiad.desc": "Economics olympiad strategy, problem-solving techniques, weekly plans, common mistakes, and recommended books.",
 
       /* ── Search index titles (for main.js) ── */
@@ -1625,7 +1625,7 @@
       "footer.contact": "Контакты",
       "footer.formulas": "Формулы",
       "footer.articles": "Статьи",
-      "footer.copyright": "© 2026 Econova",
+      "footer.copyright": "© 2026 Econlyx",
 
       /* Buttons / generic */
       "btn.read_guide": "Читать гайд",
@@ -1717,13 +1717,13 @@
 
       /* ── ABOUT PAGE ── */
       "about.hero.badge": "◆ О нас",
-      "about.hero.title": "Эконова Экономика",
+      "about.hero.title": "Econlyx",
       "about.hero.subtitle": "Образовательный проект, объединяющий макро- и микроэкономику с подготовкой к олимпиадам — создан студентами для студентов.",
       "about.who.label": "Кто мы",
       "about.who.title": "Платформа, где экономика оживает",
-      "about.who.text1": "Эконова — образовательный проект, объединяющий изучение двух областей экономики: макро и микро, а также включающий учебные материалы для подготовки к олимпиадам.",
+      "about.who.text1": "Econlyx — образовательный проект, объединяющий изучение двух областей экономики: макро и микро, а также включающий учебные материалы для подготовки к олимпиадам.",
       "about.who.text2": "Наша платформа служит образовательным инструментом для тех, кто изучает экономику. Для этого она включает актуальные статьи и формулы — всё необходимое в одном месте.",
-      "about.who.text3": "Эконова предоставляет доступную и полезную информацию и учебные материалы для тех, кто хочет глубже погрузиться в экономику.",
+      "about.who.text3": "Econlyx предоставляет доступную и полезную информацию и учебные материалы для тех, кто хочет глубже погрузиться в экономику.",
       "about.offer.label": "Что мы предлагаем",
       "about.offer.title": "Всё необходимое для освоения экономики",
       "about.offer.subtitle": "От базовой теории до олимпиадной стратегии — структурированно, понятно и для амбициозных студентов.",
@@ -1747,8 +1747,8 @@
       "about.team.tag2": "AP Экономика",
       "about.team.tag3": "Участники олимпиад",
       "about.team.tag4": "Кыргызстан",
-      "about.team.quote": "Эконова предоставляет доступную и полезную информацию и учебные материалы для тех, кто хочет глубже погрузиться в экономику.",
-      "about.team.cite": "— Команда Эконова",
+      "about.team.quote": "Econlyx предоставляет доступную и полезную информацию и учебные материалы для тех, кто хочет глубже погрузиться в экономику.",
+      "about.team.cite": "— Команда Econlyx",
       "about.cta.title": "Готов начать учиться?",
       "about.cta.text": "Изучай темы, читай статьи и используй формулы. Всё бесплатно и создано для тебя.",
       "about.cta.btn1": "Начать учиться",
@@ -1774,7 +1774,7 @@
       /* ── CONTACTS PAGE ── */
       "contacts.badge": "Контакты",
       "contacts.title": "Создавай следующее поколение экономических мыслителей вместе с нами.",
-      "contacts.subtitle": "По вопросам партнёрства, школьных программ, олимпийских клубов и редакционного сотрудничества обращайтесь к команде Эконова.",
+      "contacts.subtitle": "По вопросам партнёрства, школьных программ, олимпийских клубов и редакционного сотрудничества обращайтесь к команде Econlyx.",
       "contacts.form.title": "Отправить сообщение",
       "contacts.form.name": "Имя",
       "contacts.form.name_ph": "Ваше имя",
@@ -1855,21 +1855,21 @@
       "olympiad.g7.desc": "Учись на частых ошибках в понимании концепций, вычислениях, управлении временем и разрабатывай системные стратегии их предотвращения.",
 
       /* ── SEO meta (per-page) ── */
-      "seo.index.title": "Эконова Экономика | Платформа подготовки к олимпиадам",
-      "seo.index.desc": "Эконова — кыргызская образовательная платформа по экономике для подготовки к олимпиадам. Освой макроэкономику, микроэкономику и стратегию соревнований.",
-      "seo.about.title": "О нас | Эконова Экономика",
-      "seo.about.desc": "Эконова — образовательный проект, объединяющий макро- и микроэкономику с материалами для подготовки к олимпиадам, созданный старшеклассниками, увлечёнными экономикой.",
-      "seo.articles.title": "Статьи | Эконова Экономика",
+      "seo.index.title": "Econlyx | Платформа подготовки к олимпиадам",
+      "seo.index.desc": "Econlyx — кыргызская образовательная платформа по экономике для подготовки к олимпиадам. Освой макроэкономику, микроэкономику и стратегию соревнований.",
+      "seo.about.title": "О нас | Econlyx",
+      "seo.about.desc": "Econlyx — образовательный проект, объединяющий макро- и микроэкономику с материалами для подготовки к олимпиадам, созданный старшеклассниками, увлечёнными экономикой.",
+      "seo.articles.title": "Статьи | Econlyx",
       "seo.articles.desc": "Статьи по макроэкономике, микроэкономике и подготовке к олимпиадам.",
-      "seo.formulas.title": "Экономические формулы | Эконова Экономика",
+      "seo.formulas.title": "Экономические формулы | Econlyx",
       "seo.formulas.desc": "Интерактивные карточки с формулами по экономике с KaTeX, примерами, объяснениями и кнопками копирования.",
-      "seo.contacts.title": "Контакты | Эконова Экономика",
-      "seo.contacts.desc": "Свяжитесь с Эконова по вопросам партнёрства, олимпийских программ и образования в области экономики.",
-      "seo.macro.title": "Макроэкономика | Эконова Экономика",
+      "seo.contacts.title": "Контакты | Econlyx",
+      "seo.contacts.desc": "Свяжитесь с Econlyx по вопросам партнёрства, олимпийских программ и образования в области экономики.",
+      "seo.macro.title": "Макроэкономика | Econlyx",
       "seo.macro.desc": "Подробные уроки по макроэкономике: ВВП, инфляция, безработица, фискальная политика, денежно-кредитная политика, обменные курсы, IS-LM, AD-AS и рост.",
-      "seo.micro.title": "Микроэкономика | Эконова Экономика",
+      "seo.micro.title": "Микроэкономика | Econlyx",
       "seo.micro.desc": "Уроки по микроэкономике: спрос, предложение, эластичность, полезность, структуры рынка, теория игр, издержки производства и сравнительное преимущество.",
-      "seo.olympiad.title": "Подготовка к олимпиадам | Эконова Экономика",
+      "seo.olympiad.title": "Подготовка к олимпиадам | Econlyx",
       "seo.olympiad.desc": "Стратегия олимпиад по экономике, техники решения задач, еженедельные планы, типичные ошибки и рекомендуемые книги.",
 
       /* ── Search index titles (for main.js) ── */
@@ -3195,7 +3195,7 @@
     "about.offer.title": "Экономиканы өздөштүрүү үчүн зарыл болгон нерселердин бардыгы",
     "about.team.cite": "— Эконов бригадасы",
     "about.team.label": "Команда",
-    "about.team.quote": "Econova экономикага тереңирээк сүңгүүнү каалагандар үчүн жеткиликтүү жана пайдалуу маалыматты жана билим берүүчү материалдарды берет.",
+    "about.team.quote": "Econlyx экономикага тереңирээк сүңгүүнү каалагандар үчүн жеткиликтүү жана пайдалуу маалыматты жана билим берүүчү материалдарды берет.",
     "about.team.tag1": "Эл аралык Бакалавриат",
     "about.team.tag2": "AP Экономика",
     "about.team.tag3": "Олимпиаданын катышуучулары",
@@ -3204,9 +3204,9 @@
     "about.team.text2": "Биз Олимпиадага даярдануу, түн жарымында концепция менен күрөшүп, акыры мүмкүн эместей көрүнгөн моделди түшүнүү кандай экенин билебиз. Бул тажрыйба платформадагы ар бир баракты калыптандырды.",
     "about.team.title": "Экономиканы сүйгөн студенттер тарабынан түзүлгөн",
     "about.who.label": "Биз кимбиз",
-    "about.who.text1": "Econova – бул экономиканын эки багытын: макро жана микрону изилдөөнү айкалыштырган билим берүү долбоору, ошондой эле олимпиадаларга даярдануу үчүн окуу материалдарын камтыйт.",
+    "about.who.text1": "Econlyx – бул экономиканын эки багытын: макро жана микрону изилдөөнү айкалыштырган билим берүү долбоору, ошондой эле олимпиадаларга даярдануу үчүн окуу материалдарын камтыйт.",
     "about.who.text2": "Биздин платформа экономиканы окуп жаткандар үчүн билим берүүчү курал катары кызмат кылат. Бул үчүн, ал учурдагы макалаларды жана формулаларды камтыйт - сизге керектүү нерселердин баары бир жерде.",
-    "about.who.text3": "Econova экономикага тереңирээк сүңгүүнү каалагандар үчүн жеткиликтүү жана пайдалуу маалыматты жана билим берүүчү материалдарды берет.",
+    "about.who.text3": "Econlyx экономикага тереңирээк сүңгүүнү каалагандар үчүн жеткиликтүү жана пайдалуу маалыматты жана билим берүүчү материалдарды берет.",
     "about.who.title": "Экономика жанданган платформа",
     "aria.close_search": "Издөөнү жабуу",
     "aria.nav_main": "Негизги навигация",
@@ -3321,7 +3321,7 @@
     "contacts.title": "Биз менен экономикалык ойчулдардын кийинки муунун түзүңүз.",
     "footer.articles": "Макалалар",
     "footer.contact": "Байланыштар",
-    "footer.copyright": "© 2026 Econova",
+    "footer.copyright": "© 2026 Econlyx",
     "footer.formulas": "Формулалар",
     "footer.resources": "Ресурстар",
     "footer.tagline": "Экономиканы изилдөө үчүн платформа",
@@ -4693,15 +4693,15 @@
     "search.idx.unemployment": "Жумушсуздуктун түрлөрү",
     "search.no_results": "Эч нерсе табылган жок. Аракет кылып көрүңүз: макро, ийкемдүүлүк, ИДП, Олимпиада.",
     "search.placeholder": "Тема боюнча издөө...",
-    "seo.about.desc": "Econova – бул макро жана микроэкономиканы олимпиадага даярдануу үчүн материалдар менен айкалыштырган билим берүү долбоору, экономикага күйгөн жогорку класстын окуучулары тарабынан түзүлгөн.",
+    "seo.about.desc": "Econlyx – бул макро жана микроэкономиканы олимпиадага даярдануу үчүн материалдар менен айкалыштырган билим берүү долбоору, экономикага күйгөн жогорку класстын окуучулары тарабынан түзүлгөн.",
     "seo.about.title": "Биз жөнүндө | Экономика",
     "seo.articles.desc": "Макроэкономика, микроэкономика жана олимпиадаларга даярдануу боюнча макалалар.",
     "seo.articles.title": "Макалалар | Экономика",
-    "seo.contacts.desc": "Өнөктөштүк, олимпиадалык программалар жана экономика тармагындагы билим берүү боюнча Econova менен байланышыңыз.",
+    "seo.contacts.desc": "Өнөктөштүк, олимпиадалык программалар жана экономика тармагындагы билим берүү боюнча Econlyx менен байланышыңыз.",
     "seo.contacts.title": "Байланыш | Экономика",
     "seo.formulas.desc": "KaTeX менен экономика формулалары, мисалдар, түшүндүрмөлөр жана көчүрүү баскычтары бар интерактивдүү карталар.",
     "seo.formulas.title": "Экономикалык формулалар | Экономика",
-    "seo.index.desc": "Econova – олимпиадаларга даярдануу үчүн экономика боюнча кыргыз билим берүү платформасы. Магистр макроэкономика, микроэкономика жана атаандаштык стратегиясы.",
+    "seo.index.desc": "Econlyx – олимпиадаларга даярдануу үчүн экономика боюнча кыргыз билим берүү платформасы. Магистр макроэкономика, микроэкономика жана атаандаштык стратегиясы.",
     "seo.index.title": "Экономика Экономика | Олимпиадага даярдануу үчүн платформа",
     "seo.macro.desc": "Макроэкономика боюнча кеңири сабактар: ИДП, инфляция, жумушсуздук, фискалдык саясат, акча-кредит саясаты, алмашуу курсу, IS-LM, AD-AS жана өсүш.",
     "seo.macro.title": "Макроэкономика | Экономика",
@@ -4718,7 +4718,7 @@
     "about.cta.title": "Prêt à commencer à apprendre ?",
     "about.hero.badge": "◆ À propos de nous",
     "about.hero.subtitle": "Un projet pédagogique combinant macro et microéconomie avec préparation aux Olympiades — construit par des étudiants, pour des étudiants.",
-    "about.hero.title": "Эконова",
+    "about.hero.title": "Econlyx",
     "about.offer.c1.desc": "PIB, inflation, politique budgétaire et monétaire, modèles AD-AS, croissance économique et balance des paiements – expliqués avec profondeur et clarté.",
     "about.offer.c1.title": "Macroéconomie",
     "about.offer.c2.desc": "Offre et demande, élasticité, théorie du consommateur, structures de marché, théorie des jeux et marchés de facteurs — des fondamentaux aux sujets avancés.",
@@ -4734,9 +4734,9 @@
     "about.offer.label": "Ce que nous proposons",
     "about.offer.subtitle": "De la théorie de base à la stratégie olympique - structuré, clair et conçu pour les étudiants ambitieux.",
     "about.offer.title": "Tout ce dont vous avez besoin pour maîtriser l'économie",
-    "about.team.cite": "— Команда Эконова",
+    "about.team.cite": "— Команда Econlyx",
     "about.team.label": "L'équipe",
-    "about.team.quote": "Эконова fournit des informations et du matériel pédagogique accessibles et utiles à ceux qui souhaitent approfondir leur connaissance de l'économie.",
+    "about.team.quote": "Econlyx fournit des informations et du matériel pédagogique accessibles et utiles à ceux qui souhaitent approfondir leur connaissance de l'économie.",
     "about.team.tag1": "Baccalauréat International",
     "about.team.tag2": "AP Économie",
     "about.team.tag3": "Concurrents de l'Olympiade",
@@ -4745,9 +4745,9 @@
     "about.team.text2": "Nous savons ce que c'est de se préparer aux olympiades, de se débattre avec un concept à minuit et d'enfin comprendre un modèle qui semblait impossible. Cette expérience a façonné chaque page de cette plateforme.",
     "about.team.title": "Réalisé par des étudiants passionnés d'économie",
     "about.who.label": "Qui nous sommes",
-    "about.who.text1": "Эконова est un projet éducatif qui combine l'étude de deux domaines de l'économie : macro et micro, ainsi que du matériel pédagogique pour la préparation aux olympiades.",
+    "about.who.text1": "Econlyx est un projet éducatif qui combine l'étude de deux domaines de l'économie : macro et micro, ainsi que du matériel pédagogique pour la préparation aux olympiades.",
     "about.who.text2": "Notre plateforme sert d'outil pédagogique pour ceux qui étudient l'économie. Pour garantir que ce critère est rempli, il comprend également des articles et des formules pertinents : tout ce dont vous avez besoin en un seul endroit.",
-    "about.who.text3": "Эконова fournit des informations et du matériel pédagogique accessibles et utiles à ceux qui souhaitent approfondir leur connaissance de l'économie.",
+    "about.who.text3": "Econlyx fournit des informations et du matériel pédagogique accessibles et utiles à ceux qui souhaitent approfondir leur connaissance de l'économie.",
     "about.who.title": "Une plateforme où l'économie prend vie",
     "aria.close_search": "Fermer la recherche",
     "aria.nav_main": "Navigation principale",
@@ -4858,11 +4858,11 @@
     "contacts.form.send": "Envoyer un message",
     "contacts.form.title": "Envoyer un message",
     "contacts.phone.title": "Téléphone",
-    "contacts.subtitle": "Pour les partenariats, les programmes scolaires, les clubs olympiques et la collaboration éditoriale, contactez l'équipe Эконова.",
+    "contacts.subtitle": "Pour les partenariats, les programmes scolaires, les clubs olympiques et la collaboration éditoriale, contactez l'équipe Econlyx.",
     "contacts.title": "Construisez avec nous la prochaine génération de penseurs économiques.",
     "footer.articles": "Articles",
     "footer.contact": "Contact",
-    "footer.copyright": "© 2026 Econova",
+    "footer.copyright": "© 2026 Econlyx",
     "footer.formulas": "Formules",
     "footer.resources": "Ressources",
     "footer.tagline": "Plateforme pour étudier l'économie",
@@ -6234,16 +6234,16 @@
     "search.idx.unemployment": "Types de chômage",
     "search.no_results": "Aucun résultat pour l'instant. Essayez la macro, l'élasticité, le PIB ou l'Olympiade.",
     "search.placeholder": "Rechercher des sujets…",
-    "seo.about.desc": "Эконова est un projet éducatif combinant macro et microéconomie avec du matériel de préparation aux Olympiades, créé par des lycéens passionnés d'économie.",
+    "seo.about.desc": "Econlyx est un projet éducatif combinant macro et microéconomie avec du matériel de préparation aux Olympiades, créé par des lycéens passionnés d'économie.",
     "seo.about.title": "À propos de nous | Économie",
     "seo.articles.desc": "Articles économiques premium pour la macroéconomie, la microéconomie et la préparation aux Olympiades.",
     "seo.articles.title": "Articles | Économie",
-    "seo.contacts.desc": "Contactez Эконова pour les partenariats, les programmes olympiques et les demandes de renseignements sur l'éducation économique.",
+    "seo.contacts.desc": "Contactez Econlyx pour les partenariats, les programmes olympiques et les demandes de renseignements sur l'éducation économique.",
     "seo.contacts.title": "Contacts | Économie",
     "seo.formulas.desc": "Cartes de formules économiques interactives avec KaTeX, exemples, explications et boutons de copie.",
     "seo.formulas.title": "Formules économiques | Économie",
-    "seo.index.desc": "Эконова — une plateforme kirghize d'enseignement économique pour la préparation aux Olympiades. Master macroéconomie, microéconomie et stratégie de concurrence.",
-    "seo.index.title": "Эконова | Plateforme de préparation aux Olympiades kirghizes",
+    "seo.index.desc": "Econlyx — une plateforme kirghize d'enseignement économique pour la préparation aux Olympiades. Master macroéconomie, microéconomie et stratégie de concurrence.",
+    "seo.index.title": "Econlyx | Plateforme de préparation aux Olympiades kirghizes",
     "seo.macro.desc": "Leçons de macroéconomie de longue durée sur le PIB, l'inflation, le chômage, la politique budgétaire, la politique monétaire, les taux de change, IS-LM, AD-AS et la croissance.",
     "seo.macro.title": "Macroéconomie | Économie",
     "seo.micro.desc": "Cours de microéconomie sur la demande, l'offre, l'élasticité, l'utilité, les structures de marché, la théorie des jeux, les coûts de production et l'avantage comparatif.",
@@ -6259,7 +6259,7 @@
     "about.cta.title": "¿Listo para empezar a aprender?",
     "about.hero.badge": "◆ Acerca de nosotros",
     "about.hero.subtitle": "Un proyecto educativo que combina macro y microeconomía con preparación para las Olimpiadas, construido por estudiantes y para estudiantes.",
-    "about.hero.title": "Эконова",
+    "about.hero.title": "Econlyx",
     "about.offer.c1.desc": "PIB, inflación, política fiscal y monetaria, modelos AD-AS, crecimiento económico y balanza de pagos, explicados con profundidad y claridad.",
     "about.offer.c1.title": "Macroeconomía",
     "about.offer.c2.desc": "Oferta y demanda, elasticidad, teoría del consumidor, estructuras de mercado, teoría de juegos y mercados de factores, desde temas fundamentales hasta temas avanzados.",
@@ -6275,9 +6275,9 @@
     "about.offer.label": "Qué ofrecemos",
     "about.offer.subtitle": "De la teoría básica a la estrategia olímpica: estructurada, clara y diseñada para estudiantes ambiciosos.",
     "about.offer.title": "Todo lo que necesitas para dominar la economía",
-    "about.team.cite": "— Команда Эконова",
+    "about.team.cite": "— Команда Econlyx",
     "about.team.label": "El equipo",
-    "about.team.quote": "Эконова proporciona información y materiales educativos accesibles y útiles para aquellos que desean profundizar en la economía.",
+    "about.team.quote": "Econlyx proporciona información y materiales educativos accesibles y útiles para aquellos que desean profundizar en la economía.",
     "about.team.tag1": "Bachillerato Internacional",
     "about.team.tag2": "AP Economía",
     "about.team.tag3": "Competidores de la Olimpiada",
@@ -6286,9 +6286,9 @@
     "about.team.text2": "Sabemos lo que es prepararse para las Olimpíadas, luchar con un concepto a medianoche y finalmente comprender un modelo que parecía imposible. Esa experiencia dio forma a cada página de esta plataforma.",
     "about.team.title": "Hecho por estudiantes amantes de la economía",
     "about.who.label": "Quiénes somos",
-    "about.who.text1": "Эконова es un proyecto educativo que combina el estudio de dos campos de la economía: macro y micro, además de incluir materiales educativos para la preparación para las olimpiadas.",
+    "about.who.text1": "Econlyx es un proyecto educativo que combina el estudio de dos campos de la economía: macro y micro, además de incluir materiales educativos para la preparación para las olimpiadas.",
     "about.who.text2": "Nuestra plataforma sirve como una herramienta educativa para quienes estudian economía. Para garantizar que se cumpla este criterio, también consta de artículos y fórmulas relevantes: todo lo que necesita en un solo lugar.",
-    "about.who.text3": "Эконова proporciona información y materiales educativos accesibles y útiles para aquellos que desean profundizar en la economía.",
+    "about.who.text3": "Econlyx proporciona información y materiales educativos accesibles y útiles para aquellos que desean profundizar en la economía.",
     "about.who.title": "Una plataforma donde la economía cobra vida",
     "aria.close_search": "Cerrar búsqueda",
     "aria.nav_main": "Navegación principal",
@@ -6399,11 +6399,11 @@
     "contacts.form.send": "Enviar mensaje",
     "contacts.form.title": "Enviar un mensaje",
     "contacts.phone.title": "Teléfono",
-    "contacts.subtitle": "Para asociaciones, programas escolares, clubes olímpicos y colaboración editorial, comuníquese con el equipo de Эконова.",
+    "contacts.subtitle": "Para asociaciones, programas escolares, clubes olímpicos y colaboración editorial, comuníquese con el equipo de Econlyx.",
     "contacts.title": "Construya la próxima generación de pensadores económicos con nosotros.",
     "footer.articles": "Artículos",
     "footer.contact": "Contacto",
-    "footer.copyright": "© 2026 Econova",
+    "footer.copyright": "© 2026 Econlyx",
     "footer.formulas": "Fórmulas",
     "footer.resources": "Recursos",
     "footer.tagline": "Plataforma para estudiar Economía",
@@ -7775,22 +7775,22 @@
     "search.idx.unemployment": "Tipos de desempleo",
     "search.no_results": "Aún no hay resultados. Pruebe con la macro, la elasticidad, el PIB o la olimpiada.",
     "search.placeholder": "Buscar temas…",
-    "seo.about.desc": "Эконова es un proyecto educativo que combina macro y microeconomía con materiales de preparación para las olimpiadas, creado por estudiantes de secundaria apasionados por la economía.",
-    "seo.about.title": "Quiénes somos | Эконова",
+    "seo.about.desc": "Econlyx es un proyecto educativo que combina macro y microeconomía con materiales de preparación para las olimpiadas, creado por estudiantes de secundaria apasionados por la economía.",
+    "seo.about.title": "Quiénes somos | Econlyx",
     "seo.articles.desc": "Artículos económicos premium para macroeconomía, microeconomía y preparación para olimpiadas.",
-    "seo.articles.title": "Artículos | Эконова",
-    "seo.contacts.desc": "Comuníquese con Эконова para asociaciones, programas olímpicos y consultas sobre educación económica.",
-    "seo.contacts.title": "Contactos | Эконова",
+    "seo.articles.title": "Artículos | Econlyx",
+    "seo.contacts.desc": "Comuníquese con Econlyx para asociaciones, programas olímpicos y consultas sobre educación económica.",
+    "seo.contacts.title": "Contactos | Econlyx",
     "seo.formulas.desc": "Tarjetas de fórmulas económicas interactivas con KaTeX, ejemplos, explicaciones y botones de copia.",
-    "seo.formulas.title": "Fórmulas Económicas | Эконова",
-    "seo.index.desc": "Эконова: una plataforma kirguisa de educación económica para la preparación para las olimpiadas. Dominar la macroeconomía, la microeconomía y la estrategia de competencia.",
-    "seo.index.title": "Эконова | Plataforma de preparación para la Olimpiada de Kirguistán",
+    "seo.formulas.title": "Fórmulas Económicas | Econlyx",
+    "seo.index.desc": "Econlyx: una plataforma kirguisa de educación económica para la preparación para las olimpiadas. Dominar la macroeconomía, la microeconomía y la estrategia de competencia.",
+    "seo.index.title": "Econlyx | Plataforma de preparación para la Olimpiada de Kirguistán",
     "seo.macro.desc": "Lecciones macroeconómicas extensas sobre PIB, inflación, desempleo, política fiscal, política monetaria, tipos de cambio, IS-LM, AD-AS y crecimiento.",
-    "seo.macro.title": "Macroeconomía | Эконова",
+    "seo.macro.title": "Macroeconomía | Econlyx",
     "seo.micro.desc": "Lecciones de microeconomía sobre demanda, oferta, elasticidad, utilidad, estructuras de mercado, teoría de juegos, costos de producción y ventaja comparativa.",
-    "seo.micro.title": "Microeconomía | Эконова",
+    "seo.micro.title": "Microeconomía | Econlyx",
     "seo.olympiad.desc": "Estrategia de olimpíada de economía, técnicas de resolución de problemas, planes semanales, errores comunes y libros recomendados.",
-    "seo.olympiad.title": "Preparación para la Olimpiada | Эконова",
+    "seo.olympiad.title": "Preparación para la Olimpiada | Econlyx",
     "skip.content": "Saltar al contenido",
   });
   LOCALES.zh = Object.assign({}, LOCALES.en, {
@@ -7800,7 +7800,7 @@
     "about.cta.title": "准备好开始学习了吗？",
     "about.hero.badge": "◆ 关于我们",
     "about.hero.subtitle": "一个将宏观经济学和微观经济学与奥林匹克竞赛准备相结合的教育项目——由学生构建，为学生服务。",
-    "about.hero.title": "Эконова",
+    "about.hero.title": "Econlyx",
     "about.offer.c1.desc": "GDP、通货膨胀、财政和货币政策、AD-AS 模型、经济增长和国际收支——深入而清晰地解释。",
     "about.offer.c1.title": "宏观经济学",
     "about.offer.c2.desc": "供需、弹性、消费者理论、市场结构、博弈论和要素市场——从基础到高级主题。",
@@ -7816,9 +7816,9 @@
     "about.offer.label": "我们提供什么",
     "about.offer.subtitle": "从核心理论到奥林匹克策略——结构化、清晰，专为雄心勃勃的学生而设计。",
     "about.offer.title": "掌握经济学所需的一切",
-    "about.team.cite": "— Команда Эконова",
+    "about.team.cite": "— Команда Econlyx",
     "about.team.label": "团队",
-    "about.team.quote": "Эконова 为那些想要深入研究经济学的人提供易于理解、有用的信息和教育材料。",
+    "about.team.quote": "Econlyx 为那些想要深入研究经济学的人提供易于理解、有用的信息和教育材料。",
     "about.team.tag1": "国际文凭",
     "about.team.tag2": "AP经济学",
     "about.team.tag3": "奥林匹克竞赛选手",
@@ -7827,9 +7827,9 @@
     "about.team.text2": "我们知道为奥运会做准备，在午夜与一个概念作斗争，并最终理解一个看似不可能的模型是什么感觉。这种经历塑造了这个平台的每一页。",
     "about.team.title": "热爱经济学的学生制作",
     "about.who.label": "我们是谁",
-    "about.who.text1": "Эконова 是一个教育项目，结合了经济学两个领域的研究：宏观和微观，以及为奥林匹克竞赛做准备的教育材料。",
+    "about.who.text1": "Econlyx 是一个教育项目，结合了经济学两个领域的研究：宏观和微观，以及为奥林匹克竞赛做准备的教育材料。",
     "about.who.text2": "我们的平台是学习经济学的人的教育工具。为了确保满足这一标准，它还包含相关文章和公式——您需要的一切都集中在一个地方。",
-    "about.who.text3": "Эконова 为那些想要深入研究经济学的人提供易于理解、有用的信息和教育材料。",
+    "about.who.text3": "Econlyx 为那些想要深入研究经济学的人提供易于理解、有用的信息和教育材料。",
     "about.who.title": "经济活跃的平台",
     "aria.close_search": "关闭搜索",
     "aria.nav_main": "主导航",
@@ -7940,11 +7940,11 @@
     "contacts.form.send": "发送消息",
     "contacts.form.title": "发送消息",
     "contacts.phone.title": "电话",
-    "contacts.subtitle": "如需合作伙伴关系、学校项目、奥林匹克俱乐部和编辑合作，请联系 Эконова 团队。",
+    "contacts.subtitle": "如需合作伙伴关系、学校项目、奥林匹克俱乐部和编辑合作，请联系 Econlyx 团队。",
     "contacts.title": "与我们一起培养下一代经济思想家。",
     "footer.articles": "文章",
     "footer.contact": "联系方式",
-    "footer.copyright": "© 2026 Econova",
+    "footer.copyright": "© 2026 Econlyx",
     "footer.formulas": "公式",
     "footer.resources": "资源",
     "footer.tagline": "学习经济学的平台",
@@ -9316,22 +9316,22 @@
     "search.idx.unemployment": "失业类型",
     "search.no_results": "尚无结果。尝试宏观、弹性、GDP 或奥林匹克。",
     "search.placeholder": "搜索主题...",
-    "seo.about.desc": "Эконова 是一个将宏观和微观经济学与奥林匹克准备材料相结合的教育项目，由对经济学充满热情的高中生创建。",
-    "seo.about.title": "关于我们 | Эконова",
+    "seo.about.desc": "Econlyx 是一个将宏观和微观经济学与奥林匹克准备材料相结合的教育项目，由对经济学充满热情的高中生创建。",
+    "seo.about.title": "关于我们 | Econlyx",
     "seo.articles.desc": "有关宏观经济学、微观经济学和奥林匹克准备的优质经济学文章。",
-    "seo.articles.title": "文章 | Эконова",
-    "seo.contacts.desc": "联系 Эконова 了解合作伙伴关系、奥林匹克项目和经济学教育咨询。",
-    "seo.contacts.title": "联系方式 | Эконова",
+    "seo.articles.title": "文章 | Econlyx",
+    "seo.contacts.desc": "联系 Econlyx 了解合作伙伴关系、奥林匹克项目和经济学教育咨询。",
+    "seo.contacts.title": "联系方式 | Econlyx",
     "seo.formulas.desc": "交互式经济学公式卡，带有 KaTeX、示例、解释和复制按钮。",
-    "seo.formulas.title": "经济公式 | Эконова",
-    "seo.index.desc": "Эконова — 吉尔吉斯斯坦奥林匹克准备经济学教育平台。掌握宏观经济学、微观经济学和竞争策略。",
-    "seo.index.title": "Эконова |吉尔吉斯奥林匹克备战平台",
+    "seo.formulas.title": "经济公式 | Econlyx",
+    "seo.index.desc": "Econlyx — 吉尔吉斯斯坦奥林匹克准备经济学教育平台。掌握宏观经济学、微观经济学和竞争策略。",
+    "seo.index.title": "Econlyx |吉尔吉斯奥林匹克备战平台",
     "seo.macro.desc": "有关 GDP、通货膨胀、失业、财政政策、货币政策、汇率、IS-LM、AD-AS 和增长的长篇宏观经济学课程。",
-    "seo.macro.title": "宏观经济学 | Эконова",
+    "seo.macro.title": "宏观经济学 | Econlyx",
     "seo.micro.desc": "关于需求、供给、弹性、效用、市场结构、博弈论、生产成本和比较优势的微观经济学课程。",
-    "seo.micro.title": "微观经济学 | Эконова",
+    "seo.micro.title": "微观经济学 | Econlyx",
     "seo.olympiad.desc": "经济学奥林匹克策略、解决问题的技巧、每周计划、常见错误和推荐书籍。",
-    "seo.olympiad.title": "奥林匹克准备| Эконова",
+    "seo.olympiad.title": "奥林匹克准备| Econlyx",
     "skip.content": "跳到内容",
   });
 
@@ -9342,7 +9342,7 @@
     var urlLang = params.get('lang');
     if (SUPPORTED_LANGS.indexOf(urlLang) !== -1) return urlLang;
 
-    var stored = localStorage.getItem('econova-language');
+    var stored = localStorage.getItem('econlyx-language');
     if (SUPPORTED_LANGS.indexOf(stored) !== -1) return stored;
 
     var browser = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
@@ -9402,7 +9402,7 @@
   function setLanguage(lang) {
     if (SUPPORTED_LANGS.indexOf(lang) === -1) return;
     activeLang = lang;
-    localStorage.setItem('econova-language', lang);
+    localStorage.setItem('econlyx-language', lang);
     document.documentElement.lang = lang;
 
     // Update URL param without reload
@@ -9414,7 +9414,7 @@
     updateLangToggle();
     updateSEO();
 
-    window.dispatchEvent(new CustomEvent('econova:languagechange', { detail: { lang: lang } }));
+    window.dispatchEvent(new CustomEvent('econlyx:languagechange', { detail: { lang: lang } }));
   }
 
   /* ── Language toggle button ─────────────────────────────── */
@@ -9458,7 +9458,7 @@
     if (ogDesc && descVal !== descKey) ogDesc.content = descVal;
 
     // hreflang
-    var productionOrigin = 'https://econova.com';
+    var productionOrigin = 'https://econlyx.com';
     var isLocalHost = location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.hostname === '::1';
     var hreflangOrigin = isLocalHost ? location.origin : productionOrigin;
     var base = hreflangOrigin + location.pathname.replace(/index\.html$/i, '').replace(/\.html$/i, '');
@@ -9517,7 +9517,7 @@
   });
 
   /* ── Public API ─────────────────────────────────────────── */
-  window.econovaI18n = {
+  window.econlyxI18n = {
     t: t,
     applyTranslations: applyTranslations,
     setLanguage: setLanguage,

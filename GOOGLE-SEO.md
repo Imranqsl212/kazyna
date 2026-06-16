@@ -1,27 +1,27 @@
-# Google SEO запуск — Econova
+# Google SEO запуск — Econlyx
 
-**Планируемый production-домен:** [https://econova.com/](https://econova.com/)
+**Планируемый production-домен:** [https://econlyx.com/](https://econlyx.com/)
 
 Сайт технически подготовлен для индексации: `robots.txt`, `sitemap.xml`, canonical, hreflang, Open Graph, Twitter Cards, manifest и schema.org. Это не гарантирует топ-1: Google ранжирует сайт по качеству контента, ссылкам, поведению пользователей, скорости, доверию домена и конкуренции.
 
 ## Перед публикацией домена
 
-1. Подключите `econova.com` к хостингу.
+1. Подключите `econlyx.com` к хостингу.
 2. Проверьте, что открываются:
-   - `https://econova.com/`
-   - `https://econova.com/robots.txt`
-   - `https://econova.com/sitemap.xml`
-3. Если домен будет не `econova.com`, замените `https://econova.com` в HTML, `robots.txt`, `sitemap.xml`, `site.webmanifest` и `assets/js/seo.js`.
+   - `https://econlyx.com/`
+   - `https://econlyx.com/robots.txt`
+   - `https://econlyx.com/sitemap.xml`
+3. Если домен будет не `econlyx.com`, замените `https://econlyx.com` в HTML, `robots.txt`, `sitemap.xml`, `site.webmanifest` и `assets/js/seo.js`.
 
 ## Google Search Console
 
 1. Откройте [Google Search Console](https://search.google.com/search-console).
-2. Добавьте ресурс `https://econova.com/`.
+2. Добавьте ресурс `https://econlyx.com/`.
 3. Подтвердите владение через DNS или HTML-файл.
 4. В разделе **Sitemaps** отправьте:
 
    ```text
-   https://econova.com/sitemap.xml
+   https://econlyx.com/sitemap.xml
    ```
 
 5. В **URL Inspection** запросите индексирование главной и ключевых страниц:
@@ -46,7 +46,7 @@
 Через 1–4 недели проверьте:
 
 ```text
-site:econova.com
+site:econlyx.com
 ```
 
 Если страниц нет, проверьте `robots.txt`, sitemap, canonical и статус домена в Search Console.
