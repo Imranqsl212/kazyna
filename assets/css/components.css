@@ -1015,10 +1015,14 @@
 /* ---- Footer ---- */
 .footer {
   padding: 3.5rem 0 2rem;
-  background: linear-gradient(135deg, #2a2018 0%, #1e1a14 100%);
-  color: rgba(247, 245, 243, 0.78);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96) 0%, rgba(239, 227, 205, 0.98) 100%),
+    radial-gradient(circle at top left, rgba(185, 139, 82, 0.16), transparent 42%);
+  color: #4f4232;
   position: relative;
   overflow: hidden;
+  border-top: 1px solid rgba(183, 142, 90, 0.26);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
 }
 
 .footer::before {
@@ -1027,17 +1031,10 @@
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  background-image: 
-    url("../images/OIP.webp"),
-    url("../images/OIP\ \(1\).webp");
-  background-position: 
-    left -40px bottom -20px,
-    right -60px bottom -40px;
-  background-size: 
-    220px 220px,
-    240px 240px;
-  background-repeat: no-repeat;
-  opacity: 0.06;
+  background:
+    linear-gradient(90deg, transparent, rgba(181, 137, 80, 0.16), transparent) top / 100% 1px no-repeat,
+    radial-gradient(circle at 82% 18%, rgba(202, 166, 112, 0.18), transparent 34%);
+  opacity: 1;
 }
 
 .footer__inner {
@@ -1049,15 +1046,28 @@
 }
 
 .footer a:hover {
-  color: var(--color-terracotta-light);
+  color: #7b5524;
 }
 
 .footer h3 {
-  color: var(--color-terracotta);
+  color: #8a622e;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.8rem;
+}
+
+.footer a {
+  color: #5e4b34;
+}
+
+.footer .navbar__mark {
+  background: rgba(255, 255, 255, 0.58);
+  border-color: rgba(174, 130, 76, 0.32);
+}
+
+.footer span[style*="color"] {
+  color: #7b5524 !important;
 }
 
 .footer__links {

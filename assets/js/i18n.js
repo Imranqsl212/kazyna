@@ -9458,16 +9458,27 @@
     if (ogDesc && descVal !== descKey) ogDesc.content = descVal;
 
     // hreflang
-    SUPPORTED_LANGS.concat(['x-default']).forEach(function (hl) {
-      var existing = document.querySelector('link[hreflang="' + hl + '"]');
+    var productionOrigin = 'https://econova.com';
+    var isLocalHost = location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.hostname === '::1';
+    var hreflangOrigin = isLocalHost ? location.origin : productionOrigin;
+    var base = hreflangOrigin + location.pathname.replace(/index\.html$/i, '').replace(/\.html$/i, '');
+    var hreflangs = [
+      { code: 'en', lang: 'en' },
+      { code: 'ru', lang: 'ru' },
+      { code: 'ky', lang: 'ky' },
+      { code: 'fr', lang: 'fr' },
+      { code: 'es', lang: 'es' },
+      { code: 'zh-Hans', lang: 'zh' }
+    ];
+    hreflangs.concat([{ code: 'x-default', lang: '' }]).forEach(function (item) {
+      var existing = document.querySelector('link[hreflang="' + item.code + '"]');
       if (!existing) {
         existing = document.createElement('link');
         existing.rel = 'alternate';
-        existing.setAttribute('hreflang', hl);
+        existing.setAttribute('hreflang', item.code);
         document.head.appendChild(existing);
       }
-      var base = location.origin + location.pathname;
-      existing.href = hl === 'x-default' ? base + '?lang=en' : base + '?lang=' + hl;
+      existing.href = item.code === 'x-default' ? base : base + '?lang=' + item.lang;
     });
   }
 

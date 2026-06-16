@@ -1,0 +1,24 @@
+{
+  "name": "Econova",
+  "short_name": "Econova",
+  "description": "Economics education and olympiad preparation platform.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f1e6",
+  "theme_color": "#b08a57",
+  "icons": [
+    {
+      "src": "/assets/images/logo-symbol.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logo-symbol.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

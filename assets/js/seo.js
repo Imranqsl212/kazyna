@@ -1,5 +1,10 @@
 (function () {
-  const origin = location.origin;
+  const productionOrigin = "https://econova.com";
+  const isLocal =
+    location.hostname === "localhost" ||
+    location.hostname === "127.0.0.1" ||
+    location.hostname === "::1";
+  const origin = isLocal ? location.origin : productionOrigin;
   let path = location.pathname.replace(/index\.html$/i, "").replace(/\.html$/i, "");
   if (path.length > 1 && path.endsWith("/")) path = path.slice(0, -1);
   const canonical = origin + (path || "/");
@@ -30,7 +35,7 @@
   if (!document.querySelector('meta[name="robots"]')) {
     const robots = document.createElement("meta");
     robots.name = "robots";
-    robots.content = "index, follow, max-image-preview:large";
+    robots.content = "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1";
     document.head.appendChild(robots);
   }
 
@@ -44,9 +49,9 @@
   document.querySelectorAll('script[type="application/ld+json"]').forEach((node) => {
     try {
       const data = JSON.parse(node.textContent);
-      if (data.url && data.url.includes("econova.local")) {
-        data.url = origin + "/";
-        node.textContent = JSON.stringify(data);
+      if (data.url && /econova\.(local|kg)/.test(data.url)) {
+        data.url = productionOrigin + "/";
+        node.textContent = JSON.stringify(data, null, 2);
       }
     } catch (_) {
       /* ignore */

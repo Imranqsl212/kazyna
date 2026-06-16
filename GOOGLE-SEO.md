@@ -1,67 +1,52 @@
-# Как попасть в Google — Эконова
+# Google SEO запуск — Econova
 
-**Живой сайт:** [https://econova.kg/](https://econova.kg/)
+**Планируемый production-домен:** [https://econova.com/](https://econova.com/)
 
-Сайт подготовлен технически (`robots.txt`, `sitemap.xml`, meta-теги, canonical). **В поиске вы появитесь только после индексации Google** — это делается вручную за 1–3 дня (иногда 1–2 недели).
+Сайт технически подготовлен для индексации: `robots.txt`, `sitemap.xml`, canonical, hreflang, Open Graph, Twitter Cards, manifest и schema.org. Это не гарантирует топ-1: Google ранжирует сайт по качеству контента, ссылкам, поведению пользователей, скорости, доверию домена и конкуренции.
 
-## 1. Проверьте, что сайт доступен
+## Перед публикацией домена
 
-- [https://econova.kg/](https://econova.kg/)
-- [https://econova.kg/robots.txt](https://econova.kg/robots.txt)
-- [https://econova.kg/sitemap.xml](https://econova.kg/sitemap.xml)
+1. Подключите `econova.com` к хостингу.
+2. Проверьте, что открываются:
+   - `https://econova.com/`
+   - `https://econova.com/robots.txt`
+   - `https://econova.com/sitemap.xml`
+3. Если домен будет не `econova.com`, замените `https://econova.com` в HTML, `robots.txt`, `sitemap.xml`, `site.webmanifest` и `assets/js/seo.js`.
 
-Если у вас свой домен (например `econova.kg`), подключите его в Vercel → Settings → Domains.
+## Google Search Console
 
-## 2. Google Search Console
+1. Откройте [Google Search Console](https://search.google.com/search-console).
+2. Добавьте ресурс `https://econova.com/`.
+3. Подтвердите владение через DNS или HTML-файл.
+4. В разделе **Sitemaps** отправьте:
 
-1. Откройте [Google Search Console](https://search.google.com/search-console)
-2. **Добавить ресурс** → укажите URL сайта (с `https://`)
-3. Подтвердите владение одним из способов:
-   - **HTML-тег** — скопируйте код и вставьте в `index.html` в `<head>`:
+   ```text
+   https://econova.com/sitemap.xml
+   ```
 
-     ```html
-     <meta name="google-site-verification" content="ВАШ_КОД" />
-     ```
+5. В **URL Inspection** запросите индексирование главной и ключевых страниц:
+   - `/pages/articles`
+   - `/pages/formulas`
+   - `/pages/microeconomics`
+   - `/pages/macroeconomics`
+   - `/pages/olympiads`
 
-   - или через DNS у регистратора домена
-4. **Файлы Sitemap** → добавьте **полный URL** (не только путь):
-   `https://econova.kg/sitemap.xml`
+## Что реально двигает сайт вверх
 
-   Если была ошибка «Не удалось обработать»:
-   - удалите старый sitemap (три точки → Удалить);
-   - подождите 2 минуты после деплоя Vercel;
-   - откройте [sitemap.xml](https://econova.kg/sitemap.xml) в браузере — должен быть XML со списком URL;
-   - добавьте sitemap заново.
+| Приоритет | Что делать |
+| --- | --- |
+| 1 | Публиковать уникальные статьи по экономике, формулам и олимпиадным задачам |
+| 2 | Получить внешние ссылки: школы, олимпиады, соцсети, GitHub, Telegram |
+| 3 | Добавить реальные авторские материалы, примеры задач, решения и PDF-гайды |
+| 4 | Следить за Search Console: ошибки индексации, страницы без кликов, запросы |
+| 5 | Обновлять sitemap после добавления новых страниц |
 
-5. **Проверка URL** → вставьте главную → **Запросить индексирование**
+## Проверка после индексации
 
-Повторите «Запросить индексирование» для важных страниц: `/pages/articles`, `/pages/macroeconomics`, статьи.
+Через 1–4 недели проверьте:
 
-## 4. Ускорить появление в выдаче
+```text
+site:econova.com
+```
 
-| Действие | Зачем |
-|----------|--------|
-| Ссылка с GitHub README на живой сайт | Google находит сайт быстрее |
-| Пост в соцсетях / Telegram с URL | Внешние ссылки |
-| Регулярно добавлять статьи | Больше страниц в индексе |
-| Уникальные `title` и `description` на каждой странице | Уже есть на основных страницах |
-
-## 5. По каким запросам могут найти
-
-Примеры (нужно время и конкуренция):
-
-- economics olympiad preparation
-- macroeconomics study guide
-- GDP explained students
-- economics glossary
-- подготовка к олимпиаде по экономике (если добавите RU-контент в текст страниц)
-
-## 6. Проверка
-
-Через 3–7 дней в Google: `site:econova.kg`
-
-Если страниц 0 — снова Search Console → «Запросить индексирование» и проверьте, что `robots.txt` не блокирует сайт.
-
----
-
-**Важно:** Google не гарантирует позиции. Техническая подготовка — необходимый минимум; трафик растёт от контента, ссылок и времени.
+Если страниц нет, проверьте `robots.txt`, sitemap, canonical и статус домена в Search Console.
