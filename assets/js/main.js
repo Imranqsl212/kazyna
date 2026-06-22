@@ -94,9 +94,44 @@
     });
   }
 
+  function reportVisitor() {
+    const storageKey = "econlyx-visitor-reported";
+
+    try {
+      if (sessionStorage.getItem(storageKey) === "1") return;
+      sessionStorage.setItem(storageKey, "1");
+    } catch (error) {
+      // Private browsing modes can block storage; reporting can continue without deduping.
+    }
+
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+    const payload = {
+      page: window.location.href,
+      path: `${window.location.pathname}${window.location.search}`,
+      title: document.title,
+      referrer: document.referrer,
+      language: navigator.language || "",
+      timezone,
+      screen: window.screen ? `${window.screen.width}x${window.screen.height}` : ""
+    };
+
+    try {
+      fetch("/api/visitor", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        keepalive: true,
+        credentials: "same-origin"
+      }).catch(() => {});
+    } catch (error) {
+      // Ignore analytics failures so the site remains unaffected.
+    }
+  }
+
   window.addEventListener("scroll", updateProgress, { passive: true });
   updateProgress();
   animateCounters();
+  reportVisitor();
 
   if (burger && navLinks) {
     burger.addEventListener("click", () => {
