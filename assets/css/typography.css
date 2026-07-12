@@ -1,31 +1,35 @@
 /* ============================================================
-   Typography — Kyrgyz Ethno Style
+   Typography — Econlyx
    ============================================================ */
 
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 1.5rem);
 }
 
 body {
   font-family: var(--font-body);
   color: var(--color-ink);
   background: var(--color-sand-2);
-  line-height: 1.72;
+  line-height: 1.68;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   color: var(--color-graphite);
-  line-height: 1.08;
+  line-height: 1.1;
   margin: 0 0 1rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
+  text-wrap: balance;
 }
 
-h1 { font-size: clamp(2.6rem, 5.5vw, 6rem); }
-h2 { font-size: clamp(1.9rem, 3.5vw, 3.8rem); }
-h3 { font-size: clamp(1.25rem, 1.9vw, 1.85rem); }
-h4 { font-size: clamp(1.05rem, 1.4vw, 1.35rem); }
+h1 { font-size: 4.25rem; }
+h2 { font-size: 2.75rem; }
+h3 { font-size: 1.55rem; }
+h4 { font-size: 1.15rem; }
 
 p {
   margin: 0 0 1.1rem;
@@ -38,9 +42,10 @@ a {
 
 .text-lead {
   color: var(--color-ink-soft);
-  font-size: clamp(1rem, 1.5vw, 1.22rem);
-  max-width: 720px;
-  line-height: 1.65;
+  font-size: 1.1rem;
+  max-width: 64ch;
+  line-height: 1.7;
+  text-wrap: pretty;
 }
 
 .muted {
@@ -49,7 +54,7 @@ a {
 
 /* Article body */
 .article-body {
-  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  font-size: 1.04rem;
 }
 
 .article-body h2,
@@ -60,13 +65,14 @@ a {
 .article-body p,
 .article-body li {
   color: var(--color-ink-soft);
+  max-width: 76ch;
 }
 
 .article-body blockquote {
   border-left: 4px solid var(--color-terracotta);
   margin: 2rem 0;
   padding: 1rem 1.4rem;
-  background: rgba(212, 165, 116, 0.08);
+  background: var(--color-cream-soft);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   color: var(--color-graphite);
   font-style: italic;
@@ -77,8 +83,17 @@ a {
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.10em;
+  letter-spacing: 0;
   color: var(--color-sage);
   margin-bottom: 0.5rem;
   display: block;
+}
+
+strong {
+  color: var(--color-graphite);
+}
+
+::selection {
+  color: var(--color-graphite);
+  background: var(--color-accent);
 }

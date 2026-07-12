@@ -4,18 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="theme-color" content="#f7f5f3" />
+    <meta name="theme-color" content="#0f513d" />
     <link rel="manifest" href="../site.webmanifest" />
-    <link rel="apple-touch-icon" href="../assets/images/logo-symbol.png" />
-    <link rel="icon" type="image/png" href="../assets/images/logo-symbol.png" />
+    <link rel="apple-touch-icon" href="../assets/images/econlyx-symbol.png" />
+    <link rel="icon" type="image/png" href="../assets/images/econlyx-symbol.png" />
     <title>Comparative Advantage: Why Trade Makes Everyone Richer | Econlyx</title>
-    <meta name="twitter:image" content="https://econlyx.com/assets/images/logo.jpg" />
+    <meta name="twitter:image" content="https://econlyx.com/assets/images/econlyx-avatar.png" />
     <meta name="twitter:description" content="Even if one country can produce everything more efficiently, trade still benefits both sides. This counterintuitive insight is one of economics" />
     <meta name="twitter:title" content="Comparative Advantage: Why Trade Makes Everyone Richer | Econlyx" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://econlyx.com/assets/images/logo.jpg" />
+    <meta property="og:image" content="https://econlyx.com/assets/images/econlyx-avatar.png" />
     <meta property="og:description" content="Even if one country can produce everything more efficiently, trade still benefits both sides. This counterintuitive insight is one of economics" />
     <meta property="og:title" content="Comparative Advantage: Why Trade Makes Everyone Richer | Econlyx" />
     <meta property="og:site_name" content="Econlyx" />
@@ -31,9 +31,9 @@
     <link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-comparative-advantage" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260616-2" />
-    <script src="../assets/js/chrome.js?v=20260616-2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260712-3" />
+    <script src="../assets/js/chrome.js?v=20260712-3"></script>
     <script type="application/ld+json">
       {
             "@context": "https://schema.org",
@@ -44,7 +44,7 @@
                         "name": "Econlyx",
                         "alternateName": "Econlyx",
                         "url": "https://econlyx.com/",
-                        "logo": "https://econlyx.com/assets/images/logo.jpg",
+                        "logo": "https://econlyx.com/assets/images/econlyx-avatar.png",
                         "description": "Economics education and olympiad preparation platform."
                   },
                   {
@@ -78,7 +78,7 @@
                         "publisher": {
                               "@id": "https://econlyx.com/#organization"
                         },
-                        "image": "https://econlyx.com/assets/images/logo.jpg",
+                        "image": "https://econlyx.com/assets/images/econlyx-avatar.png",
                         "inLanguage": "en"
                   },
                   {
@@ -103,7 +103,7 @@
       }
     </script>
 
-      <script src="../assets/js/i18n.js?v=20260616-2"></script>
+      <script src="../assets/js/i18n.js?v=20260712-3"></script>
 </head>
   <body class="page article-page">
     <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
@@ -112,10 +112,10 @@
     <header class="navbar">
       <div class="navbar__inner container">
         <a class="navbar__logo" href="../index.html" aria-label="Econlyx home">
-          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/econlyx-symbol.png" alt="" /></span>
           <span class="navbar__brand-text">Econlyx</span>
         </a>
-        <nav class="navbar__links" data-nav-links aria-label="Main navigation">
+        <nav class="navbar__links" id="main-navigation" data-nav-links aria-label="Main navigation">
           <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
           <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
           <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
@@ -126,7 +126,7 @@
         </nav>
         <div class="navbar__actions">
           <button class="icon-button" type="button" data-search-open aria-label="Open search">⌕</button>
-          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
+          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-controls="main-navigation" aria-expanded="false">☰</button>
           <select class="language-toggle" data-lang-toggle aria-label="Switch language">
             <option value="en">EN</option>
             <option value="ru">RU</option>
@@ -160,14 +160,14 @@
               <p data-i18n="micro-comparative-advantage.p2">Before David Ricardo introduced the concept of comparative advantage in 1817, the dominant view was that trade was only beneficial if a country had an <strong>absolute advantage</strong> — the ability to produce a good using fewer resources than its trading partner. <strong>Absolute advantage</strong> is straightforward: if England can produce 10 yards of cloth per worker-hour and Portugal can only produce 6, England has an absolute advantage in cloth production.</p>
               <p data-i18n="micro-comparative-advantage.p3">Ricardo's insight was that absolute advantage is irrelevant to whether trade is beneficial. What matters is <strong>comparative advantage</strong>: the ability to produce a good at a lower opportunity cost than a trading partner. A country has a comparative advantage in a good if, to produce one more unit of that good, it gives up less of other goods than its trading partner would have to.</p>
               <p data-i18n="micro-comparative-advantage.p4">The stunning implication: even if one country is more efficient at producing everything — even if it has an absolute advantage in all goods — trade still benefits both countries, as long as their opportunity costs differ. And opportunity costs always differ between countries (or people), because resources, technologies, and endowments are never perfectly identical.</p>
-              <div class="concept-box"><span class="concept-box__label" data-i18n="micro.ca.s1.box">Definition</span><p data-i18n="micro-comparative-advantage.p4"><strong>Comparative advantage</strong> is the ability to produce a good at a lower opportunity cost than a trading partner. It is the basis for all mutually beneficial trade, regardless of absolute productivity differences.</p></div>
+              <div class="concept-box"><span class="concept-box__label" data-i18n="micro.ca.s1.box">Definition</span><p data-i18n="micro-comparative-advantage.extra01"><strong>Comparative advantage</strong> is the ability to produce a good at a lower opportunity cost than a trading partner. It is the basis for all mutually beneficial trade, regardless of absolute productivity differences.</p></div>
               <blockquote data-i18n="micro.ca.s1.quote">Key takeaway: Absolute advantage asks "who produces more?" Comparative advantage asks "who gives up less?" Only comparative advantage determines whether trade is beneficial — and it always is, as long as opportunity costs differ.</blockquote>
             </section>
             <section class="card" id="calculating">
               <h2 data-i18n="micro.ca.s2.h2">How to Calculate Comparative Advantage</h2>
               <p data-i18n="micro-comparative-advantage.p6">The classic example uses two countries and two goods. Suppose England and Portugal each have 100 worker-hours available. In England, producing 1 unit of cloth requires 2 worker-hours and producing 1 unit of wine requires 5 worker-hours. In Portugal, producing 1 unit of cloth requires 3 worker-hours and producing 1 unit of wine requires 4 worker-hours.</p>
               <p data-i18n="micro-comparative-advantage.p5">England's opportunity cost of 1 unit of cloth = 2/5 units of wine (the worker-hours for cloth divided by the worker-hours for wine). Portugal's opportunity cost of 1 unit of cloth = 3/4 units of wine. Since 2/5 &lt; 3/4, England has a lower opportunity cost of producing cloth — England has a comparative advantage in cloth.</p>
-              <p data-i18n="micro-comparative-advantage.p6">Portugal's opportunity cost of 1 unit of wine = 4/3 units of cloth. England's opportunity cost of 1 unit of wine = 5/2 units of cloth. Since 4/3 &lt; 5/2, Portugal has a lower opportunity cost of producing wine — Portugal has a comparative advantage in wine. Notice that each country has a comparative advantage in exactly one good. This is always true: you cannot have a comparative advantage in everything.</p>
+              <p data-i18n="micro-comparative-advantage.extra02">Portugal's opportunity cost of 1 unit of wine = 4/3 units of cloth. England's opportunity cost of 1 unit of wine = 5/2 units of cloth. Since 4/3 &lt; 5/2, Portugal has a lower opportunity cost of producing wine — Portugal has a comparative advantage in wine. Notice that each country has a comparative advantage in exactly one good. This is always true: you cannot have a comparative advantage in everything.</p>
               <blockquote data-i18n="micro.ca.s2.quote">Key takeaway: To find comparative advantage, calculate the opportunity cost of each good in each country (in terms of the other good foregone), then compare. The country with the lower opportunity cost has the comparative advantage. It's always one good per country.</blockquote>
             </section>
             <section class="card" id="gains">
@@ -179,7 +179,7 @@
             </section>
             <section class="card" id="specialization">
               <h2 data-i18n="micro.ca.s4.h2">Specialization and the Terms of Trade</h2>
-              <p data-i18n="micro-comparative-advantage.p7">For trade to actually occur, the two countries must agree on an exchange rate between the goods — the <strong>terms of trade</strong>. The terms of trade must fall between the two countries' domestic opportunity costs for both to benefit from trade.</p>
+              <p data-i18n="micro-comparative-advantage.p12">For trade to actually occur, the two countries must agree on an exchange rate between the goods — the <strong>terms of trade</strong>. The terms of trade must fall between the two countries' domestic opportunity costs for both to benefit from trade.</p>
               <p data-i18n="micro-comparative-advantage.p13">In our example, England's opportunity cost of cloth is 2/5 wine per cloth, and Portugal's is 3/4 wine per cloth. For England to benefit from exporting cloth, it must receive more than 2/5 wine per cloth in trade (otherwise it could just produce wine domestically more cheaply). For Portugal to benefit from importing cloth, it must pay less than 3/4 wine per cloth (otherwise it would just produce cloth itself). So the terms of trade must be between 2/5 and 3/4 wine per cloth — any ratio in this range makes both countries better off.</p>
               <p data-i18n="micro-comparative-advantage.p14">Where exactly within this range the terms of trade settle depends on the relative size of the two economies and the strength of demand for each good. Larger economies tend to have more bargaining power and capture more of the gains from trade. This is why terms of trade are a significant concern in trade negotiations between developed and developing countries.</p>
               <blockquote data-i18n="micro.ca.s4.quote">Key takeaway: The terms of trade determine how the gains from trade are divided between countries. Both benefit as long as the terms fall between their domestic opportunity costs — but the exact split depends on market power and demand conditions.</blockquote>
@@ -187,11 +187,11 @@
             <section class="card" id="limits">
               <h2 data-i18n="micro.ca.s5.h2">Limits and Criticisms</h2>
               <p data-i18n="micro-comparative-advantage.p15">Comparative advantage is a powerful theory, but it has important limitations that economists and policymakers must take seriously. The classic model assumes constant opportunity costs, perfect factor mobility between industries, no transportation costs, and no economies of scale — assumptions that rarely hold in practice.</p>
-              <p data-i18n="micro-comparative-advantage.p8">The <strong>infant industry argument</strong> is the most prominent challenge to free trade based on comparative advantage. A developing country may have a potential comparative advantage in a new industry — say, semiconductors or aircraft — but cannot compete initially because it lacks the scale, technology, and experience of established foreign producers. Temporary protection (tariffs or subsidies) could allow the industry to develop until it becomes competitive. This argument has been used to justify industrial policy in South Korea, Japan, and China, with mixed but sometimes impressive results.</p>
-              <p data-i18n="micro-comparative-advantage.p9"><strong>Strategic trade policy</strong> offers another challenge: in industries with large economies of scale and imperfect competition, government subsidies can shift comparative advantage artificially. If a government subsidizes its aircraft industry enough to drive foreign competitors out of the market, it can capture the monopoly profits for its own firms. The EU's support for Airbus and the US government's support for Boeing are real-world examples of this logic.</p>
-              <p data-i18n="micro-comparative-advantage.p10">Finally, comparative advantage theory is silent on <strong>distributional effects</strong>. Even if trade makes a country richer in aggregate, it creates winners and losers within that country. Workers in import-competing industries may lose their jobs. The gains from trade are real, but they are not evenly distributed — and the political backlash against globalization in recent decades reflects the genuine pain experienced by those on the losing side of trade-driven structural change.</p>
+              <p data-i18n="micro-comparative-advantage.p16">The <strong>infant industry argument</strong> is the most prominent challenge to free trade based on comparative advantage. A developing country may have a potential comparative advantage in a new industry — say, semiconductors or aircraft — but cannot compete initially because it lacks the scale, technology, and experience of established foreign producers. Temporary protection (tariffs or subsidies) could allow the industry to develop until it becomes competitive. This argument has been used to justify industrial policy in South Korea, Japan, and China, with mixed but sometimes impressive results.</p>
+              <p data-i18n="micro-comparative-advantage.p17"><strong>Strategic trade policy</strong> offers another challenge: in industries with large economies of scale and imperfect competition, government subsidies can shift comparative advantage artificially. If a government subsidizes its aircraft industry enough to drive foreign competitors out of the market, it can capture the monopoly profits for its own firms. The EU's support for Airbus and the US government's support for Boeing are real-world examples of this logic.</p>
+              <p data-i18n="micro-comparative-advantage.p18">Finally, comparative advantage theory is silent on <strong>distributional effects</strong>. Even if trade makes a country richer in aggregate, it creates winners and losers within that country. Workers in import-competing industries may lose their jobs. The gains from trade are real, but they are not evenly distributed — and the political backlash against globalization in recent decades reflects the genuine pain experienced by those on the losing side of trade-driven structural change.</p>
               <blockquote data-i18n="micro.ca.s5.quote">Key takeaway: Comparative advantage is a powerful argument for free trade, but it is not an argument that trade is costless or that everyone benefits equally. The gains are real and large — but so are the distributional consequences, which require serious policy attention.</blockquote>
-              <p data-i18n="micro-comparative-advantage.p11"><a class="button button--gold" href="microeconomics.html" data-i18n="micro.ca.back">← Microeconomics</a></p>
+              <p><a class="button button--gold" href="microeconomics.html" data-i18n="micro.ca.back">← Microeconomics</a></p>
             </section>
           </div>
         </div>
@@ -202,7 +202,7 @@
       <div class="footer__inner container">
         <div>
           <a class="navbar__logo" href="../index.html" style="margin-bottom: 0.8rem; display: inline-flex">
-            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/econlyx-symbol.png" alt="" /></span>
             <span style="color: var(--color-terracotta-light); font-weight: 900">Econlyx</span>
           </a>
           <p data-i18n="footer.tagline" style="font-size: 0.88rem; max-width: 280px" >Platform to study Economics</p>
@@ -227,8 +227,8 @@
       </div>
     </div>
     <button class="icon-button scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
-    <script src="../assets/js/main.js?v=20260616-2" defer></script>
-    <script src="../assets/js/navigation.js?v=20260616-2" defer></script>
-    <script src="../assets/js/tabs.js?v=20260616-2" defer></script>
+    <script src="../assets/js/main.js?v=20260712-3" defer></script>
+    <script src="../assets/js/navigation.js?v=20260712-3" defer></script>
+    <script src="../assets/js/tabs.js?v=20260712-3" defer></script>
   </body>
 </html>

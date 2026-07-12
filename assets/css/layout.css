@@ -1,5 +1,5 @@
 /* ============================================================
-   Layout — Kyrgyz Ethno Style
+   Layout — Econlyx
    ============================================================ */
 
 *,
@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img,
 svg,
 canvas {
@@ -22,33 +26,52 @@ canvas {
 
 .page {
   min-height: 100vh;
-  background: var(--color-sand-2);
+  background: var(--color-cream);
 }
 
 .container {
-  width: min(var(--container), calc(100% - 2rem));
+  width: min(var(--container), calc(100% - 3rem));
   margin-inline: auto;
 }
 
 .section {
-  padding: clamp(3.5rem, 7vw, 6.5rem) 0;
+  padding: 5.5rem 0;
+  background: var(--color-cream-warm);
 }
 
 .section--tight {
-  padding: clamp(2rem, 4vw, 4rem) 0;
+  padding: 4rem 0;
+}
+
+main > .section:first-child {
+  background: var(--color-cream-warm);
+  border-bottom: 1px solid var(--color-line);
+}
+
+main > .section + .section {
+  background: var(--color-cream);
+  border-top: 1px solid rgba(9, 73, 53, 0.06);
+}
+
+main > .section:first-child:not(:only-child) h1 {
+  max-width: 19ch;
+}
+
+main > .section:first-child:not(:only-child) .text-lead {
+  max-width: 66ch;
 }
 
 .section__header {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.5fr);
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.52fr);
+  gap: 3rem;
   align-items: end;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
 }
 
 .grid {
   display: grid;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .grid--three {
@@ -65,17 +88,18 @@ canvas {
 
 .main-layout {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
-  gap: 2rem;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 3rem;
   align-items: start;
 }
 
-/* Content band — dark ethno section */
+/* Content band */
 .content-band {
-  background: linear-gradient(135deg, #2a2018, #3a2e22);
+  background: #0a3b2c;
   color: #fff;
   position: relative;
   overflow: hidden;
+  border-block: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .content-band h2,
@@ -84,11 +108,11 @@ canvas {
 }
 
 .content-band p {
-  color: rgba(247, 245, 243, 0.78);
+  color: rgba(238, 250, 244, 0.80);
 }
 
 /* Stack utility */
 .stack {
   display: grid;
-  gap: 1rem;
+  gap: 1.15rem;
 }

@@ -9,7 +9,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -22,7 +22,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/about?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/about?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/about" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -35,7 +35,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/article-elasticity?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/article-elasticity?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/article-elasticity" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -48,7 +48,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/article-fiscal-policy?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/article-fiscal-policy?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/article-fiscal-policy" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -61,20 +61,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/article-inflation?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/article-inflation?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/article-inflation" />
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://econlyx.com/pages/article-single</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://econlyx.com/pages/article-single?lang=en" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://econlyx.com/pages/article-single?lang=ru" />
-    <xhtml:link rel="alternate" hreflang="ky" href="https://econlyx.com/pages/article-single?lang=ky" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://econlyx.com/pages/article-single?lang=fr" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/article-single?lang=es" />
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/article-single?lang=zh" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/article-single" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -87,7 +74,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/article-supply-demand?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/article-supply-demand?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/article-supply-demand" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -100,7 +87,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/articles?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/articles?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/articles" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -113,7 +100,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/contacts?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/contacts?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/contacts" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -126,7 +113,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/formulas?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/formulas?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/formulas" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -139,7 +126,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/macro-exchange-rates?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/macro-exchange-rates?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-exchange-rates" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -152,7 +139,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/macro-fiscal-policy?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/macro-fiscal-policy?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-fiscal-policy" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -165,7 +152,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/macro-gdp?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/macro-gdp?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-gdp" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -178,7 +165,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/macro-growth?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/macro-growth?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-growth" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -191,7 +178,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/macro-inflation?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/macro-inflation?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-inflation" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -204,7 +191,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/macro-monetary-policy?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/macro-monetary-policy?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-monetary-policy" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -217,7 +204,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/macro-unemployment?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/macro-unemployment?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-unemployment" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -230,7 +217,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/macroeconomics?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/macroeconomics?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macroeconomics" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -243,7 +230,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/micro-comparative-advantage?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/micro-comparative-advantage?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-comparative-advantage" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -256,7 +243,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/micro-costs?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/micro-costs?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-costs" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -269,7 +256,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/micro-elasticity?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/micro-elasticity?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-elasticity" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -282,7 +269,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/micro-game-theory?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/micro-game-theory?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-game-theory" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -295,7 +282,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/micro-market-structures?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/micro-market-structures?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-market-structures" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -308,7 +295,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/micro-opportunity-cost?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/micro-opportunity-cost?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-opportunity-cost" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -321,7 +308,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/micro-supply-demand?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/micro-supply-demand?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-supply-demand" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -334,7 +321,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/micro-utility?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/micro-utility?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-utility" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -347,7 +334,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/microeconomics?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/microeconomics?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/microeconomics" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -360,7 +347,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/olympiad-advanced-techniques?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/olympiad-advanced-techniques?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/olympiad-advanced-techniques" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -373,7 +360,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/olympiad-common-mistakes?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/olympiad-common-mistakes?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/olympiad-common-mistakes" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -386,7 +373,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/olympiad-essay-writing?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/olympiad-essay-writing?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/olympiad-essay-writing" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -399,7 +386,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/olympiad-mental-preparation?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/olympiad-mental-preparation?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/olympiad-mental-preparation" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -412,7 +399,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/olympiad-problem-solving?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/olympiad-problem-solving?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/olympiad-problem-solving" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -425,7 +412,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/olympiad-study-plan?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/olympiad-study-plan?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/olympiad-study-plan" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -438,7 +425,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/olympiad-time-management?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/olympiad-time-management?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/olympiad-time-management" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -451,7 +438,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://econlyx.com/pages/olympiads?lang=es" />
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://econlyx.com/pages/olympiads?lang=zh" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/olympiads" />
-    <lastmod>2026-06-16</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

@@ -5,17 +5,17 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f7f1e6",
-  "theme_color": "#b08a57",
+  "background_color": "#ffffff",
+  "theme_color": "#0f513d",
   "icons": [
     {
-      "src": "/assets/images/logo-symbol.png",
+      "src": "/assets/images/econlyx-symbol-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/images/logo-symbol.png",
+      "src": "/assets/images/econlyx-symbol.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

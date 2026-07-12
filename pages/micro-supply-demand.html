@@ -4,18 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="theme-color" content="#f7f5f3" />
+    <meta name="theme-color" content="#0f513d" />
     <link rel="manifest" href="../site.webmanifest" />
-    <link rel="apple-touch-icon" href="../assets/images/logo-symbol.png" />
-    <link rel="icon" type="image/png" href="../assets/images/logo-symbol.png" />
+    <link rel="apple-touch-icon" href="../assets/images/econlyx-symbol.png" />
+    <link rel="icon" type="image/png" href="../assets/images/econlyx-symbol.png" />
     <title>Supply and Demand: How Markets Find Their Balance | Econlyx</title>
-    <meta name="twitter:image" content="https://econlyx.com/assets/images/logo.jpg" />
+    <meta name="twitter:image" content="https://econlyx.com/assets/images/econlyx-avatar.png" />
     <meta name="twitter:description" content="The most fundamental model in economics — how markets find equilibrium, what shifts the curves, and what happens when governments intervene." />
     <meta name="twitter:title" content="Supply and Demand: How Markets Find Their Balance | Econlyx" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://econlyx.com/assets/images/logo.jpg" />
+    <meta property="og:image" content="https://econlyx.com/assets/images/econlyx-avatar.png" />
     <meta property="og:description" content="The most fundamental model in economics — how markets find equilibrium, what shifts the curves, and what happens when governments intervene." />
     <meta property="og:title" content="Supply and Demand: How Markets Find Their Balance | Econlyx" />
     <meta property="og:site_name" content="Econlyx" />
@@ -31,9 +31,9 @@
     <link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/micro-supply-demand" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260616-2" />
-    <script src="../assets/js/chrome.js?v=20260616-2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260712-3" />
+    <script src="../assets/js/chrome.js?v=20260712-3"></script>
     <script type="application/ld+json">
       {
             "@context": "https://schema.org",
@@ -44,7 +44,7 @@
                         "name": "Econlyx",
                         "alternateName": "Econlyx",
                         "url": "https://econlyx.com/",
-                        "logo": "https://econlyx.com/assets/images/logo.jpg",
+                        "logo": "https://econlyx.com/assets/images/econlyx-avatar.png",
                         "description": "Economics education and olympiad preparation platform."
                   },
                   {
@@ -78,7 +78,7 @@
                         "publisher": {
                               "@id": "https://econlyx.com/#organization"
                         },
-                        "image": "https://econlyx.com/assets/images/logo.jpg",
+                        "image": "https://econlyx.com/assets/images/econlyx-avatar.png",
                         "inLanguage": "en"
                   },
                   {
@@ -103,7 +103,7 @@
       }
     </script>
 
-      <script src="../assets/js/i18n.js?v=20260616-2"></script>
+      <script src="../assets/js/i18n.js?v=20260712-3"></script>
 </head>
   <body class="page article-page">
     <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
@@ -112,10 +112,10 @@
     <header class="navbar">
       <div class="navbar__inner container">
         <a class="navbar__logo" href="../index.html" aria-label="Econlyx home">
-          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/econlyx-symbol.png" alt="" /></span>
           <span class="navbar__brand-text">Econlyx</span>
         </a>
-        <nav class="navbar__links" data-nav-links aria-label="Main navigation">
+        <nav class="navbar__links" id="main-navigation" data-nav-links aria-label="Main navigation">
           <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
           <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
           <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
@@ -126,7 +126,7 @@
         </nav>
         <div class="navbar__actions">
           <button class="icon-button" type="button" data-search-open aria-label="Open search">⌕</button>
-          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
+          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-controls="main-navigation" aria-expanded="false">☰</button>
           <select class="language-toggle" data-lang-toggle aria-label="Switch language">
             <option value="en">EN</option>
             <option value="ru">RU</option>
@@ -169,36 +169,36 @@
 
             <section class="card" id="shifts">
               <h2>What Shifts the Curves</h2>
-              <p data-i18n="micro-supply-demand.p5">A critical distinction in supply-and-demand analysis is the difference between a <strong>movement along a curve</strong> and a <strong>shift of the curve</strong>. A change in price causes movement along the existing curve — quantity demanded or supplied changes, but the curve itself stays put. A shift happens when something other than price changes, moving the entire curve left or right.</p>
-              <p data-i18n="micro-supply-demand.p6">Demand shifts when any of the following change: consumer <strong>income</strong> (higher income raises demand for normal goods), <strong>tastes and preferences</strong>, the prices of <strong>related goods</strong> (substitutes or complements), consumer <strong>expectations</strong> about future prices, or the <strong>number of buyers</strong> in the market. If the price of tea rises, demand for coffee increases — tea and coffee are substitutes. If the price of milk rises, demand for coffee might fall slightly — milk is a complement.</p>
-              <p data-i18n="micro-supply-demand.p7">Supply shifts when <strong>input costs</strong> change (cheaper labor or raw materials shift supply right), <strong>technology</strong> improves (more output from the same inputs), the number of <strong>sellers</strong> changes, government <strong>taxes or subsidies</strong> are applied, or sellers' <strong>expectations</strong> about future prices shift. A new coffee-harvesting machine that cuts labor costs will shift the supply of coffee rightward, lowering prices.</p>
+              <p data-i18n="micro-supply-demand.p6">A critical distinction in supply-and-demand analysis is the difference between a <strong>movement along a curve</strong> and a <strong>shift of the curve</strong>. A change in price causes movement along the existing curve — quantity demanded or supplied changes, but the curve itself stays put. A shift happens when something other than price changes, moving the entire curve left or right.</p>
+              <p data-i18n="micro-supply-demand.p7">Demand shifts when any of the following change: consumer <strong>income</strong> (higher income raises demand for normal goods), <strong>tastes and preferences</strong>, the prices of <strong>related goods</strong> (substitutes or complements), consumer <strong>expectations</strong> about future prices, or the <strong>number of buyers</strong> in the market. If the price of tea rises, demand for coffee increases — tea and coffee are substitutes. If the price of milk rises, demand for coffee might fall slightly — milk is a complement.</p>
+              <p data-i18n="micro-supply-demand.p8">Supply shifts when <strong>input costs</strong> change (cheaper labor or raw materials shift supply right), <strong>technology</strong> improves (more output from the same inputs), the number of <strong>sellers</strong> changes, government <strong>taxes or subsidies</strong> are applied, or sellers' <strong>expectations</strong> about future prices shift. A new coffee-harvesting machine that cuts labor costs will shift the supply of coffee rightward, lowering prices.</p>
               <blockquote>Key takeaway: Always ask "is this a price change or a non-price change?" before deciding whether to move along a curve or shift it. Getting this wrong is the most common mistake in supply-and-demand analysis.</blockquote>
             </section>
 
             <section class="card" id="equilibrium">
               <h2>Equilibrium and Disequilibrium</h2>
-              <p data-i18n="micro-supply-demand.p8"><strong>Market equilibrium</strong> is the price at which quantity demanded equals quantity supplied (Q<sub>d</sub> = Q<sub>s</sub>). At this price, there is no pressure for the price to change — every buyer who wants to buy at that price finds a seller, and every seller who wants to sell finds a buyer. The market clears.</p>
-              <p data-i18n="micro-supply-demand.p9">But markets are not always in equilibrium. When the price is above the equilibrium price, quantity supplied exceeds quantity demanded — there is a <strong>surplus</strong> (also called excess supply). Unsold inventory piles up, and sellers have an incentive to cut prices to move their goods. The price falls back toward equilibrium.</p>
-              <p data-i18n="micro-supply-demand.p10">When the price is below equilibrium, quantity demanded exceeds quantity supplied — there is a <strong>shortage</strong> (excess demand). Buyers compete for scarce goods, bidding prices up. Think of the gasoline shortages during the 1970s oil crisis: price controls kept prices artificially low, demand exceeded supply, and long queues formed at petrol stations. The price mechanism, when allowed to work, eliminates both surpluses and shortages automatically.</p>
-              <div class="concept-box"><span class="concept-box__label">Definition</span><p data-i18n="micro-supply-demand.p11"><strong>Equilibrium price</strong> (also called the market-clearing price) is the price at which the quantity buyers wish to purchase exactly equals the quantity sellers wish to sell. At any other price, market forces push the price back toward equilibrium.</p></div>
+              <p data-i18n="micro-supply-demand.p9"><strong>Market equilibrium</strong> is the price at which quantity demanded equals quantity supplied (Q<sub>d</sub> = Q<sub>s</sub>). At this price, there is no pressure for the price to change — every buyer who wants to buy at that price finds a seller, and every seller who wants to sell finds a buyer. The market clears.</p>
+              <p data-i18n="micro-supply-demand.p10">But markets are not always in equilibrium. When the price is above the equilibrium price, quantity supplied exceeds quantity demanded — there is a <strong>surplus</strong> (also called excess supply). Unsold inventory piles up, and sellers have an incentive to cut prices to move their goods. The price falls back toward equilibrium.</p>
+              <p data-i18n="micro-supply-demand.p11">When the price is below equilibrium, quantity demanded exceeds quantity supplied — there is a <strong>shortage</strong> (excess demand). Buyers compete for scarce goods, bidding prices up. Think of the gasoline shortages during the 1970s oil crisis: price controls kept prices artificially low, demand exceeded supply, and long queues formed at petrol stations. The price mechanism, when allowed to work, eliminates both surpluses and shortages automatically.</p>
+              <div class="concept-box"><span class="concept-box__label">Definition</span><p data-i18n="micro-supply-demand.extra01"><strong>Equilibrium price</strong> (also called the market-clearing price) is the price at which the quantity buyers wish to purchase exactly equals the quantity sellers wish to sell. At any other price, market forces push the price back toward equilibrium.</p></div>
               <blockquote>Key takeaway: Markets are self-correcting. Surpluses push prices down; shortages push prices up. Equilibrium is not a static state but a gravitational center that prices are always moving toward.</blockquote>
             </section>
 
             <section class="card" id="welfare">
               <h2>Consumer and Producer Surplus</h2>
               <p data-i18n="micro-supply-demand.p12">Supply-and-demand analysis doesn't just tell us where prices land — it tells us who benefits and by how much. <strong>Consumer surplus</strong> is the difference between what consumers are willing to pay for a good and what they actually pay. On a graph, it is the area below the demand curve and above the market price. A buyer who would have paid $5 for a coffee but only pays $3 enjoys $2 of consumer surplus.</p>
-              <p data-i18n="micro-supply-demand.p13"><strong>Producer surplus</strong> is the mirror image: the difference between the price sellers receive and the minimum price they would have accepted (their marginal cost). It is the area above the supply curve and below the market price. Together, consumer surplus and producer surplus make up <strong>total surplus</strong> — the total gain from trade in a market.</p>
-              <p data-i18n="micro-supply-demand.p14">When a market operates at its competitive equilibrium, total surplus is maximized. Any restriction on output — a tax, a quota, a monopoly — creates a <strong>deadweight loss</strong>: a wedge of surplus that is destroyed rather than transferred. This is why economists are generally skeptical of policies that prevent markets from clearing at the competitive price.</p>
+              <p data-i18n="micro-supply-demand.p14"><strong>Producer surplus</strong> is the mirror image: the difference between the price sellers receive and the minimum price they would have accepted (their marginal cost). It is the area above the supply curve and below the market price. Together, consumer surplus and producer surplus make up <strong>total surplus</strong> — the total gain from trade in a market.</p>
+              <p data-i18n="micro-supply-demand.p15">When a market operates at its competitive equilibrium, total surplus is maximized. Any restriction on output — a tax, a quota, a monopoly — creates a <strong>deadweight loss</strong>: a wedge of surplus that is destroyed rather than transferred. This is why economists are generally skeptical of policies that prevent markets from clearing at the competitive price.</p>
               <blockquote>Key takeaway: Consumer and producer surplus are the economist's measuring stick for market performance. Deadweight loss is the cost society pays whenever output is pushed away from the competitive equilibrium.</blockquote>
             </section>
 
             <section class="card" id="policy">
               <h2>Price Controls and Their Consequences</h2>
-              <p data-i18n="micro-supply-demand.p15">Governments sometimes intervene in markets by setting legal limits on prices. A <strong>price ceiling</strong> is a maximum legal price set below the equilibrium price. The classic example is <strong>rent control</strong>: a city caps apartment rents to make housing affordable. The immediate effect is that quantity demanded exceeds quantity supplied — more people want apartments at the controlled price than landlords are willing to offer. A housing shortage develops. Over time, landlords reduce maintenance, convert apartments to other uses, or exit the market entirely, shrinking the housing stock further.</p>
-              <p data-i18n="micro-supply-demand.p16">A <strong>price floor</strong> is a minimum legal price set above the equilibrium price. The most prominent example is the <strong>minimum wage</strong>: a legal floor on the price of labor. At a wage above the market-clearing wage, the quantity of labor supplied (workers seeking jobs) exceeds the quantity demanded (jobs offered by employers), creating unemployment. The debate over minimum wage policy is essentially a debate about how large this effect is in practice — and whether the benefits to employed workers outweigh the costs to those who lose jobs or can't find them.</p>
+              <p data-i18n="micro-supply-demand.p16">Governments sometimes intervene in markets by setting legal limits on prices. A <strong>price ceiling</strong> is a maximum legal price set below the equilibrium price. The classic example is <strong>rent control</strong>: a city caps apartment rents to make housing affordable. The immediate effect is that quantity demanded exceeds quantity supplied — more people want apartments at the controlled price than landlords are willing to offer. A housing shortage develops. Over time, landlords reduce maintenance, convert apartments to other uses, or exit the market entirely, shrinking the housing stock further.</p>
+              <p data-i18n="micro-supply-demand.p17">A <strong>price floor</strong> is a minimum legal price set above the equilibrium price. The most prominent example is the <strong>minimum wage</strong>: a legal floor on the price of labor. At a wage above the market-clearing wage, the quantity of labor supplied (workers seeking jobs) exceeds the quantity demanded (jobs offered by employers), creating unemployment. The debate over minimum wage policy is essentially a debate about how large this effect is in practice — and whether the benefits to employed workers outweigh the costs to those who lose jobs or can't find them.</p>
               <p data-i18n="micro-supply-demand.p18">Neither price ceilings nor price floors eliminate the underlying scarcity — they simply change who bears the cost. Rent control doesn't create more housing; it redistributes existing housing and reduces the incentive to build more. Understanding this is one of the most important lessons supply-and-demand analysis has to offer.</p>
               <blockquote>Key takeaway: Price controls don't repeal the laws of supply and demand — they redirect their effects. Shortages follow price ceilings; surpluses follow price floors. The market always finds a way to respond.</blockquote>
-              <p data-i18n="micro-supply-demand.p17"><a class="button button--gold" href="microeconomics.html">← Microeconomics</a></p>
+              <p data-i18n="micro-supply-demand.p19"><a class="button button--gold" href="microeconomics.html">← Microeconomics</a></p>
             </section>
           </div>
         </div>
@@ -210,7 +210,7 @@
       <div class="footer__inner container">
         <div>
           <a class="navbar__logo" href="../index.html" style="margin-bottom: 0.8rem; display: inline-flex">
-            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/econlyx-symbol.png" alt="" /></span>
             <span style="color: var(--color-terracotta-light); font-weight: 900">Econlyx</span>
           </a>
           <p data-i18n="footer.tagline" style="font-size: 0.88rem; max-width: 280px" >Platform to study Economics</p>
@@ -237,8 +237,8 @@
     </div>
     <button class="icon-button scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
 
-    <script src="../assets/js/main.js?v=20260616-2" defer></script>
-    <script src="../assets/js/navigation.js?v=20260616-2" defer></script>
-    <script src="../assets/js/tabs.js?v=20260616-2" defer></script>
+    <script src="../assets/js/main.js?v=20260712-3" defer></script>
+    <script src="../assets/js/navigation.js?v=20260712-3" defer></script>
+    <script src="../assets/js/tabs.js?v=20260712-3" defer></script>
   </body>
 </html>

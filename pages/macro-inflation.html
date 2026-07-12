@@ -4,18 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="theme-color" content="#f7f5f3" />
+    <meta name="theme-color" content="#0f513d" />
     <link rel="manifest" href="../site.webmanifest" />
-    <link rel="apple-touch-icon" href="../assets/images/logo-symbol.png" />
-    <link rel="icon" type="image/png" href="../assets/images/logo-symbol.png" />
+    <link rel="apple-touch-icon" href="../assets/images/econlyx-symbol.png" />
+    <link rel="icon" type="image/png" href="../assets/images/econlyx-symbol.png" />
     <title>Inflation: Why Prices Rise and Who Pays the Price | Econlyx</title>
-    <meta name="twitter:image" content="https://econlyx.com/assets/images/logo.jpg" />
+    <meta name="twitter:image" content="https://econlyx.com/assets/images/econlyx-avatar.png" />
     <meta name="twitter:description" content="Explore inflation: what causes prices to rise, how CPI and the GDP deflator measure it, who wins and loses, and how central banks fight it." />
     <meta name="twitter:title" content="Inflation: Why Prices Rise and Who Pays the Price | Econlyx" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://econlyx.com/assets/images/logo.jpg" />
+    <meta property="og:image" content="https://econlyx.com/assets/images/econlyx-avatar.png" />
     <meta property="og:description" content="Explore inflation: what causes prices to rise, how CPI and the GDP deflator measure it, who wins and loses, and how central banks fight it." />
     <meta property="og:title" content="Inflation: Why Prices Rise and Who Pays the Price | Econlyx" />
     <meta property="og:site_name" content="Econlyx" />
@@ -31,9 +31,9 @@
     <link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-inflation" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260616-2" />
-    <script src="../assets/js/chrome.js?v=20260616-2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260712-3" />
+    <script src="../assets/js/chrome.js?v=20260712-3"></script>
     <script type="application/ld+json">
       {
             "@context": "https://schema.org",
@@ -44,7 +44,7 @@
                         "name": "Econlyx",
                         "alternateName": "Econlyx",
                         "url": "https://econlyx.com/",
-                        "logo": "https://econlyx.com/assets/images/logo.jpg",
+                        "logo": "https://econlyx.com/assets/images/econlyx-avatar.png",
                         "description": "Economics education and olympiad preparation platform."
                   },
                   {
@@ -78,7 +78,7 @@
                         "publisher": {
                               "@id": "https://econlyx.com/#organization"
                         },
-                        "image": "https://econlyx.com/assets/images/logo.jpg",
+                        "image": "https://econlyx.com/assets/images/econlyx-avatar.png",
                         "inLanguage": "en"
                   },
                   {
@@ -103,7 +103,7 @@
       }
     </script>
 
-      <script src="../assets/js/i18n.js?v=20260616-2"></script>
+      <script src="../assets/js/i18n.js?v=20260712-3"></script>
 </head>
   <body class="page article-page">
     <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
@@ -112,10 +112,10 @@
     <header class="navbar">
       <div class="navbar__inner container">
         <a class="navbar__logo" href="../index.html" aria-label="Econlyx home">
-          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/econlyx-symbol.png" alt="" /></span>
           <span class="navbar__brand-text">Econlyx</span>
         </a>
-        <nav class="navbar__links" data-nav-links aria-label="Main navigation">
+        <nav class="navbar__links" id="main-navigation" data-nav-links aria-label="Main navigation">
           <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
           <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
           <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
@@ -126,7 +126,7 @@
         </nav>
         <div class="navbar__actions">
           <button class="icon-button" type="button" data-search-open aria-label="Open search">⌕</button>
-          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
+          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-controls="main-navigation" aria-expanded="false">☰</button>
           <select class="language-toggle" data-lang-toggle aria-label="Switch language">
             <option value="en">EN</option>
             <option value="ru">RU</option>
@@ -179,9 +179,9 @@
             <section class="card" id="causes">
               <h2 data-i18n="macro.inf.s3.h2">Demand-Pull and Cost-Push Inflation</h2>
               <p data-i18n="macro-inflation.p12">Not all inflations are alike. Economists distinguish between inflation driven by too much demand and inflation driven by rising costs — and the distinction matters enormously for policy, because the right cure for one can make the other worse.</p>
-              <p data-i18n="macro-inflation.p12"><strong>Demand-pull inflation</strong> occurs when aggregate demand in the economy grows faster than aggregate supply can keep up. In the AD-AS framework, the aggregate demand curve shifts rightward — perhaps because the government is running large deficits, the central bank has kept interest rates too low for too long, or a commodity boom has made consumers feel wealthy. With more money chasing the same quantity of goods, sellers raise prices. The classic description is "too much money chasing too few goods." The post-COVID inflation surge of 2021–22 had a strong demand-pull component: massive fiscal stimulus (US stimulus checks, enhanced unemployment benefits) boosted consumer spending just as supply chains were constrained.</p>
-              <p data-i18n="macro-inflation.p13"><strong>Cost-push inflation</strong> arises from the supply side. When production costs rise — oil prices spike, wages jump, raw materials become scarce — firms pass those costs on to consumers in the form of higher prices. In the AD-AS model, the short-run aggregate supply (SRAS) curve shifts leftward, producing the particularly nasty combination of higher prices and lower output known as <strong>stagflation</strong>. The 1970s oil shocks are the textbook example: OPEC's oil embargo quadrupled oil prices, pushing inflation above 10% in the US while simultaneously causing a recession.</p>
-              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.inf.s3.box">The Wage-Price Spiral</span><p data-i18n="macro-inflation.p14">A <strong>wage-price spiral</strong> occurs when workers, seeing prices rise, demand higher wages to maintain their real purchasing power. Firms, facing higher labor costs, raise prices further. Workers then demand still higher wages — and the cycle continues. This <strong>built-in inflation</strong> can become self-sustaining and is one reason central banks act aggressively to prevent inflation expectations from becoming "unanchored."</p></div>
+              <p data-i18n="macro-inflation.p13"><strong>Demand-pull inflation</strong> occurs when aggregate demand in the economy grows faster than aggregate supply can keep up. In the AD-AS framework, the aggregate demand curve shifts rightward — perhaps because the government is running large deficits, the central bank has kept interest rates too low for too long, or a commodity boom has made consumers feel wealthy. With more money chasing the same quantity of goods, sellers raise prices. The classic description is "too much money chasing too few goods." The post-COVID inflation surge of 2021–22 had a strong demand-pull component: massive fiscal stimulus (US stimulus checks, enhanced unemployment benefits) boosted consumer spending just as supply chains were constrained.</p>
+              <p data-i18n="macro-inflation.p14"><strong>Cost-push inflation</strong> arises from the supply side. When production costs rise — oil prices spike, wages jump, raw materials become scarce — firms pass those costs on to consumers in the form of higher prices. In the AD-AS model, the short-run aggregate supply (SRAS) curve shifts leftward, producing the particularly nasty combination of higher prices and lower output known as <strong>stagflation</strong>. The 1970s oil shocks are the textbook example: OPEC's oil embargo quadrupled oil prices, pushing inflation above 10% in the US while simultaneously causing a recession.</p>
+              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.inf.s3.box">The Wage-Price Spiral</span><p data-i18n="macro-inflation.extra01">A <strong>wage-price spiral</strong> occurs when workers, seeing prices rise, demand higher wages to maintain their real purchasing power. Firms, facing higher labor costs, raise prices further. Workers then demand still higher wages — and the cycle continues. This <strong>built-in inflation</strong> can become self-sustaining and is one reason central banks act aggressively to prevent inflation expectations from becoming "unanchored."</p></div>
               <p data-i18n="macro-inflation.p15">The <strong>quantity theory of money</strong>, summarized in the equation <strong>MV = PQ</strong>, offers a monetarist perspective on inflation. M is the money supply, V is the velocity of money (how often each unit of currency changes hands), P is the price level, and Q is real output. If V and Q are roughly stable, then increases in M translate directly into increases in P — inflation. Milton Friedman's famous dictum that "inflation is always and everywhere a monetary phenomenon" is rooted in this identity. While modern central banking has moved beyond simple monetarism, the insight that excessive money creation fuels inflation remains valid.</p>
               <blockquote data-i18n="macro.inf.s3.quote">Key takeaway: Demand-pull inflation comes from excess demand (too much spending); cost-push inflation comes from supply shocks (rising production costs). Stagflation — the combination of high inflation and high unemployment — is the most difficult macroeconomic environment to manage because the standard cures conflict with each other.</blockquote>
             </section>
@@ -189,21 +189,21 @@
             <section class="card" id="effects">
               <h2 data-i18n="macro.inf.s4.h2">Who Wins and Who Loses</h2>
               <p data-i18n="macro-inflation.p17">Inflation is not neutral — it redistributes wealth and income in ways that are often invisible but deeply consequential. Understanding who benefits and who suffers from inflation is one of the most practically important insights in macroeconomics.</p>
-              <p data-i18n="macro-inflation.p16"><strong>Debtors benefit from unexpected inflation</strong>. If you borrow $100,000 at a fixed interest rate and inflation unexpectedly rises, you repay the loan in dollars that are worth less in real terms. The real burden of your debt has fallen. Governments are the world's largest debtors, which is why some economists argue that governments have an incentive to allow moderate inflation — it erodes the real value of outstanding public debt. Homeowners with fixed-rate mortgages experienced this benefit during the post-2021 inflation surge.</p>
-              <p data-i18n="macro-inflation.p17"><strong>Creditors and savers lose from unexpected inflation</strong>. If you lend money at a fixed interest rate and inflation rises unexpectedly, the real return on your loan falls — possibly turning negative. Pensioners living on fixed incomes are particularly vulnerable: their nominal income stays constant while the prices of everything they buy rise. People holding cash lose purchasing power directly. This is why inflation is sometimes called a "tax on savings."</p>
-              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.inf.s4.box">Costs of Inflation</span><p data-i18n="macro-inflation.p18"><strong>Menu costs</strong>: the real resources spent updating prices (printing new menus, reprogramming systems). <strong>Shoe-leather costs</strong>: the time and effort spent economizing on cash holdings when inflation is high (historically, people wore out their shoes walking to the bank more often). <strong>Uncertainty costs</strong>: high and variable inflation makes it harder to plan investments, sign long-term contracts, or compare prices — it degrades the information content of the price system.</p></div>
+              <p data-i18n="macro-inflation.p18"><strong>Debtors benefit from unexpected inflation</strong>. If you borrow $100,000 at a fixed interest rate and inflation unexpectedly rises, you repay the loan in dollars that are worth less in real terms. The real burden of your debt has fallen. Governments are the world's largest debtors, which is why some economists argue that governments have an incentive to allow moderate inflation — it erodes the real value of outstanding public debt. Homeowners with fixed-rate mortgages experienced this benefit during the post-2021 inflation surge.</p>
+              <p data-i18n="macro-inflation.p19"><strong>Creditors and savers lose from unexpected inflation</strong>. If you lend money at a fixed interest rate and inflation rises unexpectedly, the real return on your loan falls — possibly turning negative. Pensioners living on fixed incomes are particularly vulnerable: their nominal income stays constant while the prices of everything they buy rise. People holding cash lose purchasing power directly. This is why inflation is sometimes called a "tax on savings."</p>
+              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.inf.s4.box">Costs of Inflation</span><p data-i18n="macro-inflation.extra02"><strong>Menu costs</strong>: the real resources spent updating prices (printing new menus, reprogramming systems). <strong>Shoe-leather costs</strong>: the time and effort spent economizing on cash holdings when inflation is high (historically, people wore out their shoes walking to the bank more often). <strong>Uncertainty costs</strong>: high and variable inflation makes it harder to plan investments, sign long-term contracts, or compare prices — it degrades the information content of the price system.</p></div>
               <p data-i18n="macro-inflation.p21">Asset owners — those holding real estate, stocks, or commodities — tend to fare better during inflation because the nominal value of their assets rises with prices. This is one reason inflation tends to widen wealth inequality: the wealthy hold assets, the poor hold cash and fixed-income claims. The distributional effects of the 2021–22 inflation episode were stark: homeowners saw their property values surge while renters faced rapidly rising rents and stagnant real wages.</p>
-              <p data-i18n="macro-inflation.p19">At the extreme, <strong>hyperinflation destroys the price system entirely</strong>. When prices change by the hour, the fundamental function of money — as a unit of account, a medium of exchange, and a store of value — breaks down. People resort to barter, foreign currencies, or commodity money. Economic activity collapses. The social and political consequences can be catastrophic: hyperinflation in Weimar Germany contributed to the political instability that eventually brought the Nazi party to power.</p>
+              <p data-i18n="macro-inflation.p22">At the extreme, <strong>hyperinflation destroys the price system entirely</strong>. When prices change by the hour, the fundamental function of money — as a unit of account, a medium of exchange, and a store of value — breaks down. People resort to barter, foreign currencies, or commodity money. Economic activity collapses. The social and political consequences can be catastrophic: hyperinflation in Weimar Germany contributed to the political instability that eventually brought the Nazi party to power.</p>
               <blockquote data-i18n="macro.inf.s4.quote">Key takeaway: Inflation redistributes from creditors to debtors, from savers to asset owners, and from fixed-income earners to those with flexible incomes. Unexpected inflation is more damaging than anticipated inflation because people can't protect themselves against it. Hyperinflation is an economic catastrophe that destroys the foundations of market exchange.</blockquote>
             </section>
 
             <section class="card" id="policy">
               <h2 data-i18n="macro.inf.s5.h2">Fighting Inflation</h2>
               <p data-i18n="macro-inflation.p20">When inflation rises above target, central banks are the first line of defense. Their primary tool is the <strong>policy interest rate</strong> — the rate at which they lend to commercial banks overnight. Raising this rate makes borrowing more expensive throughout the economy: mortgage rates rise, business loan rates rise, credit card rates rise. Higher borrowing costs reduce consumer spending and business investment, cooling aggregate demand and putting downward pressure on prices.</p>
-              <p data-i18n="macro-inflation.p21">Central banks also conduct <strong>open market operations</strong> — buying and selling government bonds to influence the money supply and short-term interest rates. Selling bonds removes money from the banking system (contractionary); buying bonds injects money (expansionary). In normal times, open market operations are the primary mechanism through which central banks implement their interest rate decisions.</p>
-              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.inf.s5.box">The Taylor Rule</span><p data-i18n="macro-inflation.p22">The <strong>Taylor Rule</strong> is a formula that prescribes how central banks should set interest rates: <em>i = r* + π + 0.5(π − π*) + 0.5(y − y*)</em>, where i is the nominal interest rate, r* is the neutral real rate, π is current inflation, π* is the inflation target, and (y − y*) is the output gap. If inflation is 1% above target, the rule says raise rates by 0.5%. If output is 2% below potential, cut rates by 1%. It's a useful benchmark, not a rigid rule.</p></div>
-              <p data-i18n="macro-inflation.p23">The relationship between inflation and unemployment is captured by the <strong>Phillips curve</strong>. In the short run, there appears to be a trade-off: lower unemployment tends to come with higher inflation (tight labor markets push up wages and prices), and higher unemployment tends to come with lower inflation. This trade-off tempted policymakers in the 1960s to "buy" lower unemployment with higher inflation. But in the long run, the trade-off disappears: workers adjust their expectations, and the economy returns to the natural rate of unemployment regardless of the inflation rate. The stagflation of the 1970s — high inflation and high unemployment simultaneously — shattered the simple Phillips curve view.</p>
-              <p data-i18n="macro-inflation.p24">For cost-push inflation, monetary tightening is a blunt instrument: it reduces demand but doesn't address the underlying supply problem. <strong>Supply-side policies</strong> — investing in energy infrastructure, diversifying supply chains, reducing import barriers — can address cost-push pressures more directly. The challenge is that supply-side reforms take years to implement, while inflation can accelerate quickly.</p>
+              <p data-i18n="macro-inflation.p24">Central banks also conduct <strong>open market operations</strong> — buying and selling government bonds to influence the money supply and short-term interest rates. Selling bonds removes money from the banking system (contractionary); buying bonds injects money (expansionary). In normal times, open market operations are the primary mechanism through which central banks implement their interest rate decisions.</p>
+              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.inf.s5.box">The Taylor Rule</span><p data-i18n="macro-inflation.extra03">The <strong>Taylor Rule</strong> is a formula that prescribes how central banks should set interest rates: <em>i = r* + π + 0.5(π − π*) + 0.5(y − y*)</em>, where i is the nominal interest rate, r* is the neutral real rate, π is current inflation, π* is the inflation target, and (y − y*) is the output gap. If inflation is 1% above target, the rule says raise rates by 0.5%. If output is 2% below potential, cut rates by 1%. It's a useful benchmark, not a rigid rule.</p></div>
+              <p data-i18n="macro-inflation.p26">The relationship between inflation and unemployment is captured by the <strong>Phillips curve</strong>. In the short run, there appears to be a trade-off: lower unemployment tends to come with higher inflation (tight labor markets push up wages and prices), and higher unemployment tends to come with lower inflation. This trade-off tempted policymakers in the 1960s to "buy" lower unemployment with higher inflation. But in the long run, the trade-off disappears: workers adjust their expectations, and the economy returns to the natural rate of unemployment regardless of the inflation rate. The stagflation of the 1970s — high inflation and high unemployment simultaneously — shattered the simple Phillips curve view.</p>
+              <p data-i18n="macro-inflation.p27">For cost-push inflation, monetary tightening is a blunt instrument: it reduces demand but doesn't address the underlying supply problem. <strong>Supply-side policies</strong> — investing in energy infrastructure, diversifying supply chains, reducing import barriers — can address cost-push pressures more directly. The challenge is that supply-side reforms take years to implement, while inflation can accelerate quickly.</p>
               <blockquote data-i18n="macro.inf.s5.quote">Key takeaway: Central banks fight inflation primarily by raising interest rates, which cools demand throughout the economy. The Taylor Rule provides a systematic framework for rate decisions. The short-run Phillips curve trade-off between inflation and unemployment disappears in the long run — there is no permanent way to "buy" lower unemployment with higher inflation.</blockquote>
             </section>
 
@@ -217,7 +217,7 @@
       <div class="footer__inner container">
         <div>
           <a class="navbar__logo" href="../index.html" style="margin-bottom: 0.8rem; display: inline-flex">
-            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/econlyx-symbol.png" alt="" /></span>
             <span style="color: var(--color-terracotta-light); font-weight: 900">Econlyx</span>
           </a>
           <p data-i18n="footer.tagline" style="font-size: 0.88rem; max-width: 280px" >Platform to study Economics</p>
@@ -242,8 +242,8 @@
       </div>
     </div>
     <button class="icon-button scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
-    <script src="../assets/js/main.js?v=20260616-2" defer></script>
-    <script src="../assets/js/navigation.js?v=20260616-2" defer></script>
-    <script src="../assets/js/tabs.js?v=20260616-2" defer></script>
+    <script src="../assets/js/main.js?v=20260712-3" defer></script>
+    <script src="../assets/js/navigation.js?v=20260712-3" defer></script>
+    <script src="../assets/js/tabs.js?v=20260712-3" defer></script>
   </body>
 </html>

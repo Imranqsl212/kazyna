@@ -4,18 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="theme-color" content="#f7f5f3" />
+    <meta name="theme-color" content="#0f513d" />
     <link rel="manifest" href="../site.webmanifest" />
-    <link rel="apple-touch-icon" href="../assets/images/logo-symbol.png" />
-    <link rel="icon" type="image/png" href="../assets/images/logo-symbol.png" />
+    <link rel="apple-touch-icon" href="../assets/images/econlyx-symbol.png" />
+    <link rel="icon" type="image/png" href="../assets/images/econlyx-symbol.png" />
     <title>Monetary Policy: How Central Banks Control the Economy | Econlyx</title>
-    <meta name="twitter:image" content="https://econlyx.com/assets/images/logo.jpg" />
+    <meta name="twitter:image" content="https://econlyx.com/assets/images/econlyx-avatar.png" />
     <meta name="twitter:description" content="How central banks control the economy through interest rates, open market operations, and quantitative easing — and why monetary policy transmission takes time." />
     <meta name="twitter:title" content="Monetary Policy: How Central Banks Control the Economy | Econlyx" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://econlyx.com/assets/images/logo.jpg" />
+    <meta property="og:image" content="https://econlyx.com/assets/images/econlyx-avatar.png" />
     <meta property="og:description" content="How central banks control the economy through interest rates, open market operations, and quantitative easing — and why monetary policy transmission takes time." />
     <meta property="og:title" content="Monetary Policy: How Central Banks Control the Economy | Econlyx" />
     <meta property="og:site_name" content="Econlyx" />
@@ -31,9 +31,9 @@
     <link rel="alternate" hreflang="x-default" href="https://econlyx.com/pages/macro-monetary-policy" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20260616-2" />
-    <script src="../assets/js/chrome.js?v=20260616-2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Playfair+Display:wght@700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260712-3" />
+    <script src="../assets/js/chrome.js?v=20260712-3"></script>
     <script type="application/ld+json">
       {
             "@context": "https://schema.org",
@@ -44,7 +44,7 @@
                         "name": "Econlyx",
                         "alternateName": "Econlyx",
                         "url": "https://econlyx.com/",
-                        "logo": "https://econlyx.com/assets/images/logo.jpg",
+                        "logo": "https://econlyx.com/assets/images/econlyx-avatar.png",
                         "description": "Economics education and olympiad preparation platform."
                   },
                   {
@@ -78,7 +78,7 @@
                         "publisher": {
                               "@id": "https://econlyx.com/#organization"
                         },
-                        "image": "https://econlyx.com/assets/images/logo.jpg",
+                        "image": "https://econlyx.com/assets/images/econlyx-avatar.png",
                         "inLanguage": "en"
                   },
                   {
@@ -103,7 +103,7 @@
       }
     </script>
 
-      <script src="../assets/js/i18n.js?v=20260616-2"></script>
+      <script src="../assets/js/i18n.js?v=20260712-3"></script>
 </head>
   <body class="page article-page">
     <a class="skip-link" href="#main" data-i18n="skip.content">Skip to content</a>
@@ -112,10 +112,10 @@
     <header class="navbar">
       <div class="navbar__inner container">
         <a class="navbar__logo" href="../index.html" aria-label="Econlyx home">
-          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+          <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/econlyx-symbol.png" alt="" /></span>
           <span class="navbar__brand-text">Econlyx</span>
         </a>
-        <nav class="navbar__links" data-nav-links aria-label="Main navigation">
+        <nav class="navbar__links" id="main-navigation" data-nav-links aria-label="Main navigation">
           <a class="navbar__link" href="../index.html" data-i18n="nav.home">Home</a>
           <a class="navbar__link" href="microeconomics.html" data-i18n="nav.micro">Microeconomics</a>
           <a class="navbar__link" href="macroeconomics.html" data-i18n="nav.macro">Macroeconomics</a>
@@ -126,7 +126,7 @@
         </nav>
         <div class="navbar__actions">
           <button class="icon-button" type="button" data-search-open aria-label="Open search">⌕</button>
-          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-expanded="false">☰</button>
+          <button class="icon-button navbar__burger" type="button" data-burger aria-label="Open menu" aria-controls="main-navigation" aria-expanded="false">☰</button>
           <select class="language-toggle" data-lang-toggle aria-label="Switch language">
             <option value="en">EN</option>
             <option value="ru">RU</option>
@@ -168,29 +168,29 @@
             <section class="card" id="tools">
               <h2 data-i18n="macro.mon.s2.h2">Tools of Monetary Policy</h2>
               <p data-i18n="macro-monetary-policy.p6">Central banks have several tools at their disposal, though their relative importance has shifted significantly since the 2008 financial crisis. Understanding each tool — and its limitations — is essential for following monetary policy debates.</p>
-              <p data-i18n="macro-monetary-policy.p6"><strong>Open market operations (OMOs)</strong> are the primary tool of monetary policy in normal times. The central bank buys or sells government bonds in the open market. When it buys bonds, it pays for them by crediting banks' reserve accounts — injecting money into the banking system and pushing short-term interest rates down. When it sells bonds, it withdraws money from the banking system, pushing rates up. OMOs are flexible, reversible, and can be conducted in large volumes quickly, making them the workhorse of day-to-day monetary policy implementation.</p>
-              <p data-i18n="macro-monetary-policy.p7">The <strong>policy interest rate</strong> — called the federal funds rate in the US, the bank rate in the UK, or the main refinancing rate in the eurozone — is the rate at which the central bank lends to commercial banks overnight. By setting this rate, the central bank anchors the entire short-term interest rate structure. Commercial banks set their own lending rates as a markup over the policy rate, so changes in the policy rate ripple through to mortgage rates, business loan rates, and savings rates across the economy.</p>
-              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.mon.s2.box">Reserve Requirements</span><p data-i18n="macro-monetary-policy.p8"><strong>Reserve requirements</strong> mandate that commercial banks hold a minimum fraction of their deposits as reserves (either as vault cash or deposits at the central bank). In theory, raising reserve requirements reduces the money multiplier and tightens credit; lowering them does the opposite. In practice, most advanced economy central banks have moved away from reserve requirements as a policy tool — the Fed reduced reserve requirements to zero in 2020 — because they are blunt, disruptive, and less effective than interest rate policy.</p></div>
+              <p data-i18n="macro-monetary-policy.p7"><strong>Open market operations (OMOs)</strong> are the primary tool of monetary policy in normal times. The central bank buys or sells government bonds in the open market. When it buys bonds, it pays for them by crediting banks' reserve accounts — injecting money into the banking system and pushing short-term interest rates down. When it sells bonds, it withdraws money from the banking system, pushing rates up. OMOs are flexible, reversible, and can be conducted in large volumes quickly, making them the workhorse of day-to-day monetary policy implementation.</p>
+              <p data-i18n="macro-monetary-policy.p8">The <strong>policy interest rate</strong> — called the federal funds rate in the US, the bank rate in the UK, or the main refinancing rate in the eurozone — is the rate at which the central bank lends to commercial banks overnight. By setting this rate, the central bank anchors the entire short-term interest rate structure. Commercial banks set their own lending rates as a markup over the policy rate, so changes in the policy rate ripple through to mortgage rates, business loan rates, and savings rates across the economy.</p>
+              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.mon.s2.box">Reserve Requirements</span><p data-i18n="macro-monetary-policy.extra01"><strong>Reserve requirements</strong> mandate that commercial banks hold a minimum fraction of their deposits as reserves (either as vault cash or deposits at the central bank). In theory, raising reserve requirements reduces the money multiplier and tightens credit; lowering them does the opposite. In practice, most advanced economy central banks have moved away from reserve requirements as a policy tool — the Fed reduced reserve requirements to zero in 2020 — because they are blunt, disruptive, and less effective than interest rate policy.</p></div>
               <p data-i18n="macro-monetary-policy.p9"><strong>Forward guidance</strong> has become an increasingly important tool since 2008. By communicating its intentions about future policy — "we expect to keep rates near zero until unemployment falls below 6.5%" — a central bank can influence long-term interest rates and financial conditions even without changing the current policy rate. If markets believe the central bank will keep rates low for a long time, long-term rates fall today, stimulating investment and spending. Forward guidance works through expectations: it's monetary policy by announcement rather than by action.</p>
               <blockquote data-i18n="macro.mon.s2.quote">Key takeaway: Open market operations are the primary tool for implementing interest rate decisions. The policy rate anchors the entire short-term rate structure. Forward guidance shapes expectations about future policy, influencing long-term rates without requiring immediate action. Reserve requirements are now rarely used in advanced economies.</blockquote>
             </section>
 
             <section class="card" id="transmission">
               <h2 data-i18n="macro.mon.s3.h2">How Monetary Policy Works</h2>
-              <p data-i18n="macro-monetary-policy.p10">Monetary policy doesn't affect the economy instantaneously — it works through multiple channels, each with different speeds and magnitudes. Understanding the <strong>transmission mechanism</strong> is essential for appreciating both the power and the limitations of central bank action.</p>
-              <p data-i18n="macro-monetary-policy.p11">The <strong>interest rate channel</strong> is the most direct. When the central bank cuts rates, borrowing becomes cheaper throughout the economy. Households take out more mortgages and car loans; businesses invest in new equipment and expand capacity; governments refinance debt at lower cost. All of this additional spending raises aggregate demand, output, and employment. The reverse happens when rates rise: borrowing becomes more expensive, spending falls, and the economy cools. This channel is most powerful when households and businesses are sensitive to interest rate changes — which depends on how much debt they carry and how confident they are about the future.</p>
-              <p data-i18n="macro-monetary-policy.p12">The <strong>asset price channel</strong> works through wealth effects. Lower interest rates make bonds less attractive relative to stocks and real estate, pushing up asset prices. Higher stock prices make shareholders feel wealthier, encouraging them to spend more (the wealth effect). Higher house prices allow homeowners to borrow against their equity. Both effects boost consumption. This channel has become more important as household wealth has become more concentrated in financial assets and real estate.</p>
-              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.mon.s3.box">The Exchange Rate Channel</span><p data-i18n="macro-monetary-policy.p13">Lower domestic interest rates make domestic assets less attractive to foreign investors, causing capital to flow out and the domestic currency to <strong>depreciate</strong>. A weaker currency makes exports cheaper for foreign buyers and imports more expensive for domestic consumers. Net exports rise, boosting aggregate demand. This channel is particularly important for small open economies where trade is a large share of GDP. It also means that monetary policy in large economies (the Fed, ECB) has significant spillover effects on the rest of the world.</p></div>
+              <p data-i18n="macro-monetary-policy.p11">Monetary policy doesn't affect the economy instantaneously — it works through multiple channels, each with different speeds and magnitudes. Understanding the <strong>transmission mechanism</strong> is essential for appreciating both the power and the limitations of central bank action.</p>
+              <p data-i18n="macro-monetary-policy.p12">The <strong>interest rate channel</strong> is the most direct. When the central bank cuts rates, borrowing becomes cheaper throughout the economy. Households take out more mortgages and car loans; businesses invest in new equipment and expand capacity; governments refinance debt at lower cost. All of this additional spending raises aggregate demand, output, and employment. The reverse happens when rates rise: borrowing becomes more expensive, spending falls, and the economy cools. This channel is most powerful when households and businesses are sensitive to interest rate changes — which depends on how much debt they carry and how confident they are about the future.</p>
+              <p data-i18n="macro-monetary-policy.p13">The <strong>asset price channel</strong> works through wealth effects. Lower interest rates make bonds less attractive relative to stocks and real estate, pushing up asset prices. Higher stock prices make shareholders feel wealthier, encouraging them to spend more (the wealth effect). Higher house prices allow homeowners to borrow against their equity. Both effects boost consumption. This channel has become more important as household wealth has become more concentrated in financial assets and real estate.</p>
+              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.mon.s3.box">The Exchange Rate Channel</span><p data-i18n="macro-monetary-policy.extra02">Lower domestic interest rates make domestic assets less attractive to foreign investors, causing capital to flow out and the domestic currency to <strong>depreciate</strong>. A weaker currency makes exports cheaper for foreign buyers and imports more expensive for domestic consumers. Net exports rise, boosting aggregate demand. This channel is particularly important for small open economies where trade is a large share of GDP. It also means that monetary policy in large economies (the Fed, ECB) has significant spillover effects on the rest of the world.</p></div>
               <p data-i18n="macro-monetary-policy.p14">The <strong>credit channel</strong> amplifies the interest rate channel through the banking system. Lower rates improve bank profitability and reduce the risk of loan defaults, encouraging banks to lend more. Easier credit conditions allow businesses and households to borrow and spend more than they could based on interest rates alone. The credit channel was central to the 2008 crisis: when banks became unwilling to lend regardless of interest rates, the credit channel broke down, severely limiting the effectiveness of conventional monetary policy.</p>
-              <p data-i18n="macro-monetary-policy.p15">A crucial feature of monetary policy is its <strong>long and variable lags</strong>. Milton Friedman famously observed that monetary policy affects the economy with lags that are "long and variable" — typically 12 to 18 months before the full effect on inflation is felt. This means central banks must act on forecasts of future inflation, not current inflation. Getting the timing right is genuinely difficult, and mistakes — tightening too late, or easing too aggressively — are common.</p>
+              <p data-i18n="macro-monetary-policy.p16">A crucial feature of monetary policy is its <strong>long and variable lags</strong>. Milton Friedman famously observed that monetary policy affects the economy with lags that are "long and variable" — typically 12 to 18 months before the full effect on inflation is felt. This means central banks must act on forecasts of future inflation, not current inflation. Getting the timing right is genuinely difficult, and mistakes — tightening too late, or easing too aggressively — are common.</p>
               <blockquote data-i18n="macro.mon.s3.quote">Key takeaway: Monetary policy works through the interest rate, asset price, exchange rate, and credit channels. Each channel operates with different speed and magnitude. The full effect on inflation takes 12–18 months, requiring central banks to act on forecasts rather than current data — a source of both power and error.</blockquote>
             </section>
 
             <section class="card" id="inflation-targeting">
               <h2 data-i18n="macro.mon.s4.h2">Inflation Targeting</h2>
-              <p data-i18n="macro-monetary-policy.p16">Since the early 1990s, most major central banks have adopted <strong>inflation targeting</strong> as their monetary policy framework. The idea is simple: announce a specific numerical target for inflation (typically 2%), and adjust interest rates to keep inflation close to that target over the medium term. New Zealand was the first country to adopt formal inflation targeting in 1990; the Bank of England followed in 1992, and the Fed formally adopted a 2% target in 2012.</p>
-              <p data-i18n="macro-monetary-policy.p17">Inflation targeting works partly through its effect on <strong>inflation expectations</strong>. If households, workers, and businesses believe the central bank will keep inflation at 2%, they set wages and prices accordingly — and their behavior makes the 2% outcome more likely. This self-fulfilling dynamic is why central bank credibility is so valuable. When inflation expectations are "anchored" at the target, the central bank has more flexibility to respond to recessions without triggering an inflationary spiral. When expectations become "unanchored" — as happened in the 1970s — controlling inflation requires much more painful interest rate increases.</p>
-              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.mon.s4.box">The Taylor Rule</span><p data-i18n="macro-monetary-policy.p18">The <strong>Taylor Rule</strong>, proposed by economist John Taylor in 1993, provides a systematic formula for setting interest rates: <em>i = r* + π + 0.5(π − π*) + 0.5(y − y*)</em>. Here, i is the nominal policy rate, r* is the neutral real rate (~2%), π is current inflation, π* is the inflation target (2%), and (y − y*) is the output gap (actual minus potential GDP as a percentage). If inflation is 1% above target, the rule prescribes raising rates by 0.5%. If output is 2% below potential, it prescribes cutting rates by 1%. The Taylor Rule is a useful benchmark, not a rigid prescription.</p></div>
+              <p data-i18n="macro-monetary-policy.p17">Since the early 1990s, most major central banks have adopted <strong>inflation targeting</strong> as their monetary policy framework. The idea is simple: announce a specific numerical target for inflation (typically 2%), and adjust interest rates to keep inflation close to that target over the medium term. New Zealand was the first country to adopt formal inflation targeting in 1990; the Bank of England followed in 1992, and the Fed formally adopted a 2% target in 2012.</p>
+              <p data-i18n="macro-monetary-policy.p18">Inflation targeting works partly through its effect on <strong>inflation expectations</strong>. If households, workers, and businesses believe the central bank will keep inflation at 2%, they set wages and prices accordingly — and their behavior makes the 2% outcome more likely. This self-fulfilling dynamic is why central bank credibility is so valuable. When inflation expectations are "anchored" at the target, the central bank has more flexibility to respond to recessions without triggering an inflationary spiral. When expectations become "unanchored" — as happened in the 1970s — controlling inflation requires much more painful interest rate increases.</p>
+              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.mon.s4.box">The Taylor Rule</span><p data-i18n="macro-monetary-policy.extra03">The <strong>Taylor Rule</strong>, proposed by economist John Taylor in 1993, provides a systematic formula for setting interest rates: <em>i = r* + π + 0.5(π − π*) + 0.5(y − y*)</em>. Here, i is the nominal policy rate, r* is the neutral real rate (~2%), π is current inflation, π* is the inflation target (2%), and (y − y*) is the output gap (actual minus potential GDP as a percentage). If inflation is 1% above target, the rule prescribes raising rates by 0.5%. If output is 2% below potential, it prescribes cutting rates by 1%. The Taylor Rule is a useful benchmark, not a rigid prescription.</p></div>
               <p data-i18n="macro-monetary-policy.p20">The Taylor Rule illustrates the fundamental tension in monetary policy: the inflation gap and the output gap can point in opposite directions. When inflation is above target and output is below potential — as in a stagflationary environment — the rule gives conflicting signals. Central banks must exercise judgment about which concern is more pressing. The Fed's dual mandate explicitly requires it to balance both objectives, while the ECB's single mandate gives it clearer guidance to prioritize inflation.</p>
               <blockquote data-i18n="macro.mon.s4.quote">Key takeaway: Inflation targeting anchors expectations and provides a clear framework for monetary policy decisions. The Taylor Rule translates the framework into a systematic interest rate prescription. Credibility is the central bank's most valuable asset — once lost, it is expensive to rebuild, as the Volcker disinflation of the early 1980s demonstrated.</blockquote>
             </section>
@@ -198,9 +198,9 @@
             <section class="card" id="limits">
               <h2 data-i18n="macro.mon.s5.h2">Zero Lower Bound and Quantitative Easing</h2>
               <p data-i18n="macro-monetary-policy.p19">Conventional monetary policy has a fundamental constraint: nominal interest rates cannot be cut much below zero. This is the <strong>zero lower bound (ZLB)</strong>. If the central bank tried to set rates significantly negative, people would simply withdraw their money from banks and hold cash — which earns exactly zero. The ZLB became a binding constraint for the Fed, ECB, and Bank of Japan after the 2008 financial crisis, when policy rates were cut to near zero and kept there for years.</p>
-              <p data-i18n="macro-monetary-policy.p20">The <strong>liquidity trap</strong> — a concept from Keynes — describes a situation where even zero interest rates fail to stimulate investment and spending. If businesses are deeply pessimistic about future demand, they won't invest regardless of how cheap borrowing is. If households are deleveraging after a debt binge, they'll use any extra income to pay down debt rather than spend. Japan's experience since the 1990s is the most sustained example: despite near-zero rates for decades, the economy remained sluggish and inflation persistently below target.</p>
-              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.mon.s5.box">Quantitative Easing (QE)</span><p data-i18n="macro-monetary-policy.p21"><strong>Quantitative easing</strong> is the purchase of longer-term assets (government bonds, mortgage-backed securities, corporate bonds) by the central bank when short-term rates are already at zero. By buying long-term bonds, the central bank pushes down long-term interest rates, lowers borrowing costs for mortgages and corporate loans, and injects reserves into the banking system. The Fed's balance sheet expanded from $900 billion before 2008 to over $9 trillion by 2022 through successive rounds of QE. The effectiveness of QE remains debated — it clearly lowered long-term rates, but its impact on the real economy was more modest.</p></div>
-              <p data-i18n="macro-monetary-policy.p22">Some central banks have experimented with <strong>negative interest rates</strong> — charging banks for holding excess reserves at the central bank, in the hope of encouraging them to lend instead. The ECB, Bank of Japan, Swiss National Bank, and others have all tried negative rates. The results have been mixed: negative rates did push down market interest rates and weaken currencies, but they also squeezed bank profit margins and raised concerns about financial stability. There appears to be an "effective lower bound" somewhat below zero — perhaps −0.5% to −1% — beyond which the costs outweigh the benefits.</p>
+              <p data-i18n="macro-monetary-policy.p22">The <strong>liquidity trap</strong> — a concept from Keynes — describes a situation where even zero interest rates fail to stimulate investment and spending. If businesses are deeply pessimistic about future demand, they won't invest regardless of how cheap borrowing is. If households are deleveraging after a debt binge, they'll use any extra income to pay down debt rather than spend. Japan's experience since the 1990s is the most sustained example: despite near-zero rates for decades, the economy remained sluggish and inflation persistently below target.</p>
+              <div class="concept-box"><span class="concept-box__label" data-i18n="macro.mon.s5.box">Quantitative Easing (QE)</span><p data-i18n="macro-monetary-policy.extra04"><strong>Quantitative easing</strong> is the purchase of longer-term assets (government bonds, mortgage-backed securities, corporate bonds) by the central bank when short-term rates are already at zero. By buying long-term bonds, the central bank pushes down long-term interest rates, lowers borrowing costs for mortgages and corporate loans, and injects reserves into the banking system. The Fed's balance sheet expanded from $900 billion before 2008 to over $9 trillion by 2022 through successive rounds of QE. The effectiveness of QE remains debated — it clearly lowered long-term rates, but its impact on the real economy was more modest.</p></div>
+              <p data-i18n="macro-monetary-policy.p24">Some central banks have experimented with <strong>negative interest rates</strong> — charging banks for holding excess reserves at the central bank, in the hope of encouraging them to lend instead. The ECB, Bank of Japan, Swiss National Bank, and others have all tried negative rates. The results have been mixed: negative rates did push down market interest rates and weaken currencies, but they also squeezed bank profit margins and raised concerns about financial stability. There appears to be an "effective lower bound" somewhat below zero — perhaps −0.5% to −1% — beyond which the costs outweigh the benefits.</p>
               <p data-i18n="macro-monetary-policy.p25">The post-2008 experience has fundamentally changed how economists think about monetary policy. The pre-crisis consensus — that a 2% inflation target and a short-term interest rate were sufficient tools — proved inadequate when the ZLB became binding. Central banks have had to develop a much larger toolkit: QE, forward guidance, negative rates, yield curve control, and direct lending to specific sectors. The debate about whether these unconventional tools are effective, and what their long-run consequences are, will shape monetary policy for decades to come.</p>
               <blockquote data-i18n="macro.mon.s5.quote">Key takeaway: The zero lower bound limits conventional monetary policy. When rates hit zero, central banks turn to quantitative easing (buying long-term assets), forward guidance, and negative rates. These unconventional tools have expanded the monetary policy toolkit but their effectiveness and side effects remain actively debated.</blockquote>
             </section>
@@ -215,7 +215,7 @@
       <div class="footer__inner container">
         <div>
           <a class="navbar__logo" href="../index.html" style="margin-bottom: 0.8rem; display: inline-flex">
-            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/logo-symbol.png" alt="" /></span>
+            <span class="navbar__mark"><img class="navbar__logo-img" src="../assets/images/econlyx-symbol.png" alt="" /></span>
             <span style="color: var(--color-terracotta-light); font-weight: 900">Econlyx</span>
           </a>
           <p data-i18n="footer.tagline" style="font-size: 0.88rem; max-width: 280px" >Platform to study Economics</p>
@@ -240,8 +240,8 @@
       </div>
     </div>
     <button class="icon-button scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
-    <script src="../assets/js/main.js?v=20260616-2" defer></script>
-    <script src="../assets/js/navigation.js?v=20260616-2" defer></script>
-    <script src="../assets/js/tabs.js?v=20260616-2" defer></script>
+    <script src="../assets/js/main.js?v=20260712-3" defer></script>
+    <script src="../assets/js/navigation.js?v=20260712-3" defer></script>
+    <script src="../assets/js/tabs.js?v=20260712-3" defer></script>
   </body>
 </html>

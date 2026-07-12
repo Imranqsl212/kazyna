@@ -10,20 +10,26 @@
   const searchModal = document.querySelector("[data-search-modal]");
   const searchInput = document.querySelector("[data-search-input]");
   const searchResults = document.querySelector("[data-search-results]");
+  let searchReturnFocus = null;
 
   function _t(key, fallback) {
     return (window.econlyxI18n && window.econlyxI18n.t(key) !== key) ? window.econlyxI18n.t(key) : fallback;
   }
 
   function applyAriaLabels() {
-    document.querySelectorAll("[data-search-open]").forEach((node) => node.setAttribute("aria-label", _t("aria.open_search", "Open search")));
+    const label = (node, value) => {
+      node.setAttribute("aria-label", value);
+      node.setAttribute("title", value);
+    };
+
+    document.querySelectorAll("[data-search-open]").forEach((node) => label(node, _t("aria.open_search", "Open search")));
     document.querySelectorAll("[data-theme-toggle]").forEach((node) => {
       const dark = document.documentElement.dataset.theme === "dark";
-      node.setAttribute("aria-label", dark ? _t("aria.theme_light", "Switch to light theme") : _t("aria.theme_dark", "Switch to dark theme"));
+      label(node, dark ? _t("aria.theme_light", "Switch to light theme") : _t("aria.theme_dark", "Switch to dark theme"));
     });
-    document.querySelectorAll("[data-burger]").forEach((node) => node.setAttribute("aria-label", _t("aria.open_menu", "Open menu")));
-    document.querySelectorAll("[data-search-close]").forEach((node) => node.setAttribute("aria-label", _t("aria.close_search", "Close search")));
-    document.querySelectorAll("[data-scroll-top]").forEach((node) => node.setAttribute("aria-label", _t("aria.scroll_top", "Scroll to top")));
+    document.querySelectorAll("[data-burger]").forEach((node) => label(node, _t("aria.open_menu", "Open menu")));
+    document.querySelectorAll("[data-search-close]").forEach((node) => label(node, _t("aria.close_search", "Close search")));
+    document.querySelectorAll("[data-scroll-top]").forEach((node) => label(node, _t("aria.scroll_top", "Scroll to top")));
   }
 
   applyAriaLabels();
@@ -34,7 +40,7 @@
   function getSearchIndex() {
     const T = (key, fb) => _t(key, fb);
     return [
-      { title: T("search.idx.gdp","GDP explained"), category: T("search.cat.macro","Macro"), url: `${base}article-single.html`, text: "GDP C I G net exports income expenditure value added ВВП" },
+      { title: T("search.idx.gdp","GDP explained"), category: T("search.cat.macro","Macro"), url: `${base}macro-gdp.html`, text: "GDP C I G net exports income expenditure value added ВВП" },
       { title: T("search.idx.inflation","Inflation deep dive"), category: T("search.cat.macro","Macro"), url: `${base}article-inflation.html`, text: "CPI deflator demand pull cost push expectations инфляция" },
       { title: T("search.idx.fiscal","Fiscal and monetary policy"), category: T("search.cat.macro","Macro"), url: `${base}article-fiscal-policy.html`, text: "multiplier crowding out interest rates central bank мультипликатор" },
       { title: T("search.idx.unemployment","Unemployment types"), category: T("search.cat.macro","Macro"), url: `${base}macroeconomics.html#unemployment`, text: "frictional structural cyclical natural NAIRU безработица" },
@@ -58,15 +64,29 @@
 
   function openSearch() {
     if (!searchModal) return;
+    searchReturnFocus = document.activeElement;
+    closeMenu();
     searchModal.classList.add("search-modal--open");
     searchModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
     setTimeout(() => searchInput && searchInput.focus(), 0);
   }
 
   function closeSearch() {
     if (!searchModal) return;
+    const wasOpen = searchModal.classList.contains("search-modal--open");
     searchModal.classList.remove("search-modal--open");
     searchModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+    if (wasOpen && searchReturnFocus && typeof searchReturnFocus.focus === "function") {
+      searchReturnFocus.focus();
+    }
+  }
+
+  function closeMenu() {
+    if (!burger || !navLinks) return;
+    navLinks.classList.remove("navbar__links--open");
+    burger.setAttribute("aria-expanded", "false");
   }
 
   function renderSearch(query) {
@@ -138,6 +158,14 @@
       const open = navLinks.classList.toggle("navbar__links--open");
       burger.setAttribute("aria-expanded", String(open));
     });
+
+    navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+
+    document.addEventListener("click", (event) => {
+      if (!navLinks.classList.contains("navbar__links--open")) return;
+      if (navLinks.contains(event.target) || burger.contains(event.target)) return;
+      closeMenu();
+    });
   }
 
   function syncThemeIcon() {
@@ -185,7 +213,23 @@
     if (searchInput) renderSearch(searchInput.value || "");
   });
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeSearch();
+    if (event.key === "Tab" && searchModal?.classList.contains("search-modal--open")) {
+      const focusable = [...searchModal.querySelectorAll("button, input, a[href]")].filter((node) => !node.hidden);
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last?.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first?.focus();
+      }
+    }
+
+    if (event.key === "Escape") {
+      closeSearch();
+      closeMenu();
+    }
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
       event.preventDefault();
       openSearch();
